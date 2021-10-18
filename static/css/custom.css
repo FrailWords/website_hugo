@@ -17,3 +17,16 @@ code {
     font-size: medium;
     background: whitesmoke;
 }
+
+.social-icons {
+    padding: 12px 0
+}
+
+.social-icons a:not(:last-of-type) {
+    margin-inline-end: 12px
+}
+
+.social-icons a svg {
+    height: 26px;
+    width: 26px
+}
