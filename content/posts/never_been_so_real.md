@@ -1,7 +1,7 @@
 ---
 title: "Never Been So Real"
 date: "2008-03-19"
-tags: ['reality']
+tags: ['reality', 'poetry']
 ---
 
     hear me now, its said and done

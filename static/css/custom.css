@@ -11,11 +11,14 @@ pre {
 }
 
 code {
-    font-family: 'my_underwoodregular', sans-serif;
     color: black;
-    text-transform: lowercase;
-    font-size: medium;
+    font-size: large;
     background: whitesmoke;
+}
+
+p > code {
+    background: whitesmoke;
+    color: black;
 }
 
 .social-icons {

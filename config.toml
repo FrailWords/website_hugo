@@ -2,6 +2,10 @@ baseURL = "https://sriramviswanathan.com/"
 languageCode = "en"
 theme = "smigle"
 title = "Sriram Viswanathan"
+paginate = 5
+
+[markup.goldmark.renderer]
+unsafe= true
 
 [[menu.main]]
 identifier = "home"
