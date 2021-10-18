@@ -1,0 +1,58 @@
+baseURL = "https://sriramviswanathan.com/"
+languageCode = "en"
+theme = "smigle"
+title = "Sriram Viswanathan"
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 3
+
+[params]
+abbrDateFmt = "Jan 2"
+dateFmt = "2006-01-02"
+author = "Sriram Viswanathan"
+subtitle = "Music, Software, Privacy, Poetry and more..."
+brandIconFile = "logo.jpg"
+customStylesheets = [ "css/custom.css" ]
+
+[[params.social]]
+name = "GitHub"
+url = "https://github.com/FrailWords"
+
+[[params.social]]
+name = "Reddit"
+url = "https://www.reddit.com/user/frailwords"
+
+[[params.social]]
+name = "Twitter"
+url = "https://twitter.com/FrailWords"
+
+[[params.social]]
+name = "StackOverflow"
+url = "https://stackoverflow.com/users/1216748/frailwords"
+
+[[params.social]]
+name = "Soundcloud"
+url = "https://soundcloud.com/inthemidstofitall"
+
+[[params.social]]
+name = "Spotify"
+url = "https://open.spotify.com/artist/27EMpIPBgqcuVVmHkde9CI?si=kDZLZuULTMeW8I6BfHZgPg"
+
+[[params.social]]
+name = "Instagram"
+url = "https://www.instagram.com/in.the.midst.0f.it.all/"
