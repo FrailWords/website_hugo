@@ -3,7 +3,6 @@ title: "The Tech interview - a candidate's perspective"
 date: "2021-06-19"
 tags: ['candidate', 'tech', 'interview']
 ---
-#### Goal of a privacy policy
 Having gone through a recent period of job search and a sequence of interviews, I thought I'd pen down what _I_ think of the different styles of tech interviews and why I think this whole process needs a complete relook.
 
 Personas - Who are the people involved in the process ?
