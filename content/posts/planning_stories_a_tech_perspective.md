@@ -108,11 +108,3 @@ business value.
 
 There is no _right_ answer here as you might expect - it's always a constant learning experience on how to define, scope and prioritize,
 and I hope this gives the reader a new view point on how a story could be sliced.
-
-
-
-
-
-
-
-
