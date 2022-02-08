@@ -21,12 +21,8 @@ One of the main ways to define a _well-defined/good story_ is through the I.N.V.
 * **S** - small - small enough to provide quick feedback
 * **T** - testable - independently verifiable and testable
 
-From my experience, it is super-hard for every story to satisfy each of these properties and the main reason that I see
-consistently is how a software product is developed from scratch. I will try to talk about this through comparisons on
-how stories span through iterations of development.
-
-**NOTE:** To simplify the discussion, I am going to make the assumption that the technology(s) we are going to use are known to
-the team already.
+This principle is generally a guiding principle, not exactly a strict rule and, it is important that we keep this in mind 
+when discussing how a story is sliced/defined.
 
 ### Preface - Iteration 0
 
