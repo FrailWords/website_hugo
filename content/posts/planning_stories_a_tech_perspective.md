@@ -1,5 +1,5 @@
 ---
-title: "Agile Story Slicing - Horizontal? Vertical?"
+title: "Agile Story Slicing - Horizontal or Vertical ?"
 date: "2022-02-09"
 tags: ['agile', 'story', 'story-slicing', 'planning']
 ---
