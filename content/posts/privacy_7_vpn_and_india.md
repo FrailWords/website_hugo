@@ -133,7 +133,7 @@ NordVPN has also warned that it will be removing physical servers from India if 
 
 ### How will this ultimately affect VPN providers in India ?
 
-India is a huge market for these providers. Just removing their servers from India only does one thing - every request has to go _outside_ of India another country.
+India is a huge market for these providers. Just removing their servers from India only does one thing - every request has to go _outside_ to a VPN server in another country.
 
 This adds latency and probably cost as well to them but that's about it from what I can understand.
 
@@ -151,6 +151,8 @@ In a democratic nation like ours, these govt institutions should be held to parl
 We need to hold accountable the mandate given to an organization like CERT-In, have it presented for public feedback and also put up for debate and not just passed on as a 'directive'.
 
 These decisions affect the basic rights of every citizen and should be treated so.
+
+Also, the question is who do you trust more - your VPN provider or your government ? 
 
 #### References
 
