@@ -45,7 +45,7 @@ Quote again -
     provide “Internet proxy like services” through the use of VPN technologies, standard or
     proprietary, to general Internet subscribers/users.
 
-This explanation is opens up so many questions, I am not even sure what to say. Are corporate VPNs not "Internet proxy like services" ? ?   
+This explanation opens up so many questions, I am not even sure what to say. Are corporate VPNs not "Internet proxy like services" ? ?   
 
 <br />
 
@@ -65,7 +65,7 @@ Some websites are blocked in India and so when you try to access it, you'll not 
 
 #### Say hello to VPN :)
 
-I am sure almost everyone uses VPN nowadays to access websites that are blocked in India.  
+I am sure almost everyone uses VPN nowadays to access websites that are blocked in India. For the other way around - when you are abroad and want to access India only sites.
 
 What a VPN does is that they provide a server in some other part of the world to act as a _intermediary_ on our way to access the website.
 
