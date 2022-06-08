@@ -144,7 +144,7 @@ Quote from the NordVPN PR person -
 
 The most this will affect is an _Indian_ VPN provider who only have servers in India.  All the global VPN providers would still be able to route requests to outside servers.
 
-#### Conclusion
+### Conclusion
 
 In a democratic nation like ours, these govt institutions should be held to parliamentary debate and discussion and be treated like how traditional bills are passed through majority.
 
@@ -152,9 +152,11 @@ We need to hold accountable the mandate given to an organization like CERT-In, h
 
 These decisions affect the basic rights of every citizen and should be treated so.
 
-Also, the question is who do you trust more - your VPN provider or your government ? 
+### Passing Thought
 
-#### References
+Who do you trust more - your VPN provider or your government ?
+
+### References
 
 - <a href="https://kinsta.com/blog/how-does-a-vpn-work/" target="_blank">How does a VPN work ?</a>
 
