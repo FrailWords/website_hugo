@@ -77,7 +77,7 @@ person.
 
 A lay person is expected to - 
 1. Read and understand the language of these complicated policies/banners/app permission notices.
-2. Understand technical terms of 'cookies' or read up on it.
+2. Understand technical terms like 'cookies' or 'data brokers' or read up on it.
 3. Understand how the data is shared with other 3rd parties in a complex web of data brokers and ad networks.
 
 ### Isn't anyone working towards fixing this ?
