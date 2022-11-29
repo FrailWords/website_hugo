@@ -7,7 +7,7 @@ tags: ['privacy', 'DPDP', 'india', 'data protection']
 
 ### Preface
 
-The Government of India has tabled a proposed bill title `Digital Personal Data Protection` Bill or DPDP 2022 for short.
+The Government of India has tabled a proposed bill titled `Digital Personal Data Protection` Bill or DPDP 2022 for short.
 
 You can find the draft bill at the MeitY website - https://www.meity.gov.in/data-protection-framework.
 
@@ -22,7 +22,7 @@ And two podcasts -
 2.  <a href="https://www.thehindu.com/podcast/fourth-draft-decoding-the-digital-personal-data-protection-bill-2022-part-2-in-focus-podcast/article66195288.ece" target="_blank">Decoding the data protection bill - Part 2</a>
 
 There is enough information in these sources from eminent legal and policy scholars to suggest that this bill is legally unsound
-in its terminology of many things and how it gives the government (not the legislature or the judiciary) overarching powers and essentially a free hand
+in its terminology and how it gives the government (not the legislature or the judiciary) overarching powers and essentially a free hand
 over anything in the act as it is written in its current form. I will not explain this in detail as it is already been clearly discussed in the above articles and podcasts.
 
 ### What do I want to discuss ? 
