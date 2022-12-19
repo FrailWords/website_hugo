@@ -34,24 +34,16 @@ brandIconFile = "logo.jpg"
 customStylesheets = [ "css/custom.css" ]
 
 [[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/sriramvish/"
+
+[[params.social]]
 name = "twitter"
 url = "https://twitter.com/FrailWords"
 
 [[params.social]]
 name = "soundcloud"
 url = "https://soundcloud.com/inthemidstofitall"
-
-[[params.social]]
-name = "spotify"
-url = "https://open.spotify.com/artist/27EMpIPBgqcuVVmHkde9CI?si=kDZLZuULTMeW8I6BfHZgPg"
-
-[[params.social]]
-name = "instagram"
-url = "https://www.instagram.com/in.the.midst.0f.it.all/"
-
-[[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/sriramvish/"
 
 [[params.social]]
 name = "github"
