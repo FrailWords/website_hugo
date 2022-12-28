@@ -38,8 +38,8 @@ name = "linkedin"
 url = "https://www.linkedin.com/in/sriramvish/"
 
 [[params.social]]
-name = "twitter"
-url = "https://twitter.com/FrailWords"
+name = "mastodon"
+url = "https://hostux.social/@sriramv"
 
 [[params.social]]
 name = "soundcloud"
