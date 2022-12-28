@@ -40,7 +40,6 @@ url = "https://www.linkedin.com/in/sriramvish/"
 [[params.social]]
 name = "mastodon"
 url = "https://hostux.social/@sriramv"
-image = "/images/social/mastodon.svg"
 
 [[params.social]]
 name = "soundcloud"
