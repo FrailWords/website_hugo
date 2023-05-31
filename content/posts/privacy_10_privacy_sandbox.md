@@ -24,10 +24,11 @@ to understand that our privacy and security on the web hugely dependent on how C
 We live in a world of what researchers in the field of human-computer-interaction(HCI) term as _personalization paradox_ [[tech-crunch]][3] - to quote - 
 
 ```text
-Personalization promises to modify your digital experience based on your personal interests and preferences. 
-Simultaneously, personalization is used to shape you, to influence you and guide your everyday choices and actions. 
-Inaccessible and incomprehensible algorithms make autonomous decisions on your behalf. 
-They reduce the amount of visible choices, thus restricting your personal agency.
+Personalization promises to modify your digital experience based on your 
+personal interests and preferences. Simultaneously, personalization is used to shape you, 
+to influence you and guide your everyday choices and actions. 
+Inaccessible and incomprehensible algorithms make autonomous decisions 
+on your behalf. They reduce the amount of visible choices, thus restricting your personal agency.
 ```
 
 This points, as the original article points out as well, towards an _unfulfilling_ and _incomplete_ online experience, which leaves us with a feeling that such online personalization 
