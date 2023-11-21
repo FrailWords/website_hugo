@@ -67,7 +67,7 @@ change to now allow for data subject rights to apply to physical documents as we
 
 ### Papering over the cracks
 
-In a highly 'analog' country like India, where photocopies and scanned documents sent through WhatsApp are the primary ways of sharing identity and PII information, a data protection act has to look cover these 'analog' source of data 
+In a highly 'analog' country like India, where photocopies and scanned documents sent through WhatsApp are the primary ways of sharing identity and PII information, a data protection act has to look at and cover these 'analog' source of data 
 as well if it has to be true to its motivation and intent.
 
 [1]: <https://pib.gov.in/PressReleasePage.aspx?PRID=1828797> "UIDAI cautions of sharing photocopy of Aadhar"
