@@ -11,14 +11,14 @@ pre {
 }
 
 code {
-    color: #7fe5a3;
+    color: lightseagreen;
     font-size: large;
-    background: white;
+    background: whitesmoke;
 }
 
 p > code {
-    background: white;
-    color: #7fe5a3;
+    background: whitesmoke;
+    color: lightseagreen;
 }
 
 .social-icons {
