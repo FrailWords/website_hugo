@@ -8,15 +8,14 @@ tags: ['love', 'night', 'intimacy']
     
     Far away...
     Its the feeling
-
+    
     Far away...
     Can you come closer..
     To me..
-
+    
     We surf the night
     While they were asleep...
     The blackest skies were blue
-
     It was just...
     Me and You...
     
@@ -26,6 +25,11 @@ tags: ['love', 'night', 'intimacy']
     Fools we are
     What good we are
     If we can't love ourselves
+    
+    ‘Cause how far we are
+    The lights are fading out
+    Can we…walk…
+    Can we…talk…
     
     We surf the night
     While they were asleep...
