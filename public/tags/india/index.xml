@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>India on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/india/</link>
+    <description>Recent content in India on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/india/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy - 8 - Theatre of privacy - notice and consent</title>
+      <link>http://localhost:1313/posts/privacy_8_is_india_ready_for_data_protection_law/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_8_is_india_ready_for_data_protection_law/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;preface&#34;&gt;Preface&lt;/h3&gt;&#xA;&lt;p&gt;The Government of India has tabled a proposed bill titled &lt;code&gt;Digital Personal Data Protection&lt;/code&gt; Bill or DPDP 2022 for short.&lt;/p&gt;&#xA;&lt;p&gt;You can find the draft bill at the MeitY website - &lt;a href=&#34;https://www.meity.gov.in/data-protection-framework&#34;&gt;https://www.meity.gov.in/data-protection-framework&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;There are really detailed explanations of the bill in its current form by newspaper &lt;code&gt;TheHindu&lt;/code&gt; at -&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.thehindu.com/sci-tech/technology/a-first-look-at-the-new-data-protection-bill/article66162209.ece&#34; target=&#34;_blank&#34;&gt;A first look at the new data protection bill&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.thehindu.com/opinion/interview/new-draft-of-data-protection-bill-is-fundamentally-flawed-says-justice-b-n-srikrishna/article66184338.ece&#34; target=&#34;_blank&#34;&gt;New draft of Data Protection Bill is fundamentally flawed&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;And two podcasts -&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 7 - VPN Providers and India - what&#39;s going on ? </title>
+      <link>http://localhost:1313/posts/privacy_7_vpn_and_india/</link>
+      <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_7_vpn_and_india/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;context&#34;&gt;Context&lt;/h3&gt;&#xA;&lt;p&gt;The Indian government&amp;rsquo;s cybersecurity wing is called Computer Emergency Response Team (&lt;a href=&#34;https://cert-in.org.in/&#34; target=&#34;_blank&#34;&gt;CERT-In&lt;/a&gt;), under the Ministry of Electronics and Information Technology (MeitY).&lt;/p&gt;&#xA;&lt;p&gt;In April&#39;22, CERT-In &lt;a href=&#34;https://www.pib.gov.in/PressReleasePage.aspx?PRID=1820904&#34; target=&#34;_blank&#34;&gt;published&lt;/a&gt; &lt;em&gt;directions&lt;/em&gt; to address gaps in &lt;em&gt;incident analysis&lt;/em&gt;.  Most controversially, this includes the following -&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Maintenance of logs of ICT systems; subscriber/customer registrations &#xA;details by Data centers, Virtual Private Server (VPS) providers, &#xA;VPN Service providers&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;and&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;These directions shall enhance overall cyber security posture and &#xA;ensure safe &amp;amp; trusted Internet in the country.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Due to the very &lt;em&gt;concise&lt;/em&gt; nature of this document, CERT-In &lt;a href=&#34;https://www.cert-in.org.in/PDF/FAQs_on_CyberSecurityDirections_May2022.pdf&#34; target=&#34;_blank&#34;&gt;published another document&lt;/a&gt; in May&#39;22 to &lt;em&gt;clarify&lt;/em&gt; why they are asking VPN providers to share their customer details and also log all their activity.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sublime on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/sublime/</link>
+    <description>Recent content in Sublime on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Nov 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sublime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moment</title>
+      <link>http://localhost:1313/posts/a_moment/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/a_moment/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;Slow dance under the fading light&#xA;Delicate balance of our imaginary flight&#xA;&#xA;Seeping through the corners are the whispers&#xA;That echo a thousand memories&#xA;&#xA;Some that pull the moment towards infinity&#xA;And some that make it still&#xA;&#xA;To forget the now would be a crime&#xA;Cherish this song and all that is sublime&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

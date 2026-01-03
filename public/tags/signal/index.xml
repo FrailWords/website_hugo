@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Signal on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/signal/</link>
+    <description>Recent content in Signal on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/signal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy - 4 - End-To-End Encryption And Your Messaging App</title>
+      <link>http://localhost:1313/posts/privacy_4_end_to_end_encryption_and_your_messaging_app/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_4_end_to_end_encryption_and_your_messaging_app/</guid>
+      <description>&lt;h4 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h4&gt;&#xA;&lt;p&gt;I am going to simplify a lot of concepts to a great deal so as to reach a broader audience and not make it very very tech oriented.&lt;/p&gt;&#xA;&lt;h4 id=&#34;encryption&#34;&gt;Encryption?&lt;/h4&gt;&#xA;&lt;p&gt;In simple terms, it’s about ‘obfuscating’ or &amp;rsquo;encoding&amp;rsquo; or converting plain text information into a form that is not human readable and is based on mathematical properties/proofs.&lt;/p&gt;&#xA;&lt;h4 id=&#34;some-basics-principles&#34;&gt;Some Basics Principles&lt;/h4&gt;&#xA;&lt;p&gt;Basic aims which any good encryption protocol tries to achieve -&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

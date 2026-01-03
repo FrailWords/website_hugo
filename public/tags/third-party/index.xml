@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Third-Party on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/third-party/</link>
+    <description>Recent content in Third-Party on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/third-party/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy - 3 - Third Party Cookies</title>
+      <link>http://localhost:1313/posts/privacy_3_third_party_cookies/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_3_third_party_cookies/</guid>
+      <description>&lt;h3 id=&#34;what-is-a-cookie-&#34;&gt;What is a cookie ?&lt;/h3&gt;&#xA;&lt;p&gt;Pieces of data that a website uses to &amp;lsquo;remember&amp;rsquo; your activity so that it provide &amp;lsquo;better&amp;rsquo; services.&lt;/p&gt;&#xA;&lt;h3 id=&#34;types-of-cookies&#34;&gt;Types of cookies&lt;/h3&gt;&#xA;&lt;p&gt;First party - basically from the website you are visiting.&lt;/p&gt;&#xA;&lt;p&gt;Third party - from other websites (not from the current domain/website).  E.g. Google Adsense, Analytics, Facebook Like Button.&lt;/p&gt;&#xA;&lt;p&gt;The most common use of third-party cookies is to track users who click on advertisements and associate them with the referring domain.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

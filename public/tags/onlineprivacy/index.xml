@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Onlineprivacy on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/onlineprivacy/</link>
+    <description>Recent content in Onlineprivacy on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/onlineprivacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy - 1 - Awareness</title>
+      <link>http://localhost:1313/posts/privacy_1_awareness/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_1_awareness/</guid>
+      <description>&lt;p&gt;Let’s start with a hypothetical situation -&lt;/p&gt;&#xA;&lt;p&gt;You are craving ice-cream and it’s midnight.  You open your phone and go to Zomato or whatever app to order your ice-cream and to your amazement, the app shows the ice-cream shop as “not available to order”.  You can click on this text to get more information - it says “Your latest health report says that you are type-II diabetic and should not be eating ice-cream.  If you want to override this behaviour, please talk with our customer care”.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 2 - Right To Privacy ?</title>
+      <link>http://localhost:1313/posts/privacy_2_right_to_privacy/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_2_right_to_privacy/</guid>
+      <description>&lt;h3 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h3&gt;&#xA;&lt;p&gt;I am not a legal expert or even with lay legal knowledge, so please do your research before drawing conclusions from this diary entry.&lt;/p&gt;&#xA;&lt;h3 id=&#34;pretext&#34;&gt;Pretext&lt;/h3&gt;&#xA;&lt;p&gt;According to Indian constitution, every Indian citizen has 7 fundamental rights (&lt;a href=&#34;https://en.wikipedia.org/wiki/Fundamental_rights_in_India&#34;&gt;https://en.wikipedia.org/wiki/Fundamental_rights_in_India&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;As per the wikipedia entry above -&lt;/p&gt;&#xA;&lt;p&gt;⇢The &lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Right_to_privacy&#34;&gt;right to privacy&lt;/a&gt;&lt;/em&gt; is an intrinsic part of Article 21 (the Right to Freedom) that protects the life and liberty of the citizens.&lt;/p&gt;&#xA;&lt;p&gt;The right to &lt;a href=&#34;https://en.wikipedia.org/wiki/Privacy&#34;&gt;privacy&lt;/a&gt; is the newest right assured by the &lt;a href=&#34;https://en.wikipedia.org/wiki/Supreme_Court_of_India&#34;&gt;Supreme Court of India&lt;/a&gt;. It assures the people&amp;rsquo;s data and &lt;a href=&#34;https://en.wikipedia.org/wiki/Personal_security&#34;&gt;personal security&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 3 - Third Party Cookies</title>
+      <link>http://localhost:1313/posts/privacy_3_third_party_cookies/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_3_third_party_cookies/</guid>
+      <description>&lt;h3 id=&#34;what-is-a-cookie-&#34;&gt;What is a cookie ?&lt;/h3&gt;&#xA;&lt;p&gt;Pieces of data that a website uses to &amp;lsquo;remember&amp;rsquo; your activity so that it provide &amp;lsquo;better&amp;rsquo; services.&lt;/p&gt;&#xA;&lt;h3 id=&#34;types-of-cookies&#34;&gt;Types of cookies&lt;/h3&gt;&#xA;&lt;p&gt;First party - basically from the website you are visiting.&lt;/p&gt;&#xA;&lt;p&gt;Third party - from other websites (not from the current domain/website).  E.g. Google Adsense, Analytics, Facebook Like Button.&lt;/p&gt;&#xA;&lt;p&gt;The most common use of third-party cookies is to track users who click on advertisements and associate them with the referring domain.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

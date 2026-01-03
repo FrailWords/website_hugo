@@ -1,0 +1,772 @@
+/* ==========================================================================
+   Sriram's Personal Site — Soft Minimal Theme
+   A warm, pastel, light aesthetic for poetry and code
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties
+   -------------------------------------------------------------------------- */
+:root {
+  /* Background & Surface */
+  --bg-primary: #FDFCFB;
+  --bg-secondary: #F7F5F3;
+  --bg-tertiary: #F0EDEB;
+  --bg-code: #F9F7F5;
+  
+  /* Text Colors */
+  --text-primary: #2D2A26;
+  --text-secondary: #5C574F;
+  --text-tertiary: #8A847A;
+  --text-muted: #B5AFA5;
+  
+  /* Accent Colors — Muted Pastels */
+  --accent-sage: #7D9B8A;
+  --accent-terracotta: #C4907A;
+  --accent-dusty-blue: #7A95A8;
+  --accent-lavender: #9B8AA8;
+  --accent-warm: #D4A574;
+  
+  /* Links */
+  --link-color: #6B8F7A;
+  --link-hover: #4A6B56;
+  --link-visited: #8A7A9B;
+  
+  /* Code */
+  --code-bg: #F5F2EF;
+  --code-border: #E8E4E0;
+  --code-text: #5C574F;
+  
+  /* Borders & Dividers */
+  --border-light: #EBE7E3;
+  --border-medium: #DDD8D2;
+  
+  /* Shadows */
+  --shadow-soft: 0 2px 8px rgba(45, 42, 38, 0.04);
+  --shadow-medium: 0 4px 16px rgba(45, 42, 38, 0.06);
+  
+  /* Typography Scale */
+  --font-body: 'Source Serif 4', 'Georgia', serif;
+  --font-heading: 'Source Serif 4', 'Georgia', serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Consolas', monospace;
+  --font-poetry: 'Cormorant Garamond', 'Georgia', serif;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  
+  /* Layout */
+  --content-width: 680px;
+  --content-wide: 780px;
+}
+
+/* --------------------------------------------------------------------------
+   Font Imports
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,300;1,8..60,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* --------------------------------------------------------------------------
+   Base Reset & Defaults
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Layout Container
+   -------------------------------------------------------------------------- */
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: var(--space-2xl) var(--space-lg);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  margin: 0 0 var(--space-md) 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+em, i {
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--border-medium) 20%,
+    var(--border-medium) 80%,
+    transparent
+  );
+  margin: var(--space-xl) 0;
+}
+
+blockquote {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--accent-sage);
+  background: var(--bg-secondary);
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   -------------------------------------------------------------------------- */
+header {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.site-brand {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.site-brand h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.site-brand h1 a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.site-brand h1 a:hover {
+  color: var(--accent-sage);
+}
+
+.site-tagline {
+  font-size: 0.95rem;
+  color: var(--text-tertiary);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin: var(--space-lg) 0;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 var(--space-md);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent-sage);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--text-primary);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Header divider */
+.header-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.header-divider::before,
+.header-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-light);
+}
+
+.header-divider .ornament {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   Main Content Area
+   -------------------------------------------------------------------------- */
+main {
+  min-height: 50vh;
+}
+
+/* --------------------------------------------------------------------------
+   Post Listing (Home & Archive)
+   -------------------------------------------------------------------------- */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+  line-height: 1.4;
+}
+
+.post-item-title a {
+  color: var(--text-primary);
+}
+
+.post-item-title a:hover {
+  color: var(--accent-sage);
+}
+
+.post-item-meta {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+.post-item-excerpt {
+  margin-top: var(--space-xs);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Flatten any headings that appear inside excerpts */
+.post-item-excerpt h1,
+.post-item-excerpt h2,
+.post-item-excerpt h3,
+.post-item-excerpt h4 {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
+  display: inline;
+}
+
+/* Archive by year */
+.archive-year {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.archive-year:first-child {
+  margin-top: 0;
+}
+
+.archive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.archive-item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+}
+
+.archive-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 50px;
+}
+
+.archive-title {
+  flex: 1;
+}
+
+.archive-title a {
+  color: var(--text-primary);
+}
+
+.archive-title a:hover {
+  color: var(--accent-sage);
+}
+
+/* --------------------------------------------------------------------------
+   Single Post / Article
+   -------------------------------------------------------------------------- */
+article {
+  padding: var(--space-lg) 0;
+}
+
+.post-header {
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+.post-meta time {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.post-tags {
+  margin-top: var(--space-sm);
+}
+
+.post-tags a {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin-right: var(--space-sm);
+}
+
+.post-tags a:hover {
+  color: var(--accent-sage);
+}
+
+.post-tags a::before {
+  content: '#';
+  opacity: 0.5;
+}
+
+/* Post content */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.post-content > * + * {
+  margin-top: var(--space-md);
+}
+
+.post-content h2 {
+  margin-top: var(--space-2xl);
+}
+
+.post-content h3 {
+  margin-top: var(--space-xl);
+}
+
+.post-content ul, 
+.post-content ol {
+  padding-left: var(--space-lg);
+}
+
+.post-content li {
+  margin-bottom: var(--space-sm);
+}
+
+.post-content li::marker {
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Code — Base styles
+   -------------------------------------------------------------------------- */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}
+
+/* Inline code only (not inside pre) */
+:not(pre) > code {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  color: var(--accent-terracotta);
+}
+
+/* --------------------------------------------------------------------------
+   Poetry Styling — Plain pre/code blocks without language class
+   Hugo wraps indented text in <pre><code>...</code></pre>
+   -------------------------------------------------------------------------- */
+pre:not(.highlight):not([class*="language-"]) {
+  font-family: var(--font-poetry);
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 2;
+  background: transparent;
+  border: none;
+  padding: var(--space-md) 0;
+  margin: var(--space-md) 0;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  overflow-x: visible;
+}
+
+/* Reset code inside poetry pre blocks */
+pre:not(.highlight):not([class*="language-"]) code {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   Code Blocks — Fenced code with language hints
+   -------------------------------------------------------------------------- */
+pre.highlight,
+pre[class*="language-"],
+.highlight pre,
+div.highlight {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: var(--space-lg);
+  overflow-x: auto;
+  margin: var(--space-lg) 0;
+  color: var(--text-primary);
+}
+
+/* Code inside highlighted blocks */
+.highlight code,
+pre.highlight code,
+pre[class*="language-"] code {
+  font-family: var(--font-mono);
+  font-size: inherit;
+  font-style: normal;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+}
+
+/* Syntax highlighting - Pastel theme */
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt { color: var(--accent-lavender); } /* Keywords */
+
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss { color: var(--accent-sage); } /* Strings */
+
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx { color: var(--accent-terracotta); } /* Numbers */
+
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cp,
+.highlight .cs { color: var(--text-muted); font-style: italic; } /* Comments */
+
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nt,
+.highlight .nv { color: var(--accent-dusty-blue); } /* Names */
+
+.highlight .o,
+.highlight .ow { color: var(--text-secondary); } /* Operators */
+
+.highlight .p { color: var(--text-secondary); } /* Punctuation */
+
+/* --------------------------------------------------------------------------
+   Tags Page
+   -------------------------------------------------------------------------- */
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+  margin: var(--space-lg) 0;
+}
+
+.tag-item {
+  display: inline-block;
+}
+
+.tag-item a {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.tag-item a:hover {
+  background: var(--accent-sage);
+  border-color: var(--accent-sage);
+  color: white;
+}
+
+.tag-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-left: var(--space-xs);
+}
+
+/* --------------------------------------------------------------------------
+   Pagination
+   -------------------------------------------------------------------------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  margin: var(--space-2xl) 0 var(--space-lg);
+  font-size: 0.9rem;
+}
+
+.pagination a {
+  color: var(--text-secondary);
+}
+
+.pagination a:hover {
+  color: var(--accent-sage);
+}
+
+.pagination .current {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+footer {
+  margin-top: var(--space-2xl);
+  padding: var(--space-xl) 0;
+  text-align: center;
+  border-top: 1px solid var(--border-light);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  color: var(--text-tertiary);
+  transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+  background: var(--accent-sage);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 18px;
+  height: 18px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.copyright a {
+  color: var(--text-tertiary);
+}
+
+/* --------------------------------------------------------------------------
+   Utility Classes
+   -------------------------------------------------------------------------- */
+.text-center { text-align: center; }
+.text-muted { color: var(--text-muted); }
+.mt-lg { margin-top: var(--space-lg); }
+.mb-lg { margin-bottom: var(--space-lg); }
+
+/* --------------------------------------------------------------------------
+   Responsive Adjustments
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .post-title {
+    font-size: 1.6rem;
+  }
+  
+  nav a {
+    margin: 0 var(--space-sm);
+  }
+  
+  .archive-item {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  
+  .archive-date {
+    font-size: 0.75rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Print Styles
+   -------------------------------------------------------------------------- */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  header nav,
+  footer,
+  .pagination {
+    display: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}

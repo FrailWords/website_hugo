@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'my_underwoodregular';
+    src: url('MyUnderwood-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+pre {
+    background: none;
+}
+
+code {
+    color: lightseagreen;
+    font-size: large;
+    background: whitesmoke;
+}
+
+p > code {
+    background: whitesmoke;
+    color: lightseagreen;
+}
+
+.social-icons {
+    padding: 12px 0
+}
+
+.social-icons a:not(:last-of-type) {
+    margin-inline-end: 12px
+}
+
+.social-icons a svg {
+    height: 26px;
+    width: 26px
+}

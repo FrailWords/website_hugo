@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/privacy/</link>
+    <description>Recent content in Privacy on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy - 11 - All my life&#39;s documents are shared on whatsapp and photocopies, why only &#39;digital&#39; data protection ?</title>
+      <link>http://localhost:1313/posts/privacy_11_physical_and_scanned_docs/</link>
+      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_11_physical_and_scanned_docs/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;lets-talk-documents-containing-sensitive-personal-information&#34;&gt;Let&amp;rsquo;s talk &amp;lsquo;documents&amp;rsquo; containing sensitive personal information&lt;/h3&gt;&#xA;&lt;p&gt;When we share copies of our documents such as Passport, Driving License, Educational Certificates and other types of personal and sensitive documents, they can&#xA;primarily fall into two ways -&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;lsquo;Non-digital&amp;rsquo; forms of data - &amp;lsquo;Subsequently&amp;rsquo; digitized&#xA;&lt;ul&gt;&#xA;&lt;li&gt;physical forms filled up with PII data&lt;/li&gt;&#xA;&lt;li&gt;photocopies of all sorts of documents&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Scanned copies shared over -&#xA;&lt;ul&gt;&#xA;&lt;li&gt;whatsapp&lt;/li&gt;&#xA;&lt;li&gt;email&lt;/li&gt;&#xA;&lt;li&gt;google drive&lt;/li&gt;&#xA;&lt;li&gt;usb drive&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-does-the-indian-digital-personal-data-protectiondpdp-act-say-about-these-&#34;&gt;What does the Indian Digital Personal Data Protection(DPDP) Act say about these ?&lt;/h3&gt;&#xA;&lt;p&gt;The DPDP Act says that the act will apply to data that is collected -&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 10 - Google Privacy Sandbox</title>
+      <link>http://localhost:1313/posts/privacy_10_privacy_sandbox/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_10_privacy_sandbox/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;lets-talk-ads&#34;&gt;Lets talk Ads&lt;/h3&gt;&#xA;&lt;p&gt;The advertising/ad-tech ecosystem (or &lt;em&gt;programmatic&lt;/em&gt; ad ecosystem as it is called nowadays) is what underpins the revenue model for most websites, including the biggest tech companies (e.g. Google, Meta, Twitter etc.).&lt;/p&gt;&#xA;&lt;p&gt;Of these companies, the one company that dominates the ad networks market by far is Google. Current stats show that Google Ads is used by almost &lt;code&gt;48.7%&lt;/code&gt; of &lt;em&gt;all&lt;/em&gt; websites worldwide, with a market share of &lt;code&gt;98.8%&lt;/code&gt;&lt;a href=&#34;https://w3techs.com/technologies/overview/advertising&#34; title=&#34;Google Ads Market Share&#34;&gt;[source]&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 9 - Security vs Privacy</title>
+      <link>http://localhost:1313/posts/privacy_9_security_vs_privacy/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_9_security_vs_privacy/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;preface&#34;&gt;Preface&lt;/h3&gt;&#xA;&lt;p&gt;If I mention the word &lt;em&gt;security&lt;/em&gt;, the usual connotations that come to mind are - confidentiality, integrity and availability (CIA). This is &lt;em&gt;usually&lt;/em&gt; the first definition anyone in the security domain would come up with.&lt;/p&gt;&#xA;&lt;p&gt;Ask the same question but now about &lt;em&gt;privacy&lt;/em&gt;, usually people would talk about things like online tracking, surveillance, how they are being shown these &lt;em&gt;creepy&lt;/em&gt; ads etc.&lt;/p&gt;&#xA;&lt;p&gt;The difference is stark in the sense that one (security) has its definition rooted in strictly measurable/testable terms and the other maybe not so much.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 8 - Theatre of privacy - notice and consent</title>
+      <link>http://localhost:1313/posts/privacy_8_is_india_ready_for_data_protection_law/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_8_is_india_ready_for_data_protection_law/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;preface&#34;&gt;Preface&lt;/h3&gt;&#xA;&lt;p&gt;The Government of India has tabled a proposed bill titled &lt;code&gt;Digital Personal Data Protection&lt;/code&gt; Bill or DPDP 2022 for short.&lt;/p&gt;&#xA;&lt;p&gt;You can find the draft bill at the MeitY website - &lt;a href=&#34;https://www.meity.gov.in/data-protection-framework&#34;&gt;https://www.meity.gov.in/data-protection-framework&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;There are really detailed explanations of the bill in its current form by newspaper &lt;code&gt;TheHindu&lt;/code&gt; at -&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.thehindu.com/sci-tech/technology/a-first-look-at-the-new-data-protection-bill/article66162209.ece&#34; target=&#34;_blank&#34;&gt;A first look at the new data protection bill&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.thehindu.com/opinion/interview/new-draft-of-data-protection-bill-is-fundamentally-flawed-says-justice-b-n-srikrishna/article66184338.ece&#34; target=&#34;_blank&#34;&gt;New draft of Data Protection Bill is fundamentally flawed&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;And two podcasts -&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 7 - VPN Providers and India - what&#39;s going on ? </title>
+      <link>http://localhost:1313/posts/privacy_7_vpn_and_india/</link>
+      <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_7_vpn_and_india/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;context&#34;&gt;Context&lt;/h3&gt;&#xA;&lt;p&gt;The Indian government&amp;rsquo;s cybersecurity wing is called Computer Emergency Response Team (&lt;a href=&#34;https://cert-in.org.in/&#34; target=&#34;_blank&#34;&gt;CERT-In&lt;/a&gt;), under the Ministry of Electronics and Information Technology (MeitY).&lt;/p&gt;&#xA;&lt;p&gt;In April&#39;22, CERT-In &lt;a href=&#34;https://www.pib.gov.in/PressReleasePage.aspx?PRID=1820904&#34; target=&#34;_blank&#34;&gt;published&lt;/a&gt; &lt;em&gt;directions&lt;/em&gt; to address gaps in &lt;em&gt;incident analysis&lt;/em&gt;.  Most controversially, this includes the following -&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;Maintenance of logs of ICT systems; subscriber/customer registrations &#xA;details by Data centers, Virtual Private Server (VPS) providers, &#xA;VPN Service providers&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;and&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;These directions shall enhance overall cyber security posture and &#xA;ensure safe &amp;amp; trusted Internet in the country.&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Due to the very &lt;em&gt;concise&lt;/em&gt; nature of this document, CERT-In &lt;a href=&#34;https://www.cert-in.org.in/PDF/FAQs_on_CyberSecurityDirections_May2022.pdf&#34; target=&#34;_blank&#34;&gt;published another document&lt;/a&gt; in May&#39;22 to &lt;em&gt;clarify&lt;/em&gt; why they are asking VPN providers to share their customer details and also log all their activity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 6 - Google FLoC and what you should know</title>
+      <link>http://localhost:1313/posts/privacy_6_google_floc/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_6_google_floc/</guid>
+      <description>&lt;h4 id=&#34;context&#34;&gt;Context&lt;/h4&gt;&#xA;&lt;p&gt;Google&amp;rsquo;s main revenue stream is Ads and thus collecting the data that enables this business.&lt;/p&gt;&#xA;&lt;p&gt;Everyone is online nowadays, and it (in many ways) defines &lt;em&gt;who we are&lt;/em&gt; - specially what can be considered &lt;em&gt;private&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Our window into this online world is our web browser, and we put a lot of &lt;em&gt;trust&lt;/em&gt; in the companies that build these browsers to do the right thing by us and protect what is private to each of us as individuals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 5 - Privacy Policies And You</title>
+      <link>http://localhost:1313/posts/privacy_5_privacy_policies_and_you/</link>
+      <pubDate>Wed, 16 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_5_privacy_policies_and_you/</guid>
+      <description>&lt;h4 id=&#34;goal-of-a-privacy-policy&#34;&gt;Goal of a privacy policy&lt;/h4&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intended&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Protect consumer’s interests and in a digital world, their data and identity form mis-use.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Actual&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Protect companies from consumers suing them - written by a lawyer for a lawyer.&lt;/p&gt;&#xA;&lt;h4 id=&#34;readability-of-a-privacy-policy&#34;&gt;Readability of a privacy policy&lt;/h4&gt;&#xA;&lt;p&gt;This &lt;a href=&#34;https://www.nytimes.com/interactive/2019/06/12/opinion/facebook-google-privacy-policies.html&#34;&gt;nytimes article&lt;/a&gt; is the best research and visualization of how &lt;em&gt;readable&lt;/em&gt; are privacy policies of some of the services we use on a day to day basis.  For e.g. to read Facebook’s privacy policy, you need to be &lt;em&gt;college level&lt;/em&gt; educated.  To read Airbnb’s privacy policy, you need some professional training after your college degree.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 4 - End-To-End Encryption And Your Messaging App</title>
+      <link>http://localhost:1313/posts/privacy_4_end_to_end_encryption_and_your_messaging_app/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_4_end_to_end_encryption_and_your_messaging_app/</guid>
+      <description>&lt;h4 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h4&gt;&#xA;&lt;p&gt;I am going to simplify a lot of concepts to a great deal so as to reach a broader audience and not make it very very tech oriented.&lt;/p&gt;&#xA;&lt;h4 id=&#34;encryption&#34;&gt;Encryption?&lt;/h4&gt;&#xA;&lt;p&gt;In simple terms, it’s about ‘obfuscating’ or &amp;rsquo;encoding&amp;rsquo; or converting plain text information into a form that is not human readable and is based on mathematical properties/proofs.&lt;/p&gt;&#xA;&lt;h4 id=&#34;some-basics-principles&#34;&gt;Some Basics Principles&lt;/h4&gt;&#xA;&lt;p&gt;Basic aims which any good encryption protocol tries to achieve -&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 1 - Awareness</title>
+      <link>http://localhost:1313/posts/privacy_1_awareness/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_1_awareness/</guid>
+      <description>&lt;p&gt;Let’s start with a hypothetical situation -&lt;/p&gt;&#xA;&lt;p&gt;You are craving ice-cream and it’s midnight.  You open your phone and go to Zomato or whatever app to order your ice-cream and to your amazement, the app shows the ice-cream shop as “not available to order”.  You can click on this text to get more information - it says “Your latest health report says that you are type-II diabetic and should not be eating ice-cream.  If you want to override this behaviour, please talk with our customer care”.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 2 - Right To Privacy ?</title>
+      <link>http://localhost:1313/posts/privacy_2_right_to_privacy/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_2_right_to_privacy/</guid>
+      <description>&lt;h3 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h3&gt;&#xA;&lt;p&gt;I am not a legal expert or even with lay legal knowledge, so please do your research before drawing conclusions from this diary entry.&lt;/p&gt;&#xA;&lt;h3 id=&#34;pretext&#34;&gt;Pretext&lt;/h3&gt;&#xA;&lt;p&gt;According to Indian constitution, every Indian citizen has 7 fundamental rights (&lt;a href=&#34;https://en.wikipedia.org/wiki/Fundamental_rights_in_India&#34;&gt;https://en.wikipedia.org/wiki/Fundamental_rights_in_India&lt;/a&gt;).&lt;/p&gt;&#xA;&lt;p&gt;As per the wikipedia entry above -&lt;/p&gt;&#xA;&lt;p&gt;⇢The &lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Right_to_privacy&#34;&gt;right to privacy&lt;/a&gt;&lt;/em&gt; is an intrinsic part of Article 21 (the Right to Freedom) that protects the life and liberty of the citizens.&lt;/p&gt;&#xA;&lt;p&gt;The right to &lt;a href=&#34;https://en.wikipedia.org/wiki/Privacy&#34;&gt;privacy&lt;/a&gt; is the newest right assured by the &lt;a href=&#34;https://en.wikipedia.org/wiki/Supreme_Court_of_India&#34;&gt;Supreme Court of India&lt;/a&gt;. It assures the people&amp;rsquo;s data and &lt;a href=&#34;https://en.wikipedia.org/wiki/Personal_security&#34;&gt;personal security&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy - 3 - Third Party Cookies</title>
+      <link>http://localhost:1313/posts/privacy_3_third_party_cookies/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_3_third_party_cookies/</guid>
+      <description>&lt;h3 id=&#34;what-is-a-cookie-&#34;&gt;What is a cookie ?&lt;/h3&gt;&#xA;&lt;p&gt;Pieces of data that a website uses to &amp;lsquo;remember&amp;rsquo; your activity so that it provide &amp;lsquo;better&amp;rsquo; services.&lt;/p&gt;&#xA;&lt;h3 id=&#34;types-of-cookies&#34;&gt;Types of cookies&lt;/h3&gt;&#xA;&lt;p&gt;First party - basically from the website you are visiting.&lt;/p&gt;&#xA;&lt;p&gt;Third party - from other websites (not from the current domain/website).  E.g. Google Adsense, Analytics, Facebook Like Button.&lt;/p&gt;&#xA;&lt;p&gt;The most common use of third-party cookies is to track users who click on advertisements and associate them with the referring domain.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,16 @@
+<header>
+  <div class="site-brand">
+    <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <p class="site-tagline">{{ .Site.Params.subtitle }}</p>
+  </div>
+  
+  <nav>
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+  
+  <div class="header-divider">
+    <span class="ornament">✦</span>
+  </div>
+</header>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Me on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/me/</link>
+    <description>Recent content in Me on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Singular</title>
+      <link>http://localhost:1313/posts/singular/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/singular/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;In the follow up&#xA;To the free you&#xA;Did you decide on&#xA;What to be, as you...&#xA;&#xA;Together we shall find&#xA;A hiding place&#xA;To shed, uncover, define&#xA;Till one of us is whole&#xA;&#xA;Rest now, for we are one&#xA;The path is here, for us to take&#xA;Let&#39;s step ahead as we break&#xA;And heal, forge, shape&#xA;&#xA;Once again we are singular&#xA;Our insides, our lives&#xA;Step out, rewind&#xA;Here we are, lets redefine...&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

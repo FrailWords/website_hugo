@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal space for poetry, tech musings, and reflections.">
+  <meta name="author" content="Sriram Viswanathan">
+  
+  
+    <title>Agile Story Slicing - Horizontal ? Vertical ? · Sriram Viswanathan</title>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+  
+  <meta property="og:title" content="Agile Story Slicing - Horizontal ? Vertical ?">
+  <meta property="og:description" content="A personal space for poetry, tech musings, and reflections.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1313/posts/agile_story_slicing/">
+</head>
+
+  <body>
+    <div class="container">
+      <header>
+  <div class="site-brand">
+    <h1><a href="http://localhost:1313/">Sriram Viswanathan</a></h1>
+    <p class="site-tagline">Poetry, Software, Privacy &amp; Thoughts</p>
+  </div>
+  
+  <nav>
+    
+      <a href="/">Home</a>
+    
+      <a href="/posts/">Writing</a>
+    
+      <a href="/tags/">Topics</a>
+    
+  </nav>
+  
+  <div class="header-divider">
+    <span class="ornament">✦</span>
+  </div>
+</header>
+
+      <main>
+        
+<article>
+  <header class="post-header">
+    <h1 class="post-title">Agile Story Slicing - Horizontal ? Vertical ?</h1>
+    <div class="post-meta">
+      <time datetime="2022-02-01">February 1, 2022</time>
+      
+        · 953 words
+      
+      
+        · 5 min read
+      
+    </div>
+    
+    <div class="post-tags">
+      
+        <a href="/tags/agile">agile</a>
+      
+        <a href="/tags/story">story</a>
+      
+        <a href="/tags/planning">planning</a>
+      
+    </div>
+    
+  </header>
+  
+  <div class="post-content">
+    <p><strong>Disclaimer:</strong> There are probably a lot of cake related metaphors in this post, you might feel like ordering one by the
+end of this post, which is an unintentional side effect :)</p>
+<h3 id="a-well-defined-story">A well-defined story</h3>
+<p>Creating well-defined stories is an essential part of software development nowadays, specially if you are following any
+of the &ldquo;Agile&rdquo; methodologies where the key motivation is to incrementally deliver value and at the same time building
+towards a goal or a product release.</p>
+<p>One of the main ways to define a <em>well-defined/good story</em> is through the I.N.V.E.S.T. principle -</p>
+<ul>
+<li><strong>I</strong> - independent - story should NOT be dependent on another story</li>
+<li><strong>N</strong> - negotiable - scope of the story should be adjustable or negotiate how its implemented</li>
+<li><strong>V</strong> - valuable - should provide business value</li>
+<li><strong>E</strong> - estimable - enough clarity to be estimable</li>
+<li><strong>S</strong> - small - small enough to provide quick feedback</li>
+<li><strong>T</strong> - testable - independently verifiable and testable</li>
+</ul>
+<p>This principle is generally a guiding principle, not exactly a strict rule and, it is important that we keep this in mind
+when discussing how a story is sliced/defined.</p>
+<h3 id="preface---iteration-0">Preface - Iteration 0</h3>
+<p>At a very abstract level, majority software product development (from scratch) starts with -</p>
+<ul>
+<li>Infrastructure setup - cloud provisioning, infra-as-code &hellip;</li>
+<li>Skeleton/scaffolding code setup - using best practices for the language/framework &hellip;</li>
+<li>CI/CD - path-to-production - including steps like code analysis, testing, building and deployment  &hellip;</li>
+<li>Observability/monitoring/alerting/logging setup &hellip;</li>
+</ul>
+<p>In brief, we are setting the foundation of the project so that it is <em>production ready</em> from day one.</p>
+<p>So, we&rsquo;ve not built any <em>actual</em> software for the problem statement which <em>delivers value</em>.</p>
+<p>Usually what I&rsquo;ve seen is that teams spend a lot of time refining these steps as the project goes along and with increasing
+infrastructure complexity (viz. microservices, kubernetes, cross-platform apps), the effort spent in this is significant.</p>
+<p>The clarity that this begs is how the <em>business value</em> is or might be perceived differently by a tech-savvy vs a non-tech-savvy
+business or customer and how much are we willing to shed in terms of delivering the best-in-class software engineering.</p>
+<h3 id="an-alternative-view---story-slicing">An Alternative View - Story Slicing</h3>
+<p>Given that we do not want to compromise on engineering excellence and what is considered best-in-class, the question is how
+these tasks are then tied into the whole &ldquo;deliver business value&rdquo; theme.</p>
+<p>One way of looking at this is how we <em>slice</em> a story (the whole project/product/scope being the <em>cake</em> metaphor).</p>
+<p>There are 2 ways of <em>slicing</em> a story -</p>
+<ul>
+<li>
+<p>vertically - like majority of folks would normally eat a cake, by slicing vertically into individual pieces, or</p>
+</li>
+<li>
+<p>horizontally - maybe not so majority who like the icing layer or the fruit only layer :D</p>
+</li>
+</ul>
+<h3 id="right-way-to-start---vertical-or-horizontal-">Right Way To Start - Vertical or Horizontal ?</h3>
+<p>In an ideal world, vertical slicing would be the <em>right</em> way to <em>slice</em> stories as they provide the complete value (think eating
+all the layers of the cake together, not just a single layer of the icing). This is how we deliver <em>business value</em> at the end of
+the day.</p>
+<p>But let&rsquo;s flip the cake metaphor the other way around - do we build cakes vertically ? or horizontally ?</p>
+<p>When you think of it this way, the point that becomes clear -</p>
+<p><em>Enough Horizontal Layers</em> need to be built before we can start to <em>Vertically</em> start building something</p>
+<p>This idea ties back to our I-0 tasks - if we try to incorporate those horizontal layers into the stories directly and try to
+make it a <em>vertical slice</em>, we will end up having really large stories that incorporate too many things and violate the INVEST
+principle.</p>
+<h3 id="business-value---horizontal-slicing">Business Value - Horizontal Slicing</h3>
+<p>But you might be thinking - doesn&rsquo;t the horizontal <em>slicing</em> also violate the INVEST principle ?</p>
+<p>Delivering fast business value is the promise of Agile but if we keep building these <em>horizontal</em> layers for a long time, there
+is really no actual business value in the eyes of the stakeholder who is paying for the project - all they are seeing is dashboards and
+pipelines.</p>
+<p>The key point that I find here is to how to show all the stakeholders - tech and non-tech - that this is actually <em>value</em>, not necessarily
+something that they can see as a web page or an app feature but as a foundational step to building a production ready application.</p>
+<p>To build a software system/product of good quality, the expectation needs to be set amongst all stakeholders about how long it
+will take to build the <em>horizontal</em> slices and also articulate how those slices add up to form the final picture.</p>
+<h3 id="trade-offs---speed-quality-scope">Trade-Offs - Speed, Quality, Scope</h3>
+<p>There&rsquo;s this famous saying - that you can only 2 of 3 things - speed, quality, scope - you&rsquo;ll have to trade-off on one point.</p>
+<ul>
+<li>
+<p>Speed or pace of development is usually directly constrained by the problem space - in how <em>streams</em> of work it can be parallelized
+into.</p>
+</li>
+<li>
+<p>Scope &amp; Quality - these two directly translate to <em>prioritization</em> - what&rsquo;s important <em>right now</em> and what can be done <em>later</em>.</p>
+</li>
+</ul>
+<h3 id="increasing-detail-in-horizontal-slicing">Increasing Detail In Horizontal Slicing</h3>
+<p>When we define our horizontal slices, I&rsquo;ve usually seen only <em>business stories</em> being subject to these constraints. Increasingly, I feel
+that the foundational and cross-cutting stories should also be subject to these constraints of speed, quality and scope.</p>
+<p>On the basis of these constraints, we should prioritize the horizontal slices in a way that aligns with how want to deliver
+business value.</p>
+<h3 id="summary">Summary</h3>
+<p>There is no <em>right</em> answer here as you might expect - it&rsquo;s always a constant learning experience on how to define, scope and prioritize,
+and I hope this gives the reader a new view point on how a story could be sliced.</p>
+
+  </div>
+</article>
+
+      </main>
+      <footer>
+  
+  <div class="social-links">
+    
+      <a href="https://www.linkedin.com/in/sriramvish/" target="_blank" rel="noopener noreferrer" title="linkedin">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        
+      </a>
+    
+      <a href="https://hostux.social/@sriramv" target="_blank" rel="noopener noreferrer" title="mastodon">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.184-2.737.368-4.185.276-2.368-.092-4.237-.551-4.237-.551 0 .184.014.459.043.643.308 2.294 2.317 2.478 4.22 2.57 1.922.092 3.635-.459 3.635-.459l.079 1.653s-1.344.735-3.738.827c-1.32.092-2.96-.092-4.869-.551-4.14-1.102-4.853-5.507-4.961-9.912-.036-1.286-.014-2.478-.014-3.488 0-4.408 2.879-5.693 2.879-5.693 1.452-.643 3.945-.918 6.535-.918h.064c2.59 0 5.083.275 6.534.918 0 0 2.879 1.285 2.879 5.693 0 0 .036 3.213-.626 5.596z"/>
+          <path d="M17.79 8.14v5.156h-2.042V8.324c0-1.102-.459-1.653-1.377-1.653-1.014 0-1.522.643-1.522 1.928v2.754h-2.029v-2.754c0-1.285-.508-1.928-1.522-1.928-.918 0-1.377.551-1.377 1.653v4.972H5.879V8.14c0-1.102.276-1.973.84-2.616.578-.643 1.327-.973 2.257-.973 1.072 0 1.885.413 2.42 1.24l.522.872.521-.872c.535-.827 1.348-1.24 2.42-1.24.93 0 1.679.33 2.257.973.564.643.84 1.514.84 2.616z"/>
+        </svg>
+        
+      </a>
+    
+      <a href="https://soundcloud.com/inthemidstofitall" target="_blank" rel="noopener noreferrer" title="soundcloud">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 14.5v-2M5 17v-7M8 17V8M11 17V6M14 17v-8M17 17v-5"/>
+          <path d="M20 17c1.5 0 2.5-1 2.5-2.5S21.5 12 20 12c-.17 0-.33.02-.5.05A4.5 4.5 0 0 0 11 13"/>
+        </svg>
+        
+      </a>
+    
+      <a href="https://github.com/FrailWords" target="_blank" rel="noopener noreferrer" title="github">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+        
+      </a>
+    
+      <a href="https://stackoverflow.com/users/1216748/frailwords" target="_blank" rel="noopener noreferrer" title="stackoverflow">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 17v5h16v-5M8 20h8M8.5 14.5l7.5 1.5M9.5 9l7 3.5M12 4l5.5 5"/>
+        </svg>
+        
+      </a>
+    
+  </div>
+  
+  
+  <p class="copyright">
+    © 2026 <a href="http://localhost:1313/">Sriram Viswanathan</a>
+    · Made with quietude
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

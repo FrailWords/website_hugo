@@ -1,11 +1,18 @@
 baseURL = "https://sriramviswanathan.com/"
 languageCode = "en"
-theme = "smigle"
+theme = "sriram"
 title = "Sriram Viswanathan"
-paginate = 5
+
+[pagination]
+pagerSize = 8
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
+
+[markup.highlight]
+style = "pastie"
+lineNos = false
+noClasses = false
 
 [[menu.main]]
 identifier = "home"
@@ -15,13 +22,13 @@ weight = 1
 
 [[menu.main]]
 identifier = "posts"
-name = "Posts"
+name = "Writing"
 url = "/posts/"
 weight = 2
 
 [[menu.main]]
 identifier = "tags"
-name = "Tags"
+name = "Topics"
 url = "/tags/"
 weight = 3
 
@@ -29,9 +36,8 @@ weight = 3
 abbrDateFmt = "Jan 2"
 dateFmt = "2006-01-02"
 author = "Sriram Viswanathan"
-subtitle = "Music, Software, Privacy, Poetry and more..."
-brandIconFile = "logo.jpg"
-customStylesheets = [ "css/custom.css" ]
+subtitle = "Poetry, Software, Privacy & Thoughts"
+description = "A personal space for poetry, tech musings, and reflections."
 
 [[params.social]]
 name = "linkedin"
@@ -48,10 +54,6 @@ url = "https://soundcloud.com/inthemidstofitall"
 [[params.social]]
 name = "github"
 url = "https://github.com/FrailWords"
-
-[[params.social]]
-name = "reddit"
-url = "https://www.reddit.com/user/frailwords"
 
 [[params.social]]
 name = "stackoverflow"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/agile/</link>
+    <description>Recent content in Agile on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agile Story Slicing - Horizontal ? Vertical ?</title>
+      <link>http://localhost:1313/posts/agile_story_slicing/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/agile_story_slicing/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; There are probably a lot of cake related metaphors in this post, you might feel like ordering one by the&#xA;end of this post, which is an unintentional side effect :)&lt;/p&gt;&#xA;&lt;h3 id=&#34;a-well-defined-story&#34;&gt;A well-defined story&lt;/h3&gt;&#xA;&lt;p&gt;Creating well-defined stories is an essential part of software development nowadays, specially if you are following any&#xA;of the &amp;ldquo;Agile&amp;rdquo; methodologies where the key motivation is to incrementally deliver value and at the same time building&#xA;towards a goal or a product release.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

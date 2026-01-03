@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal space for poetry, tech musings, and reflections.">
+  <meta name="author" content="Sriram Viswanathan">
+  
+  
+    <title>Privacy - 7 - VPN Providers and India - what&#39;s going on ?  · Sriram Viswanathan</title>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+  
+  <meta property="og:title" content="Privacy - 7 - VPN Providers and India - what&#39;s going on ? ">
+  <meta property="og:description" content="A personal space for poetry, tech musings, and reflections.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://localhost:1313/posts/privacy_7_vpn_and_india/">
+</head>
+
+  <body>
+    <div class="container">
+      <header>
+  <div class="site-brand">
+    <h1><a href="http://localhost:1313/">Sriram Viswanathan</a></h1>
+    <p class="site-tagline">Poetry, Software, Privacy &amp; Thoughts</p>
+  </div>
+  
+  <nav>
+    
+      <a href="/">Home</a>
+    
+      <a href="/posts/">Writing</a>
+    
+      <a href="/tags/">Topics</a>
+    
+  </nav>
+  
+  <div class="header-divider">
+    <span class="ornament">✦</span>
+  </div>
+</header>
+
+      <main>
+        
+<article>
+  <header class="post-header">
+    <h1 class="post-title">Privacy - 7 - VPN Providers and India - what&#39;s going on ? </h1>
+    <div class="post-meta">
+      <time datetime="2022-06-08">June 8, 2022</time>
+      
+        · 1193 words
+      
+      
+        · 6 min read
+      
+    </div>
+    
+    <div class="post-tags">
+      
+        <a href="/tags/privacy">privacy</a>
+      
+        <a href="/tags/vpn">vpn</a>
+      
+        <a href="/tags/india">india</a>
+      
+    </div>
+    
+  </header>
+  
+  <div class="post-content">
+    <br />
+<h3 id="context">Context</h3>
+<p>The Indian government&rsquo;s cybersecurity wing is called Computer Emergency Response Team (<a href="https://cert-in.org.in/" target="_blank">CERT-In</a>), under the Ministry of Electronics and Information Technology (MeitY).</p>
+<p>In April'22, CERT-In <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=1820904" target="_blank">published</a> <em>directions</em> to address gaps in <em>incident analysis</em>.  Most controversially, this includes the following -</p>
+<pre><code>Maintenance of logs of ICT systems; subscriber/customer registrations 
+details by Data centers, Virtual Private Server (VPS) providers, 
+VPN Service providers
+</code></pre>
+<p>and</p>
+<pre><code>These directions shall enhance overall cyber security posture and 
+ensure safe &amp; trusted Internet in the country.
+</code></pre>
+<p>Due to the very <em>concise</em> nature of this document, CERT-In <a href="https://www.cert-in.org.in/PDF/FAQs_on_CyberSecurityDirections_May2022.pdf" target="_blank">published another document</a> in May'22 to <em>clarify</em> why they are asking VPN providers to share their customer details and also log all their activity.</p>
+<p>Quote from that clarification -</p>
+<pre><code>The right to informational privacy of individuals is not affected by these Cyber
+Security Directions of 28.04.2022. These directions do not envisage seeking of
+information by CERT-In from the service providers on continuation basis as a standing
+arrangement. CERT-In may seek information from service providers in case of cyber
+security incidents and cyber incidents, on case to case basis, for discharge of its statutory
+obligations to enhance cyber security in the country. The service providers are bound to
+protect the users’ information by following reasonable security practises and
+procedures.
+</code></pre>
+<p>Fair enough. This is the <em>trust me, I am the govt&rsquo;</em> promise. Sounds very familiar from many other parts of the world, doesn&rsquo;t it ?</p>
+<br />
+<h3 id="does-this-apply-to-corporate-vpns-">Does this apply to corporate VPNs ?</h3>
+<p>Quote again -</p>
+<pre><code>No. For the purpose of this direction, VPN Service provider refer to an entity that
+provide “Internet proxy like services” through the use of VPN technologies, standard or
+proprietary, to general Internet subscribers/users.
+</code></pre>
+<p>This explanation opens up so many questions, I am not even sure what to say. Are corporate VPNs not &ldquo;Internet proxy like services&rdquo; ? ?</p>
+<br />
+<h3 id="lets-see-what-a-vpn-does-first">Let&rsquo;s see what a VPN does first</h3>
+<h4 id="before-vpn---why-do-we-need-vpn----simple-explanation">Before VPN - why do we need VPN ? - simple explanation</h4>
+<p>Usually, when you are browsing a website, the path of the request is -</p>
+<pre><code>You -&gt; Your ISP (internet service provider) -&gt; Website
+</code></pre>
+<p>and all the way back. This whole communication happens over a protocol like HTTP/HTTPS.</p>
+<p>When the final website gets your request, it knows that you are in India (based on your original request IP address) and so, it will serve content based on its policies for India as a country.</p>
+<p>Some websites are blocked in India and so when you try to access it, you&rsquo;ll not be able to reach the website.  Same goes for when you are in another country and trying to access an Indian website like Hotstar.</p>
+<h4 id="say-hello-to-vpn-">Say hello to VPN :)</h4>
+<p>I am sure almost everyone uses VPN nowadays to access websites that are blocked in India. For the other way around - when you are abroad and want to access India only sites.</p>
+<p>What a VPN does is that they provide a server in some other part of the world to act as a <em>intermediary</em> on our way to access the website.</p>
+<p>So, our path becomes -</p>
+<pre><code>You -&gt; Your ISP -&gt; VPN Server -&gt; Website
+</code></pre>
+<p>and all the way back.  The biggest difference is that, now, there&rsquo;s an <em>encrypted</em> connection between you and the VPN server and the VPN server <em>acts on behalf of you</em> to access the website.</p>
+<p>The VPN server can be in any country that <em>allows</em> the access to the site you are trying to access.</p>
+<h4 id="whats-happened-here-">What&rsquo;s happened here ?</h4>
+<p>Now, the ISP can no longer <em>see</em> where you are going - it just sees that you are talking to any of the VPN servers and so the ISP cannot track your requests. It can see your IP but can&rsquo;t really do anything with it, as the final website
+details are <em>encrypted</em>. Only the VPN server can <em>decrypt</em> and see where you are trying to go and what you are requesting.</p>
+<br />
+<h3 id="why-are-the-vpns-complaining-about-the-directions-from-cert-in-">Why are the VPNs complaining about the <em>directions</em> from CERT-In ?</h3>
+<p>What CERT-In is asking VPNs to do is 2 things mainly -</p>
+<ol>
+<li>Log all the activity of its customers and provide it when requested</li>
+<li>Share all the subscriber data</li>
+</ol>
+<p>Implementing both these points doesn&rsquo;t really <em>break</em> VPN functionality as such but then again, it damages one thing - <strong>privacy</strong>.</p>
+<p>VPN is not just about being able to access blocked content or content from other countries, its also about doing so in a way that our privacy is not out there for the taking.</p>
+<br />
+<h3 id="technical-segway---what-about-https-you-might-ask">Technical segway - &ldquo;what about HTTPS?&rdquo; you might ask</h3>
+<p><em>HTTPS</em> is an improvement over <em>HTTP</em> that <em>encrypts</em> all communication between the user and the website.</p>
+<p>What it cannot do - <em>it can’t be used to conceal your identity with an anonymous IP address</em>.</p>
+<p>Here&rsquo;s where VPNs come in. VPN is an additional layer of security and privacy over HTTPS as a secure way of communication.</p>
+<h3 id="can-you-trust-vpns-">Can you trust VPNs ?</h3>
+<p>Quoting directly from <a href="https://www.schneier.com/blog/archives/2021/06/vpns-and-trust.html" target="_blank">Schneier on Security - VPNs and Trust</a> reference -</p>
+<pre><code>We don’t talk about it a lot, but VPNs are entirely based on trust. 
+
+As a consumer, you have no idea which company will best protect your privacy.
+
+You don’t know the data protection laws of the Seychelles or Panama.
+
+You don’t know which countries can put extra-legal pressure on companies 
+operating within their jurisdiction. 
+
+You don’t know who actually owns and runs the VPNs.
+
+You don’t even know which foreign companies the intelligence agencies have 
+targeted for mass surveillance.
+
+All you can do is make your best guess, and hope you guessed well.
+</code></pre>
+<h3 id="how-are-vpn-providers-reacting-to-these-directions-">How are VPN providers reacting to these <em>directions</em> ?</h3>
+<p>ExpressVPN and SurfShark are two providers that have acted by closing down their servers in India.</p>
+<p>NordVPN has also warned that it will be removing physical servers from India if the directives are not reversed.</p>
+<h3 id="how-will-this-ultimately-affect-vpn-providers-in-india-">How will this ultimately affect VPN providers in India ?</h3>
+<p>India is a huge market for these providers. Just removing their servers from India only does one thing - every request has to go <em>outside</em> to a VPN server in another country.</p>
+<p>This adds latency and probably cost as well to them but that&rsquo;s about it from what I can understand.</p>
+<p>Quote from the NordVPN PR person -</p>
+<pre><code>“We will remove our servers as there will be no other way to stay in India,
+while preserving the privacy of our customers and integrity of our service.”
+</code></pre>
+<p>The most this will affect is an <em>Indian</em> VPN provider who only have servers in India.  All the global VPN providers would still be able to route requests to outside servers.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In a democratic nation like ours, these govt institutions should be held to parliamentary debate and discussion and be treated like how traditional bills are passed through majority.</p>
+<p>We need to hold accountable the mandate given to an organization like CERT-In, have it presented for public feedback and also put up for debate and not just passed on as a &lsquo;directive&rsquo;.</p>
+<p>These decisions affect the basic rights of every citizen and should be treated so.</p>
+<h3 id="passing-thought">Passing Thought</h3>
+<p>Who do you trust more - your VPN provider or your government ?</p>
+<h3 id="references">References</h3>
+<ul>
+<li>
+<p><a href="https://kinsta.com/blog/how-does-a-vpn-work/" target="_blank">How does a VPN work ?</a></p>
+</li>
+<li>
+<p><a href="https://www.purevpn.com/blog/https-vs-vpn/" target="_blank">VPN vs HTTPS</a></p>
+</li>
+<li>
+<p><a href="https://www.theregister.com/2022/06/08/india_it_regulation_criticism/" target="_blank">India IT regulation criticism</a></p>
+</li>
+<li>
+<p><a href="https://www.moneycontrol.com/news/business/vpn-service-providers-slam-cert-in-directions-on-maintaining-logs-8480081.html" target="_blank">VPN providers against the CERT-In directions</a></p>
+</li>
+</ul>
+
+  </div>
+</article>
+
+      </main>
+      <footer>
+  
+  <div class="social-links">
+    
+      <a href="https://www.linkedin.com/in/sriramvish/" target="_blank" rel="noopener noreferrer" title="linkedin">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        
+      </a>
+    
+      <a href="https://hostux.social/@sriramv" target="_blank" rel="noopener noreferrer" title="mastodon">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.184-2.737.368-4.185.276-2.368-.092-4.237-.551-4.237-.551 0 .184.014.459.043.643.308 2.294 2.317 2.478 4.22 2.57 1.922.092 3.635-.459 3.635-.459l.079 1.653s-1.344.735-3.738.827c-1.32.092-2.96-.092-4.869-.551-4.14-1.102-4.853-5.507-4.961-9.912-.036-1.286-.014-2.478-.014-3.488 0-4.408 2.879-5.693 2.879-5.693 1.452-.643 3.945-.918 6.535-.918h.064c2.59 0 5.083.275 6.534.918 0 0 2.879 1.285 2.879 5.693 0 0 .036 3.213-.626 5.596z"/>
+          <path d="M17.79 8.14v5.156h-2.042V8.324c0-1.102-.459-1.653-1.377-1.653-1.014 0-1.522.643-1.522 1.928v2.754h-2.029v-2.754c0-1.285-.508-1.928-1.522-1.928-.918 0-1.377.551-1.377 1.653v4.972H5.879V8.14c0-1.102.276-1.973.84-2.616.578-.643 1.327-.973 2.257-.973 1.072 0 1.885.413 2.42 1.24l.522.872.521-.872c.535-.827 1.348-1.24 2.42-1.24.93 0 1.679.33 2.257.973.564.643.84 1.514.84 2.616z"/>
+        </svg>
+        
+      </a>
+    
+      <a href="https://soundcloud.com/inthemidstofitall" target="_blank" rel="noopener noreferrer" title="soundcloud">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 14.5v-2M5 17v-7M8 17V8M11 17V6M14 17v-8M17 17v-5"/>
+          <path d="M20 17c1.5 0 2.5-1 2.5-2.5S21.5 12 20 12c-.17 0-.33.02-.5.05A4.5 4.5 0 0 0 11 13"/>
+        </svg>
+        
+      </a>
+    
+      <a href="https://github.com/FrailWords" target="_blank" rel="noopener noreferrer" title="github">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+        </svg>
+        
+      </a>
+    
+      <a href="https://stackoverflow.com/users/1216748/frailwords" target="_blank" rel="noopener noreferrer" title="stackoverflow">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 17v5h16v-5M8 20h8M8.5 14.5l7.5 1.5M9.5 9l7 3.5M12 4l5.5 5"/>
+        </svg>
+        
+      </a>
+    
+  </div>
+  
+  
+  <p class="copyright">
+    © 2026 <a href="http://localhost:1313/">Sriram Viswanathan</a>
+    · Made with quietude
+  </p>
+</footer>
+
+    </div>
+  </body>
+</html>

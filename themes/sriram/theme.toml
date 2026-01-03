@@ -1,0 +1,8 @@
+name = "sriram"
+license = "MIT"
+description = "A soft, minimal, pastel theme for poetry and thoughts"
+min_version = "0.41.0"
+
+[author]
+  name = "Sriram Viswanathan"
+  homepage = "https://sriramviswanathan.com/"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FLoC on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/floc/</link>
+    <description>Recent content in FLoC on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/floc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy - 6 - Google FLoC and what you should know</title>
+      <link>http://localhost:1313/posts/privacy_6_google_floc/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_6_google_floc/</guid>
+      <description>&lt;h4 id=&#34;context&#34;&gt;Context&lt;/h4&gt;&#xA;&lt;p&gt;Google&amp;rsquo;s main revenue stream is Ads and thus collecting the data that enables this business.&lt;/p&gt;&#xA;&lt;p&gt;Everyone is online nowadays, and it (in many ways) defines &lt;em&gt;who we are&lt;/em&gt; - specially what can be considered &lt;em&gt;private&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Our window into this online world is our web browser, and we put a lot of &lt;em&gt;trust&lt;/em&gt; in the companies that build these browsers to do the right thing by us and protect what is private to each of us as individuals.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

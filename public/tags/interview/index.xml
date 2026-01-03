@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interview on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/interview/</link>
+    <description>Recent content in Interview on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Tech interview - a candidate&#39;s perspective</title>
+      <link>http://localhost:1313/posts/the_tech_interview/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/the_tech_interview/</guid>
+      <description>&lt;p&gt;Having gone through a recent period of job search and a sequence of interviews, I thought I&amp;rsquo;d pen down what &lt;em&gt;I&lt;/em&gt; think of the different styles of tech interviews and why I think this whole process needs a complete relook.&lt;/p&gt;&#xA;&lt;h2 id=&#34;personas---who-are-the-people-involved-in-the-process-&#34;&gt;Personas - Who are the people involved in the process ?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Recruiter(s) (can be multiple in some cases)&lt;/li&gt;&#xA;&lt;li&gt;Future Colleagues (More and less experienced)&lt;/li&gt;&#xA;&lt;li&gt;Future Boss (e.g. Engineering Manager/Head Of Engineering)&lt;/li&gt;&#xA;&lt;li&gt;Boss&amp;rsquo;s boss (e.g. CTO)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;rounds---how-many-rounds-of-interviews-are-we-talking-here-&#34;&gt;Rounds - how many rounds of interviews are we talking here ?&lt;/h2&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s a typical breakdown -&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

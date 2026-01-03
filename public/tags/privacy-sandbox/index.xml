@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy Sandbox on Sriram Viswanathan</title>
+    <link>http://localhost:1313/tags/privacy-sandbox/</link>
+    <description>Recent content in Privacy Sandbox on Sriram Viswanathan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/privacy-sandbox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy - 10 - Google Privacy Sandbox</title>
+      <link>http://localhost:1313/posts/privacy_10_privacy_sandbox/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/privacy_10_privacy_sandbox/</guid>
+      <description>&lt;br /&gt;&#xA;&lt;h3 id=&#34;lets-talk-ads&#34;&gt;Lets talk Ads&lt;/h3&gt;&#xA;&lt;p&gt;The advertising/ad-tech ecosystem (or &lt;em&gt;programmatic&lt;/em&gt; ad ecosystem as it is called nowadays) is what underpins the revenue model for most websites, including the biggest tech companies (e.g. Google, Meta, Twitter etc.).&lt;/p&gt;&#xA;&lt;p&gt;Of these companies, the one company that dominates the ad networks market by far is Google. Current stats show that Google Ads is used by almost &lt;code&gt;48.7%&lt;/code&gt; of &lt;em&gt;all&lt;/em&gt; websites worldwide, with a market share of &lt;code&gt;98.8%&lt;/code&gt;&lt;a href=&#34;https://w3techs.com/technologies/overview/advertising&#34; title=&#34;Google Ads Market Share&#34;&gt;[source]&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
