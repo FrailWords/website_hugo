@@ -21,16 +21,22 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+identifier = "work"
+name = "Work"
+url = "/work/"
+weight = 2
+
+[[menu.main]]
 identifier = "posts"
 name = "Writing"
 url = "/posts/"
-weight = 2
+weight = 3
 
 [[menu.main]]
 identifier = "tags"
 name = "Topics"
 url = "/tags/"
-weight = 3
+weight = 4
 
 [params]
 abbrDateFmt = "Jan 2"
@@ -38,6 +44,7 @@ dateFmt = "2006-01-02"
 author = "Sriram Viswanathan"
 subtitle = "Poetry, Software, Privacy & Thoughts"
 description = "A personal space for poetry, tech musings, and reflections."
+mainSections = ["posts"]
 
 [[params.social]]
 name = "linkedin"

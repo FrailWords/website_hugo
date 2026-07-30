@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <h1 class="text-center">{{ .Title }}</h1>
+  {{ with .Content }}{{ . }}{{ end }}
+
+  <ul class="post-list">
+    {{ range .Pages.ByWeight }}
+    <li class="post-item">
+      <h2 class="post-item-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      {{ with .Params.description }}
+      <p class="post-item-excerpt">{{ . }}</p>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}
