@@ -110,7 +110,7 @@ Section 6(b) requires:
 
 Sounds progressive.
 
-But OTP already satisfies this. It asks for the factor to be unique to the transaction, not bound to what the transaction actually is. A six-digit code that expires in five minutes and is freshly generated each time is already "unique to that transaction" by this definition. Nothing here requires the code to change if the amount or the payee changes. Uniqueness, not meaning.
+But OTP already satisfies this. A six-digit code that expires in five minutes and is freshly generated each time is already "unique to that transaction" by this definition. What it doesn't do is verify *what* that transaction is. The code proves a transaction happened and someone was present for it. It says nothing about the amount or the payee. If those details get altered somewhere between what you saw and what actually reaches the bank, say by malware on your device, the same OTP still goes through. Uniqueness, not meaning.
 
 Section 9(2) says issuers must compensate customers "in full without demur" for losses from non-compliant transactions. But since OTP already complies with Section 6(b), there's nothing to trigger the clause.
 
@@ -121,7 +121,7 @@ Section 9(2) says issuers must compensate customers "in full without demur" for 
 "specific to the amount of the payment transaction and the payee agreed to by the payer"
 ```
 
-Change either the amount or payee and the code is invalidated. That's an auditable, enforceable way to tie the OTP to its *purpose*, immediately connecting it to fraud detection and investigation.
+The code itself is generated from the amount and payee, not something you see, something the bank checks. If either gets altered after you approve and before it reaches the bank, the code no longer matches and the bank can catch it. That's an auditable, enforceable way to tie the OTP to its *purpose*: not proof someone was merely present, but proof the transaction that got approved is the one that got executed.
 
 Article 5 of the PSD2 RTS has much clearer and more enforceable language than what RBI put out. PSD2 is from 2018. RBI's directions are from 2025. There is always an opportunity to learn from your predecessors, no?
 
