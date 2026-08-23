@@ -1,7 +1,7 @@
 ---
 title: "While They Were Asleep"
 date: "2024-08-24"
-tags: ['love', 'night', 'intimacy']
+tags: ['love', 'night', 'intimacy', 'poetry']
 ---
     Turn around...I hope you do
     Listen now... I hope you do

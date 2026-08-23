@@ -30,16 +30,13 @@ Did you really agree to share your data with these people ? Is this mentioned in
 
 Quoting this excellent [article](https://theoutline.com/post/5380/targeted-ad-creepy-surveillance-facebook-instagram-google-listening-not-alone) -
 
-    "Not even the marketing people and data scientists completely understand 
-     how the algorithmic distribution of their content works."
+    "Not even the marketing people and data scientists completely understand how the algorithmic distribution of their content works."
 
 #### What can be done ?
 
 We have to be optimistic towards how the privacy policies can be made more _accessible_.  For e.g. one suggestion from the nytimes article shared above is -
 
-    "Something as simple as a list of companies that might purchase and use 
-     your personal information could go a long way towards setting a new bar 
-     for privacy-conscious behavior."
+    "Something as simple as a list of companies that might purchase and use your personal information could go a long way towards setting a new bar for privacy-conscious behavior."
 
 I, for one, have started reading the privacy policies, at least a cursory glance for super vague words which might give me an idea about weighing the use of the service vs an alternative.
 

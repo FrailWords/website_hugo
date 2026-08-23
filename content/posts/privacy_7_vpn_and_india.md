@@ -11,27 +11,17 @@ The Indian government's cybersecurity wing is called Computer Emergency Response
 
 In April'22, CERT-In <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=1820904" target="_blank">published</a> _directions_ to address gaps in _incident analysis_.  Most controversially, this includes the following - 
 
-    Maintenance of logs of ICT systems; subscriber/customer registrations 
-    details by Data centers, Virtual Private Server (VPS) providers, 
-    VPN Service providers
+    Maintenance of logs of ICT systems; subscriber/customer registrations details by Data centers, Virtual Private Server (VPS) providers, VPN Service providers
 
 and
 
-    These directions shall enhance overall cyber security posture and 
-    ensure safe & trusted Internet in the country.
+    These directions shall enhance overall cyber security posture and ensure safe & trusted Internet in the country.
 
 Due to the very _concise_ nature of this document, CERT-In <a href="https://www.cert-in.org.in/PDF/FAQs_on_CyberSecurityDirections_May2022.pdf" target="_blank">published another document</a> in May'22 to _clarify_ why they are asking VPN providers to share their customer details and also log all their activity.
 
 Quote from that clarification -
 
-    The right to informational privacy of individuals is not affected by these Cyber
-    Security Directions of 28.04.2022. These directions do not envisage seeking of
-    information by CERT-In from the service providers on continuation basis as a standing
-    arrangement. CERT-In may seek information from service providers in case of cyber
-    security incidents and cyber incidents, on case to case basis, for discharge of its statutory
-    obligations to enhance cyber security in the country. The service providers are bound to
-    protect the users’ information by following reasonable security practises and
-    procedures.
+    The right to informational privacy of individuals is not affected by these Cyber Security Directions of 28.04.2022. These directions do not envisage seeking of information by CERT-In from the service providers on continuation basis as a standing arrangement. CERT-In may seek information from service providers in case of cyber security incidents and cyber incidents, on case to case basis, for discharge of its statutory obligations to enhance cyber security in the country. The service providers are bound to protect the users’ information by following reasonable security practises and procedures.
 
 Fair enough. This is the _trust me, I am the govt'_ promise. Sounds very familiar from many other parts of the world, doesn't it ?    
 
@@ -41,9 +31,7 @@ Fair enough. This is the _trust me, I am the govt'_ promise. Sounds very familia
 
 Quote again -
 
-    No. For the purpose of this direction, VPN Service provider refer to an entity that
-    provide “Internet proxy like services” through the use of VPN technologies, standard or
-    proprietary, to general Internet subscribers/users.
+    No. For the purpose of this direction, VPN Service provider refer to an entity that provide “Internet proxy like services” through the use of VPN technologies, standard or proprietary, to general Internet subscribers/users.
 
 This explanation opens up so many questions, I am not even sure what to say. Are corporate VPNs not "Internet proxy like services" ? ?   
 
@@ -115,13 +103,11 @@ Quoting directly from <a href="https://www.schneier.com/blog/archives/2021/06/vp
 
     You don’t know the data protection laws of the Seychelles or Panama.
 
-    You don’t know which countries can put extra-legal pressure on companies 
-    operating within their jurisdiction. 
+    You don’t know which countries can put extra-legal pressure on companies operating within their jurisdiction.
 
     You don’t know who actually owns and runs the VPNs.
 
-    You don’t even know which foreign companies the intelligence agencies have 
-    targeted for mass surveillance.
+    You don’t even know which foreign companies the intelligence agencies have targeted for mass surveillance.
 
     All you can do is make your best guess, and hope you guessed well.
 
@@ -139,8 +125,7 @@ This adds latency and probably cost as well to them but that's about it from wha
 
 Quote from the NordVPN PR person -
 
-    “We will remove our servers as there will be no other way to stay in India,
-    while preserving the privacy of our customers and integrity of our service.”
+    “We will remove our servers as there will be no other way to stay in India, while preserving the privacy of our customers and integrity of our service.”
 
 The most this will affect is an _Indian_ VPN provider who only have servers in India.  All the global VPN providers would still be able to route requests to outside servers.
 

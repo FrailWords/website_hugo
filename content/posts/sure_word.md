@@ -43,8 +43,7 @@ here, by 'sure', the person is agreeing. ok....
 
 Now, you might ask:
 
-    "why i do hate this word when it so succintly answers every
-    single question we have seen yet ?" and...
+    "why i do hate this word when it so succintly answers every single question we have seen yet ?" and...
     "what would be the alternative in your opinion ?"
 
 I am glad you asked.

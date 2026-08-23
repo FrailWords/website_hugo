@@ -1,7 +1,7 @@
 ---
 title: "The Fall It Was"
 date: "2022-11-04"
-tags: ['fall', 'love', 'colors']
+tags: ['fall', 'love', 'colors', 'poetry']
 ---
     And there you stood
     The most beautiful

@@ -605,37 +605,14 @@ code {
 }
 
 /* --------------------------------------------------------------------------
-   Poetry — deliberate authoring convention: every poem on this site is
-   written as 4-space indented text, never fenced. Goldmark renders that
-   as bare <pre><code> with no wrapping div and no chroma/language class,
-   which is a reliable, author-controlled signal (verified against all
-   poem posts), not a guess based on incidental markup.
+   Code Blocks — default treatment for every <pre> in every post, indented
+   or fenced. Hugo/Chroma wraps fenced blocks as
+   <div class="highlight"><pre class="chroma"><code class="language-x">;
+   plain indented blocks are just <pre><code>. Style pre itself so both
+   match identically, and neutralize the extra wrapping div where Chroma
+   adds one so its box doesn't stack with the pre's own.
    -------------------------------------------------------------------------- */
-pre:not(.chroma):not(.highlight):not([class*="language-"]) {
-  font-family: var(--font-poetry);
-  font-size: 1.15rem;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 2;
-  background: transparent;
-  border: none;
-  padding: var(--space-md) 0;
-  margin: var(--space-md) 0;
-  color: var(--text-secondary);
-  white-space: pre-wrap;
-  overflow-x: visible;
-}
-
-/* --------------------------------------------------------------------------
-   Code Blocks — fenced blocks (with or without a language hint), which
-   Hugo/Chroma always wraps as <div class="highlight"><pre class="chroma">
-   <code class="language-x">, even for prose-style quotes fenced as
-   ```text. Style pre itself, and neutralize the extra wrapping div so
-   its box doesn't stack with the pre's own.
-   -------------------------------------------------------------------------- */
-.chroma,
-.highlight pre,
-pre[class*="language-"] {
+pre {
   font-family: var(--font-mono);
   font-size: 0.95rem;
   font-style: normal;
@@ -666,6 +643,27 @@ pre code {
   border-radius: 0;
   padding: 0;
   color: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   Poetry — .post-content.poetry is set by the template when the post's
+   front matter tags include "poetry" (an explicit author decision, not a
+   guess based on Markdown's incidental HTML shape). Overrides the default
+   code-block treatment above for every <pre> in that post.
+   -------------------------------------------------------------------------- */
+.poetry pre {
+  font-family: var(--font-poetry);
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 2;
+  background: transparent;
+  border: none;
+  padding: var(--space-md) 0;
+  margin: var(--space-md) 0;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  overflow-x: visible;
 }
 
 /* Syntax highlighting - Pastel theme */
