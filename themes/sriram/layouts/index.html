@@ -14,7 +14,8 @@
         {{ end }}
       </div>
       {{ if .Summary }}
-      <p class="post-item-excerpt">{{ .Summary | truncate 150 }}</p>
+      {{ $excerpt := .Summary | replaceRE `^\s*(<br\s*/?>)?\s*<h[1-6][^>]*>.*?</h[1-6]>\s*` "" }}
+      <p class="post-item-excerpt">{{ $excerpt | plainify | truncate 150 }}</p>
       {{ end }}
     </li>
     {{ end }}

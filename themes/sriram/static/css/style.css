@@ -311,6 +311,7 @@ main {
 .post-item-title {
   font-size: 1.25rem;
   font-weight: 500;
+  margin-top: 0;
   margin-bottom: var(--space-sm);
   line-height: 1.4;
 }
