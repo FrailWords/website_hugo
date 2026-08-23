@@ -1,5 +1,5 @@
 baseURL = "https://sriramviswanathan.com/"
-languageCode = "en"
+locale = "en"
 theme = "sriram"
 title = "Sriram Viswanathan"
 
@@ -45,6 +45,7 @@ author = "Sriram Viswanathan"
 subtitle = "Poetry, Software, Privacy & Thoughts"
 description = "A personal space for poetry, tech musings, and reflections."
 mainSections = ["posts"]
+defaultImage = "/images/default-og.png"
 
 [[params.social]]
 name = "linkedin"
