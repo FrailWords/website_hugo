@@ -120,7 +120,7 @@ Sounds progressive.
 
 But OTP already satisfies this. A six-digit code that expires in five minutes and is freshly generated each time is already "unique to that transaction" by this definition. What it doesn't do is verify *what* that transaction is. The code proves a transaction happened and someone was present for it. It says nothing about the amount or the payee. If those details get altered somewhere between what you saw and what actually reaches the bank, say by malware on your device, the same OTP still goes through. Uniqueness, not meaning.
 
-Section 9(2) says issuers must compensate customers "in full without demur" for losses from non-compliant transactions. But since OTP already complies with Section 6(b), there's nothing to trigger the clause.
+Section 9 says issuers must compensate customers "in full without demur" for losses from non-compliant transactions. But since OTP already complies with Section 6(b), there's nothing to trigger the clause.
 
 #### PSD2 Article 5: What Enforceable Language Looks Like
 
