@@ -59,8 +59,8 @@
   --space-2xl: 4rem;
   
   /* Layout */
-  --content-width: 680px;
-  --content-wide: 780px;
+  --content-width: 740px;
+  --content-wide: 900px;
 }
 
 /* --------------------------------------------------------------------------
@@ -131,6 +131,14 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
   margin-top: var(--space-lg);
   margin-bottom: var(--space-sm);
 }
@@ -463,6 +471,44 @@ article {
 
 .post-content li::marker {
   color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+.table-scroll {
+  overflow-x: auto;
+  margin: var(--space-lg) 0;
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.post-content th,
+.post-content td {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.post-content thead th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-medium);
+  white-space: nowrap;
+}
+
+.post-content tbody tr:nth-child(even) {
+  background: var(--bg-secondary);
+}
+
+.post-content tbody tr:last-child td {
+  border-bottom: none;
 }
 
 /* --------------------------------------------------------------------------
