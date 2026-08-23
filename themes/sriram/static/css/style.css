@@ -476,9 +476,17 @@ article {
 /* --------------------------------------------------------------------------
    Tables
    -------------------------------------------------------------------------- */
+/* Break tables out wider than the prose column so they get real room
+   instead of needing to scroll — centered on the viewport, capped at
+   --content-wide, never wider than the viewport itself. */
 .table-scroll {
-  overflow-x: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92vw;
+  max-width: var(--content-wide);
   margin: var(--space-lg) 0;
+  overflow-x: auto;
 }
 
 .post-content table {
@@ -500,7 +508,6 @@ article {
   color: var(--text-primary);
   font-weight: 600;
   border-bottom: 2px solid var(--border-medium);
-  white-space: nowrap;
 }
 
 .post-content tbody tr:nth-child(even) {
@@ -509,6 +516,55 @@ article {
 
 .post-content tbody tr:last-child td {
   border-bottom: none;
+}
+
+/* Below this width even a breakout table gets cramped — stack each row
+   as a labelled card instead of forcing horizontal scroll. */
+@media (max-width: 640px) {
+  .table-scroll {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    transform: none;
+    overflow-x: visible;
+  }
+
+  .post-content table,
+  .post-content tbody,
+  .post-content tr,
+  .post-content td {
+    display: block;
+    width: 100%;
+  }
+
+  .post-content thead {
+    display: none;
+  }
+
+  .post-content tr {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .post-content tbody tr:nth-child(even) {
+    background: transparent;
+  }
+
+  .post-content td {
+    padding: var(--space-xs) 0;
+    border-bottom: none;
+  }
+
+  .post-content td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin-bottom: 2px;
+  }
 }
 
 /* --------------------------------------------------------------------------

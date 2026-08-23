@@ -50,26 +50,6 @@ OTP proves presence, not intent. Six digits carry zero meaning. It never gives t
 
 You could say there's a context in which the person is typing the OTP and that's clear. But this 'context' is a mental model, not an enforced contract. There is nothing stopping the app or website from using your authentication to do five other things you never wanted. Where is the 'intent' here?
 
-### The Habituation Trap
-
-We go through our days receiving and typing so many OTPs that, at some point, it becomes a mind-numbing activity. We don't pause to think about what we are reading, who we are reading it to or, for that matter, typing it immediately when we see that 'fill in the blanks' UI. It's almost like we're over-eager to get it done, given most of these OTPs expire in seconds.
-
-| Who sends OTPs most often | How often | What's at stake |
-|---|---|---|
-| Banks: login, transactions, profile changes, address changes, email changes, everything | Multiple times a week | Your money and financial identity |
-| Government portals: income tax, LIC, DigiLocker, IRCTC, every single session | Every visit, no exceptions | Your identity documents, tax records, insurance |
-| Travel and transport: Rapido, Uber, MakeMyTrip (often in-app, not SMS) | Regularly | Your location history, saved addresses |
-| Health and pharmacy: 1mg, hospital portals | Every login | Your medical history, prescriptions |
-| Dating: Bumble, Hinge | Every login/reinstall | Your most personal conversations and photos |
-
-The OTPs that matter most (banks, government, health) are also the ones we type most often. Every routine banking OTP is a rehearsal for the fraud OTP.
-
-### Our Phones Don't Help
-
-Even if someone added more 'context' to the OTP message (payee, amount, scope, purpose), we would never see it.
-
-Both Android and iOS phones automatically parse the OTP from the SMS and show it right there in the app you're using. The actual message is never opened. We just tap the auto-suggested digits and move on.
-
 ### Who Benefits?
 
 If OTPs suddenly carried real information about what you're authorizing, who would lose?
@@ -98,6 +78,26 @@ If OTPs suddenly carried real information about what you're authorizing, who wou
 Everyone's incentives align. Not with improving the system, but with keeping it exactly as it is. The ceremony exists so everyone can say consent was given.
 
 This is the [Theatre of Privacy][3] applied to a different ritual.
+
+### The Habituation Trap
+
+We go through our days receiving and typing so many OTPs that, at some point, it becomes a mind-numbing activity. We don't pause to think about what we are reading, who we are reading it to or, for that matter, typing it immediately when we see that 'fill in the blanks' UI. It's almost like we're over-eager to get it done, given most of these OTPs expire in seconds.
+
+| Who sends OTPs most often | How often | What's at stake |
+|---|---|---|
+| Banks: login, transactions, profile changes, address changes, email changes, everything | Multiple times a week | Your money and financial identity |
+| Government portals: income tax, LIC, DigiLocker, IRCTC, every single session | Every visit, no exceptions | Your identity documents, tax records, insurance |
+| Travel and transport: Rapido, Uber, MakeMyTrip (often in-app, not SMS) | Regularly | Your location history, saved addresses |
+| Health and pharmacy: 1mg, hospital portals | Every login | Your medical history, prescriptions |
+| Dating: Bumble, Hinge | Every login/reinstall | Your most personal conversations and photos |
+
+The OTPs that matter most (banks, government, health) are also the ones we type most often. Every routine banking OTP is a rehearsal for the fraud OTP.
+
+### Our Phones Don't Help
+
+Even if someone added more 'context' to the OTP message (payee, amount, scope, purpose), we would never see it.
+
+Both Android and iOS phones automatically parse the OTP from the SMS and show it right there in the app you're using. The actual message is never opened. We just tap the auto-suggested digits and move on.
 
 ### Financial Sector as a Special Case
 
