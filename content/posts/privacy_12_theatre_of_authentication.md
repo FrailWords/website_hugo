@@ -59,7 +59,7 @@ If OTPs suddenly carried real information about what you're authorizing, who wou
 
 **Telcos**
 - Every OTP is an A2P SMS (Application-to-Person), a bulk message that the bank or app *pays the telco for*, per message
-- At India's scale, this is significant revenue. Every move away from SMS OTP is money off the telco's books
+- Multiply that by how many OTPs India sends daily, and it adds up. Every move away from SMS OTP is money off the telco's books
 - Your phone number being the universal identity keeps the telco permanently in the middle of every authentication flow in the country
 
 **Banks**
@@ -135,9 +135,7 @@ Article 5 of the PSD2 RTS has much clearer and more enforceable language than wh
 
 #### UPI Already Moved Beyond OTP
 
-UPI uses device binding plus a UPI PIN. No OTP in the transaction path. No six-digit ritual required.
-
-UPI ties your account to your specific device (not just your phone number) and you approve each transaction with a PIN you chose. That approval doesn't travel as an SMS. The authentication happens between your phone and your bank directly.
+UPI ties your account to your specific device, not just your phone number, and you approve each transaction with a PIN you chose. No OTP in the transaction path, no SMS, no six-digit ritual. The authentication happens between your phone and your bank directly.
 
 The replacement exists. It just didn't propagate to cards and net banking, because replacing OTP is easy on a new rail and nearly impossible on an old one.
 
