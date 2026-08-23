@@ -52,6 +52,14 @@ name = "linkedin"
 url = "https://www.linkedin.com/in/sriramvish/"
 
 [[params.social]]
+name = "instagram"
+url = "https://www.instagram.com/inthemidst0fitall/"
+
+[[params.social]]
+name = "youtube"
+url = "https://www.youtube.com/@inthemidstofitall"
+
+[[params.social]]
 name = "mastodon"
 url = "https://hostux.social/@sriramv"
 
