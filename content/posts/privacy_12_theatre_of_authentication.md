@@ -63,8 +63,8 @@ If OTPs suddenly carried real information about what you're authorizing, who wou
 - Your phone number being the universal identity keeps the telco permanently in the middle of every authentication flow in the country
 
 **Banks**
-- The [2009 RBI mandate][1] for additional-factor authentication was universally implemented as SMS OTP. The cheapest possible compliance
-- It was the compliance floor, and it became the ceiling. OTP was legally sufficient, so nobody built anything better
+- The [2009 RBI mandate][1] for additional-factor authentication was almost always implemented as SMS OTP. The cheapest possible compliance
+- It was the compliance floor, and for most banks it became the ceiling. OTP was legally sufficient, so there was little incentive to build anything better
 - When fraud happened, the liability often sat with the customer, not the bank. Changing that required [new directions in 2025][2], which we'll get to
 
 **Government portals**
@@ -77,15 +77,9 @@ This is the [Theatre of Privacy][3] applied to a different ritual.
 
 ### One Number, Every Service
 
-| What the telco sees | What that could reveal |
-|---|---|
-| OTPs from 1mg, several times a week, for months | An ongoing health condition |
-| OTPs from Bumble, most nights around midnight | An active dating life, and roughly when |
-| A sudden run of OTPs from banks, insurers, and a lending app in the same week | A financial decision, or financial stress |
+Every OTP, no matter which app sent it, passes through the same telco pipe, tied to the same number, stamped with the same timestamp. String enough of these together and the telco holds something no single app has: a record of which services you use and when, across all of them, without opening a single message.
 
-None of this needs a single message read. Just who sent an OTP, and when.
-
-Encryption on its own wouldn't fix this. It can hide what a message says. It can't hide which app sent it or when, and that's exactly what turns "an OTP arrived" into "a health app sent you one, three times this month." And for the record, that kind of encryption isn't even coming for OTPs. RCS, the standard meant to eventually replace SMS, added real end-to-end encryption in 2026, but only for person-to-person chats. The [spec itself][5] says plainly:
+Encryption on its own wouldn't fix this. It can hide what a message says. It can't hide which app sent it or when, and that's the part that builds this record. And for the record, that kind of encryption isn't even coming for OTPs. RCS, the standard meant to eventually replace SMS, added real end-to-end encryption in 2026, but only for person-to-person chats. The [spec itself][5] says plainly:
 ```text
 "SMS messages are not subject to End-to-End Encryption (E2EE)."
 ```
@@ -145,13 +139,13 @@ RBI does not reference PSD2 anywhere in the circular.
 
 UPI uses device binding plus a UPI PIN. No OTP in the transaction path. No six-digit ritual required.
 
-UPI ties your account to your specific device (not just your phone number) and you approve each transaction with a PIN you chose. No SMS involved. No telco in the middle. The authentication happens between your phone and your bank directly.
+UPI ties your account to your specific device (not just your phone number) and you approve each transaction with a PIN you chose. That approval doesn't travel as an SMS. The authentication happens between your phone and your bank directly.
 
 The replacement exists. It just didn't propagate to cards and net banking, because replacing OTP is easy on a new rail and nearly impossible on an old one.
 
 ### What About Everything Else?
 
-Payments at least have *a* regulator that noticed. Every other sector (health, dating, transport, government, legal) uses OTP with zero regulatory pressure, zero liability framework, and zero reason to change.
+Payments at least have *a* regulator that noticed, even if what they did about it fell short. Health, dating, transport, government, legal: none of them have anything like RBI's or PSD2's authentication rules. Nobody has required OTPs to mean anything in those sectors either.
 
 #### What Better Would Actually Look Like
 
