@@ -83,13 +83,7 @@ This is the [Theatre of Privacy][3] applied to a different ritual.
 
 We go through our days receiving and typing so many OTPs that, at some point, it becomes a mind-numbing activity. We don't pause to think about what we are reading, who we are reading it to or, for that matter, typing it immediately when we see that 'fill in the blanks' UI. It's almost like we're over-eager to get it done, given most of these OTPs expire in seconds.
 
-| Who sends OTPs most often | How often | What's at stake |
-|---|---|---|
-| Banks: login, transactions, profile changes, address changes, email changes, everything | Multiple times a week | Your money and financial identity |
-| Government portals: income tax, LIC, DigiLocker, IRCTC, every single session | Every visit, no exceptions | Your identity documents, tax records, insurance |
-| Travel and transport: Rapido, Uber, MakeMyTrip (often in-app, not SMS) | Regularly | Your location history, saved addresses |
-| Health and pharmacy: 1mg, hospital portals | Every login | Your medical history, prescriptions |
-| Dating: Bumble, Hinge | Every login/reinstall | Your most personal conversations and photos |
+Banks send them for every login, transaction, and profile change. Government portals demand one on every single visit, no exceptions, for income tax, LIC, DigiLocker, IRCTC. Travel apps like Rapido and Uber send them regularly, often in-app rather than SMS. Health and pharmacy apps like 1mg send one on every login. Dating apps like Bumble send one on every login or reinstall.
 
 The OTPs that matter most (banks, government, health) are also the ones we type most often. Every routine banking OTP is a rehearsal for the fraud OTP.
 
@@ -98,6 +92,8 @@ The OTPs that matter most (banks, government, health) are also the ones we type 
 Even if someone added more 'context' to the OTP message (payee, amount, scope, purpose), we would never see it.
 
 Both Android and iOS phones automatically parse the OTP from the SMS and show it right there in the app you're using. The actual message is never opened. We just tap the auto-suggested digits and move on.
+
+Most sectors have no regulator looking at any of this. Payments do. RBI had a recent regulation/directive around online payment authentication.
 
 ### Financial Sector as a Special Case
 
@@ -109,15 +105,22 @@ The RBI issued new authentication [directions in September 2025][2]. Seven pages
 
 The whole thing has no concrete detail on what financial institutions and banks *must* do as an improvement over OTP. Worst part, it leaves the door wide open for them to continue using OTP.
 
-They require two distinct factors with at least one being "dynamically created" and "unique to that transaction." Sounds progressive.
+Section 6(b) requires:
+```text
+"at least one of the factors of authentication is dynamically created
+or proven, i.e., the proof of possession of the factor, being sent as
+part of the transaction, is unique to that transaction."
+```
 
-But OTP already satisfies this. The directions don't require the dynamic factor to be bound to the transaction data (amount, payee, purpose). They ask for uniqueness, not meaning.
+Sounds progressive.
 
-A six-digit code that expires in five minutes is already unique to the transaction. The liability clause (Section 9b) says issuers must compensate customers "in full without demur" for losses from non-compliant transactions. But since OTP already complies, there's nothing to trigger the clause. Teeth with nothing to bite on.
+But OTP already satisfies this. It asks for the factor to be unique to the transaction, not bound to what the transaction actually is. A six-digit code that expires in five minutes and is freshly generated each time is already "unique to that transaction" by this definition. Nothing here requires the code to change if the amount or the payee changes. Uniqueness, not meaning.
+
+Section 9(2) says issuers must compensate customers "in full without demur" for losses from non-compliant transactions. But since OTP already complies with Section 6(b), there's nothing to trigger the clause.
 
 #### PSD2 Article 5: What Enforceable Language Looks Like
 
-Compare this to [PSD2 Article 5][4] (Europe, 2018), which requires the authentication code to be 
+[PSD2 Article 5][4] (Europe, 2018) requires the authentication code to be 
 ```text
 "specific to the amount of the payment transaction and 
 the payee agreed to by the payer"
@@ -125,7 +128,7 @@ the payee agreed to by the payer"
 
 Change either the amount or payee and the code is invalidated. That's an auditable, enforceable way to tie the OTP to its *purpose*, immediately connecting it to fraud detection and investigation.
 
-If you read just Article 5 of the PSD2 RTS, it has much clearer and more enforceable language than what RBI put out. And remember, PSD2 is from 2018. RBI's directions are from 2025. There is always an opportunity to learn from your predecessors, no?
+Article 5 of the PSD2 RTS has much clearer and more enforceable language than what RBI put out. PSD2 is from 2018. RBI's directions are from 2025. There is always an opportunity to learn from your predecessors, no?
 
 RBI does not reference PSD2 anywhere in the circular.
 
@@ -159,8 +162,6 @@ Yes, you 'consented' to everything at signup. But that was a blanket consent. A 
 ### In Closing
 
 Our beloved six-digit OTP ritual will outlive the RBI directive. Not because alternatives don't exist (UPI proved they do), but because everyone in the chain, apps, telcos, banks, government, has built their system on the assumption that the user doesn't need to understand what they're approving.
-
-An uninformed user helps everyone move on conveniently. Their incentives align not with improving the underlying system, but with keeping people in the dark.
 
 ---
 
