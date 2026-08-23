@@ -18,21 +18,19 @@ What are these numbers used for? Are they trying to make us 'acknowledge' someth
 
 Same six digits for logging into 1mg and for transferring money from your bank. Same ceremony for checking your Rapido ride history and for signing a rental agreement. Same OTP to get into Bumble (where you have your chats, your photos, pictures of your cats and dogs) and to reset your email password.
 
-But the consequences are wildly different.
+The stakes are wildly different. The OTP never changes.
 
-| What you're doing | What the OTP shows you | What's actually at stake | If someone else gets in |
-|---|---|---|---|
-| Logging into 1mg | 6 digits | Your prescriptions, lab results, entire medicine history | Your medical history is out there, permanently |
-| Logging into Bumble | 6 digits | Your chats, photos, personal conversations, matches | Your chats and photos, now in a stranger's hands |
-| Logging into Rapido/Uber | 6 digits | Every ride you've taken, every place you've been | Your location history is a surveillance goldmine |
-| Logging into LIC/IRCTC | 6 digits | Your insurance policies, nominations, travel history, ID details | Your identity and travel history exposed, tied back to you |
-| Resetting your Gmail password | 6 digits | The master key. Email controls recovery for everything else | Every other account linked to this email is exposed too |
-| Banking transaction | 6 digits | Moving your money to someone | Your account and spending history exposed, money moved without your knowledge |
-| Signing a rental agreement via e-sign | 6 digits | Legally binding your signature to a contract | Your identity and signature tied to a contract you didn't choose |
+| What you're doing | What the OTP shows you | If someone else gets in |
+|---|---|---|
+| Logging into 1mg | 6 digits | Your medical history is out there, permanently |
+| Banking transaction | 6 digits | Your account and spending history exposed, money moved without your knowledge |
+| Signing a rental agreement via e-sign | 6 digits | Your identity and signature tied to a contract you didn't choose |
 
-The 'What the OTP shows you' column is the same in every row.
+Same six digits, whether it's a courier update or your life savings.
 
-"Someone else gets in" isn't hypothetical. A SIM swap, where a fraudster convinces (or bribes) a telco to reissue your number on a new SIM, hands over every OTP silently, no phone theft required. Malware on your phone (a fake courier-tracking app, a sideloaded APK) can read incoming SMS and auto-forward OTPs without you noticing a thing. Neither needs your PIN, your face, or physical access to your device.
+A TOTP app at least names the service the code is for. Face ID shows you which app is asking, unlocking your phone or approving a payment. SMS OTP shows you neither. Just the number.
+
+"Someone else gets in" isn't hypothetical. A SIM swap, where a fraudster convinces (or bribes) a telco to reissue your number on a new SIM, hands over every OTP silently, no phone theft required. Malware on your phone (a fake courier-tracking app, a sideloaded APK) can read incoming SMS and auto-forward OTPs without you noticing a thing. Neither needs your PIN, your face, or physical access to your device. The same blindness that fails you also helps them. Whoever holds the code doesn't need to know what it's for either.
 
 The OTP doesn't differentiate between a login, an approval and an acknowledgement. Whether you're getting *into* an app, *approving* a transaction, or *acknowledging* a delivery, the ceremony is identical. Six digits, type, move on.
 
@@ -73,7 +71,7 @@ If OTPs suddenly carried real information about what you're authorizing, who wou
 - Aadhaar OTP gives them an identity layer for 1.4 billion people without building per-service authentication
 - Every government service (income tax, DigiLocker, PF, gas subsidy) uses the same blind six-digit ceremony for everything
 
-**The privacy angle:** your phone number links your 1mg login to your Zerodha login to your Bumble login to your Aadhaar verification. Every service that sends you an OTP knows your number, and it's the same number everywhere. This cross-service identity graph exists at the telco layer. They can see who you authenticate with, when, and how often.
+**The privacy angle:** the same blind number that carries no intent also links every service you use. Telcos see who you authenticate with and how often, without ever needing to know why.
 
 Everyone's incentives align. Not with improving the system, but with keeping it exactly as it is. The ceremony exists so everyone can say consent was given.
 
