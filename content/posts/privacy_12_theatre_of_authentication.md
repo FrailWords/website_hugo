@@ -71,11 +71,25 @@ If OTPs suddenly carried real information about what you're authorizing, who wou
 - Aadhaar OTP gives them an identity layer for 1.4 billion people without building per-service authentication
 - Every government service (income tax, DigiLocker, PF, gas subsidy) uses the same blind six-digit ceremony for everything
 
-**The privacy angle:** the same blind number that carries no intent also links every service you use. Telcos see who you authenticate with and how often, without ever needing to know why.
-
 Everyone's incentives align. Not with improving the system, but with keeping it exactly as it is. The ceremony exists so everyone can say consent was given.
 
 This is the [Theatre of Privacy][3] applied to a different ritual.
+
+### One Number, Every Service
+
+| What the telco sees | What that could reveal |
+|---|---|
+| OTPs from 1mg, several times a week, for months | An ongoing health condition |
+| OTPs from Bumble, most nights around midnight | An active dating life, and roughly when |
+| A sudden run of OTPs from banks, insurers, and a lending app in the same week | A financial decision, or financial stress |
+
+None of this needs a single message read. Just who sent an OTP, and when.
+
+Encryption on its own wouldn't fix this. It can hide what a message says. It can't hide which app sent it or when, and that's exactly what turns "an OTP arrived" into "a health app sent you one, three times this month." And for the record, that kind of encryption isn't even coming for OTPs. RCS, the standard meant to eventually replace SMS, added real end-to-end encryption in 2026, but only for person-to-person chats. The [spec itself][5] says plainly:
+```text
+"SMS messages are not subject to End-to-End Encryption (E2EE)."
+```
+The section covering business Chatbots, the category OTPs fall under, carries no encryption requirement of its own either. The actual fix isn't encryption. It's removing the telco from the path, which is exactly what UPI already does.
 
 ### The Habituation Trap
 
@@ -163,8 +177,10 @@ Our beloved six-digit OTP ritual will outlive the RBI directive. Not because alt
 2. [RBI Authentication Directions 2025][2]
 3. [Theatre of Privacy][3]
 4. [PSD2 RTS Article 5 - Dynamic Linking][4]
+5. [GSMA RCC.71 - RCS Universal Profile Service Definition Document, v4.0][5]
 
 [1]: <https://rbi.org.in/Scripts/NotificationUser.aspx?Id=4844&Mode=0> "RBI 2009 AFA Circular"
 [2]: <https://rbi.org.in/Scripts/NotificationUser.aspx?Id=12898&Mode=0> "RBI Authentication Directions 2025"
 [3]: </posts/privacy_8_is_india_ready_for_data_protection_law/> "Theatre of Privacy"
 [4]: <https://www.legislation.gov.uk/eur/2018/389/article/5> "PSD2 RTS Article 5 - Dynamic Linking"
+[5]: <https://media.gsma.com/assets/2026/rcs/RCC.71+v4.0.pdf> "GSMA RCC.71 - RCS Universal Profile Service Definition Document, v4.0"
