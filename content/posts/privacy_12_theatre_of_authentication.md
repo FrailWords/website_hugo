@@ -131,9 +131,7 @@ Section 9(2) says issuers must compensate customers "in full without demur" for 
 
 The code itself is generated from the amount and payee, not something you see, something the bank checks. If either gets altered after you approve and before it reaches the bank, the code no longer matches and the bank can catch it. That's an auditable, enforceable way to tie the OTP to its *purpose*: not proof someone was merely present, but proof the transaction that got approved is the one that got executed.
 
-Article 5 of the PSD2 RTS has much clearer and more enforceable language than what RBI put out. PSD2 is from 2018. RBI's directions are from 2025. There is always an opportunity to learn from your predecessors, no?
-
-RBI does not reference PSD2 anywhere in the circular.
+Article 5 of the PSD2 RTS has much clearer and more enforceable language than what RBI put out. PSD2 is from 2018, RBI's directions are from 2025. The circular doesn't reference PSD2 anywhere. Whether that's because nobody looked, or because they looked and chose not to adopt it, the result is the same: weaker language than what already existed.
 
 #### UPI Already Moved Beyond OTP
 
