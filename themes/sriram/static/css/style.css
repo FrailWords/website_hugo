@@ -24,8 +24,8 @@
   /* Text Colors */
   --text-primary: #2D2A26;
   --text-secondary: #5C574F;
-  --text-tertiary: #8A847A;
-  --text-muted: #B5AFA5;
+  --text-tertiary: #797266; /* darkened from #8A847A to pass WCAG AA (4.5:1) for real content like meta/excerpt text */
+  --text-muted: #948C80; /* darkened from #B5AFA5; still the lightest tier, for decorative-only use */
   
   /* Accent Colors — Muted Pastels */
   --accent-sage: #7D9B8A;
@@ -333,7 +333,7 @@ main {
 
 .post-item-excerpt {
   margin-top: var(--space-xs);
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: 0.85rem;
   line-height: 1.6;
 }
@@ -805,7 +805,7 @@ footer {
 
 .copyright {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--text-tertiary);
 }
 
 .copyright a {
@@ -817,8 +817,10 @@ footer {
    -------------------------------------------------------------------------- */
 .text-center { text-align: center; }
 .text-muted { color: var(--text-muted); }
+.text-tertiary { color: var(--text-tertiary); }
 .mt-lg { margin-top: var(--space-lg); }
 .mb-lg { margin-bottom: var(--space-lg); }
+.py-2xl { padding: var(--space-2xl) 0; }
 
 /* --------------------------------------------------------------------------
    Responsive Adjustments

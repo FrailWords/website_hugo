@@ -1,6 +1,6 @@
 {{ define "main" }}
   <h1 class="text-center">#{{ .Title }}</h1>
-  <p class="text-center text-muted mb-lg">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}</p>
+  <p class="text-center text-tertiary mb-lg">{{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}</p>
   
   {{ range .Data.Pages.GroupByDate "2006" }}
   <h2 class="archive-year">{{ .Key }}</h2>
