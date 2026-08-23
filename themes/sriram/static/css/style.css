@@ -461,6 +461,22 @@ article {
   margin-top: var(--space-xl);
 }
 
+/* Many posts open with a stray <br /> before the first heading. Collapse
+   it and zero out the heading's top margin so it doesn't stack with
+   .post-header's own margin-bottom into a large empty gap. */
+.post-content > br:first-child {
+  display: none;
+}
+
+.post-content > h1:first-child,
+.post-content > h2:first-child,
+.post-content > h3:first-child,
+.post-content > br:first-child + h1,
+.post-content > br:first-child + h2,
+.post-content > br:first-child + h3 {
+  margin-top: 0;
+}
+
 .post-content ul, 
 .post-content ol {
   padding-left: var(--space-lg);
