@@ -159,7 +159,7 @@ PSD2 ties the authentication code to the specific transaction, amount and payee.
 
 Yes, you 'consented' to everything at signup. But that was a blanket consent. A transaction-specific OTP would tie each *action* to a specific, auditable purpose, just as PSD2 does for payments. The equivalents exist in every domain. Nobody has required them.
 
-### In Closing
+### Final Thoughts
 
 Our beloved six-digit OTP ritual will outlive the RBI directive. Not because alternatives don't exist (UPI proved they do), but because everyone in the chain, apps, telcos, banks, government, has built their system on the assumption that the user doesn't need to understand what they're approving.
 
