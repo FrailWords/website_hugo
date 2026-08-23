@@ -170,7 +170,7 @@ An uninformed user helps everyone move on conveniently. Their incentives align n
 
 **References**
 
-[1]: <https://rbi.org.in/Scripts/NotificationUser.aspx?Id=4849&Mode=0> "RBI 2009 AFA Circular"
+[1]: <https://rbi.org.in/Scripts/NotificationUser.aspx?Id=4844&Mode=0> "RBI 2009 AFA Circular"
 [2]: <https://rbi.org.in/Scripts/NotificationUser.aspx?Id=12898&Mode=0> "RBI Authentication Directions 2025"
 [3]: </posts/privacy_8_is_india_ready_for_data_protection_law/> "Theatre of Privacy"
 [4]: <https://www.legislation.gov.uk/eur/2018/389/article/5> "PSD2 RTS Article 5 - Dynamic Linking"
