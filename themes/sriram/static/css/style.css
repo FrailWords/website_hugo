@@ -9,7 +9,7 @@
    placed after :root previously, which silently invalidated it, so custom
    fonts never actually loaded and everything rendered in the Georgia fallback.
    -------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* --------------------------------------------------------------------------
    CSS Custom Properties
@@ -56,8 +56,7 @@
   --font-body: 'Lora', 'Georgia', serif;
   --font-heading: 'Lora', 'Georgia', serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', 'Consolas', monospace;
-  --font-poetry: 'Cormorant Garamond', 'Georgia', serif;
-  
+
   /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -605,45 +604,14 @@ code {
 }
 
 /* --------------------------------------------------------------------------
-   Poetry Styling — Plain pre/code blocks without language class
-   Hugo wraps indented text in <pre><code>...</code></pre>
+   Code Blocks — uniform styling for every <pre>, indented or fenced, in
+   every post. Hugo/Chroma wraps fenced blocks as
+   <div class="highlight"><pre class="chroma"><code class="language-x">;
+   plain indented blocks are just <pre><code>. Style pre itself so both
+   cases match identically, and neutralize the extra wrapping div where
+   Chroma adds one so its box doesn't stack with the pre's own.
    -------------------------------------------------------------------------- */
-pre:not(.highlight):not([class*="language-"]) {
-  font-family: var(--font-poetry);
-  font-size: 1.15rem;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 2;
-  background: transparent;
-  border: none;
-  padding: var(--space-md) 0;
-  margin: var(--space-md) 0;
-  color: var(--text-secondary);
-  white-space: pre-wrap;
-  overflow-x: visible;
-}
-
-/* Reset code inside poetry pre blocks */
-pre:not(.highlight):not([class*="language-"]) code {
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  color: inherit;
-}
-
-/* --------------------------------------------------------------------------
-   Code Blocks — Fenced code with language hints
-   -------------------------------------------------------------------------- */
-pre.highlight,
-pre[class*="language-"],
-.highlight pre,
-div.highlight {
+pre {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-style: normal;
@@ -656,13 +624,20 @@ div.highlight {
   overflow-x: auto;
   margin: var(--space-lg) 0;
   color: var(--text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
-/* Code inside highlighted blocks */
-.highlight code,
-pre.highlight code,
-pre[class*="language-"] code {
-  font-family: var(--font-mono);
+.highlight {
+  margin: var(--space-lg) 0;
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+pre code {
+  font-family: inherit;
   font-size: inherit;
   font-style: normal;
   background: transparent;
