@@ -144,20 +144,13 @@ The replacement exists. It just didn't propagate to cards and net banking, becau
 
 Payments at least have *a* regulator that noticed. Every other sector (health, dating, transport, government, legal) uses OTP with zero regulatory pressure, zero liability framework, and zero reason to change.
 
-#### What Would a 'Transaction-Specific' OTP Look Like in Other Sectors?
+#### What Better Would Actually Look Like
 
-PSD2 ties the authentication code to the specific transaction, amount and payee. The code is not just 'unique', it is *meaningful*. What if we applied that same idea outside payments? Not at signup or login, but for each specific action?
+The fix isn't a smarter OTP message. SMS OTP is a blind text sent by a telco. There isn't a version of that pipe that can reliably carry "sharing your lab results with Dr. Mehta" for every provider without rebuilding how A2P SMS templates work.
 
-| What's happening right now | What the OTP would need to be tied to | What you'd see before typing | What you see today |
-|---|---|---|---|
-| 1mg accessing your lab results to show a doctor | Which records, which doctor | "Sharing **your lab results** with **Dr. Mehta on 1mg**" | 6 digits |
-| Rapido sharing your ride history with an insurance app | What data, who gets it | "Sharing **your ride history** with **Acko Insurance**" | 6 digits |
-| Porting your SIM to a new operator | Which number, to whom | "Porting **+91-XXXXX** from **Airtel to Jio**" | 6 digits |
-| Government portal pulling your Aadhaar for verification | Which service, what data | "Sharing **your Aadhaar** with **Income Tax dept** for ITR filing" | 6 digits |
-| Resetting your email password from a new device | Which account, from where | "**Password reset** for **your Gmail** from a new device in Delhi" | 6 digits |
-| e-Signing a rental agreement | Which document, with whom | "Signing **rental agreement** with **Rahul Kumar**, 24 months" | 6 digits |
+UPI already shows the alternative. Before you enter your UPI PIN, the app shows you the payee and the amount, on the same screen where you approve. The approval is tied to that specific detail, not sent blind over a separate channel.
 
-Yes, you 'consented' to everything at signup. But that was a blanket consent. A transaction-specific OTP would tie each *action* to a specific, auditable purpose, just as PSD2 does for payments. The equivalents exist in every domain. Nobody has required them.
+The same idea could apply outside payments. 1mg could show "Share your lab results with Dr. Mehta?" on its own screen before asking you to approve, the same way UPI shows the payee before the PIN. Nothing about SMS or telcos needs to change for that. Nobody is required to build it.
 
 ### Final Thoughts
 
