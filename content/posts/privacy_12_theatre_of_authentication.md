@@ -105,9 +105,7 @@ The whole thing has no concrete detail on what financial institutions and banks 
 
 Section 6(b) requires:
 ```text
-"at least one of the factors of authentication is dynamically created
-or proven, i.e., the proof of possession of the factor, being sent as
-part of the transaction, is unique to that transaction."
+"at least one of the factors of authentication is dynamically created or proven, i.e., the proof of possession of the factor, being sent as part of the transaction, is unique to that transaction."
 ```
 
 Sounds progressive.
@@ -120,8 +118,7 @@ Section 9(2) says issuers must compensate customers "in full without demur" for 
 
 [PSD2 Article 5][4] (Europe, 2018) requires the authentication code to be 
 ```text
-"specific to the amount of the payment transaction and 
-the payee agreed to by the payer"
+"specific to the amount of the payment transaction and the payee agreed to by the payer"
 ```
 
 Change either the amount or payee and the code is invalidated. That's an auditable, enforceable way to tie the OTP to its *purpose*, immediately connecting it to fraud detection and investigation.

@@ -64,7 +64,7 @@ which you/nobody ever read.
 Yes, it is. Everyone knows that nobody reads any of this legalese that is thrown at us 
 whenever we visit a website or signup for a service or install a mobile app. But still, we haven't been 
 able to move past this style of notice/consent because it provides a clear/actionable way to say that 
-```
+```text
 Someone agreed to our data practices and here's their consent.  
 We are not doing anything illegal.
 ```

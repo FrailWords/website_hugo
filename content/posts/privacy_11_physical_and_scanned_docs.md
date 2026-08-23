@@ -39,9 +39,8 @@ Nowadays, whenever I go to get any service like getting a phone connection or ch
 This is because the government has given guidelines to these service providers to collect this photocopy. Last year, there was even a fiasco from the UIDAI (people who manage Aadhar card) where they 
 issued a press statement saying [photocopies should not be shared][1] where they said - 
 ```text
-"Unlicensed private entities like hotels or film halls are not 
-permitted to collect or keep copies of Aadhaar card."
- ```
+"Unlicensed private entities like hotels or film halls are not permitted to collect or keep copies of Aadhaar card."
+```
 before retracting the same by saying [cardholders are only advised to exercise normal prudence][2].
 
 Make what you will of such retraction by an organization handling the most sensitive information for the whole country.
