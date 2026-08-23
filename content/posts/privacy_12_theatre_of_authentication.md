@@ -23,12 +23,12 @@ But the consequences are wildly different.
 | What you're doing | What the OTP shows you | What's actually at stake | If someone else gets in |
 |---|---|---|---|
 | Logging into 1mg | 6 digits | Your prescriptions, lab results, entire medicine history | Your medical history is out there, permanently |
-| Logging into Bumble | 6 digits | Your chats, photos, personal conversations, matches | Personal conversations exposed, can't take them back |
+| Logging into Bumble | 6 digits | Your chats, photos, personal conversations, matches | Your chats and photos, now in a stranger's hands |
 | Logging into Rapido/Uber | 6 digits | Every ride you've taken, every place you've been | Your location history is a surveillance goldmine |
-| Logging into LIC/IRCTC | 6 digits | Your insurance policies, nominations, travel history, ID details | Identity details exposed, policies at risk |
-| Resetting your Gmail password | 6 digits | The master key. Email controls recovery for everything else | Cascade. Email leads to bank leads to everything |
-| Banking transaction | 6 digits | Moving your money to someone | Money gone. Maybe recoverable, maybe not |
-| Signing a rental agreement via e-sign | 6 digits | Legally binding your signature to a contract | You're legally committed. No undo |
+| Logging into LIC/IRCTC | 6 digits | Your insurance policies, nominations, travel history, ID details | Your identity and travel history exposed, tied back to you |
+| Resetting your Gmail password | 6 digits | The master key. Email controls recovery for everything else | Every other account linked to this email is exposed too |
+| Banking transaction | 6 digits | Moving your money to someone | Your account and spending history exposed, money moved without your knowledge |
+| Signing a rental agreement via e-sign | 6 digits | Legally binding your signature to a contract | Your identity and signature tied to a contract you didn't choose |
 
 The 'What the OTP shows you' column is the same in every row.
 
