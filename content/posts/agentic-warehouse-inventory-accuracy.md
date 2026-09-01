@@ -163,13 +163,15 @@ The price of a model here is the usual one: it will not always reach the same ve
 
 ## Running It in Production
 
-Making this a service raises six production concerns. Three are unchanged: deployment cadence; recovery, since a failed run resumes the workflow where it stopped; and observability, since the event history is a full per-run trace, which also gives you a corpus of real cases to grow the eval from. The other three change once there is a model in the loop:
+Most of what it takes to run this in production has nothing to do with the model. Deployment works as before. A failed run resumes from the workflow log instead of starting over. That log is also a full trace of every run.
 
-- **Change failure rate** — you cannot unit-test a prompt. Catching a regression needs a live eval: labeled anomalies with a known right answer, run through the loop. The loop is non-deterministic, since the model chooses its own path, so the eval runs each case several times and reports how often the verdict is right, rather than passing or failing it once. `just eval` does this over a handful of scenarios.
-- **Cost** — every model call costs money, and the verify loop is several calls per anomaly, not one. Meter tokens per run and cap them, rather than trusting one "be economical" line.
-- **Security** — evidence text could be written to steer the verdict, so keep it structured, and keep operator names out of the prompt.
+Three things change because a model sits in the loop.
 
-The data is the other cost. In the example the three inputs arrive clean; in production you have to build each feed. The expected state comes from a scheduled WMS export, so it can be hours stale. The movement log comes from a nightly export, so it runs a day behind. The urgency facts, how fast an item sells and what it is worth, come from separate systems on their own schedules. None of that is new, and none of it comes from the model: it is the data-integration work any system reading from several sources has always needed.
+- **Change failure rate** — a prompt cannot be unit-tested. Catching a regression takes an eval: labeled anomalies with known answers, run through the pipeline. The model picks its own path, so the same case can land on different verdicts. The eval runs each case a few times and measures how often the verdict is right. The example has one covering three cases: a misplaced pallet, a genuinely missing one, and a stale record.
+- **Cost** — every model call costs money, and the verify loop runs several per anomaly. A real service meters token use per run and caps it. The example trusts a single "be economical" line in the prompt.
+- **Security** — the evidence text handed to the model could be written to steer its verdict, so keep it structured. Keep operator names out of the prompt.
+
+The data feeds are separate work. Here the three inputs arrive clean. A real deployment builds each one: the expected state from a scheduled WMS export that can be hours stale, the movement log from a nightly export that runs a day behind, the urgency facts from other systems on their own schedules. This is the integration work any system pulling from several sources has always needed.
 
 ## What Hasn't Changed
 
