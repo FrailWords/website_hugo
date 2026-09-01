@@ -1,6 +1,7 @@
 ---
 title: "Productionizing a Warehouse Anomaly Detector"
 date: 2026-08-27
+image: "/images/agentic-warehouse-inventory-accuracy-og.png"
 tags: ["software-engineering", "ai-agents", "agentic", "temporal", "warehouse", "logistics"]
 ---
 
