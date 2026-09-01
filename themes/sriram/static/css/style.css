@@ -9,7 +9,7 @@
    placed after :root previously, which silently invalidated it, so custom
    fonts never actually loaded and everything rendered in the Georgia fallback.
    -------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Google Fonts now loaded via a preconnected <link> in head.html for faster first paint */
 
 /* --------------------------------------------------------------------------
    CSS Custom Properties
@@ -886,4 +886,59 @@ footer {
     color: black;
     text-decoration: underline;
   }
+}
+
+/* --------------------------------------------------------------------------
+   Inline diagrams
+   -------------------------------------------------------------------------- */
+/* Like breakout tables: wider than the prose column, centered on the
+   viewport, capped at --content-wide. Rendered by _markup/render-image.html. */
+.post-content .diagram {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92vw;
+  max-width: var(--content-wide);
+  margin: var(--space-lg) 0;
+}
+
+.post-content .diagram img,
+.post-content .diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Inlined SVG diagrams: force diagram text onto the body font so it matches
+   the prose. Beats the SVG's own root font-family attribute; a more specific
+   in-SVG rule (e.g. a monospace label field) still wins. */
+.post-content .diagram svg text,
+.post-content .diagram svg tspan {
+  font-family: var(--font-body);
+}
+
+.post-content .diagram figcaption {
+  margin-top: var(--space-sm);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Post cover / hero image
+   -------------------------------------------------------------------------- */
+.post-cover {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92vw;
+  max-width: var(--content-wide);
+  margin: var(--space-md) 0 var(--space-xl);
+}
+
+.post-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }

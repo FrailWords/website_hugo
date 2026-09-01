@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="'Lora', Georgia, serif">
+  <style>
+    .title  { fill:#2f2f2f; font-weight:600; font-size:22px; }
+    .paper  { fill:#ffffff; stroke:#c7ccd2; stroke-width:2; }
+    .band   { fill:#e7e3d6; }
+    .htxt   { fill:#3f3a2e; font-weight:600; font-size:15px; letter-spacing:1px; }
+    .field  { fill:#2f2f2f; font-size:19px; font-family: ui-monospace, 'SF Mono', Menlo, monospace; }
+    .flabel { fill:#8a8a8a; font-size:12px; font-weight:600; letter-spacing:1.5px; }
+    .bar    { fill:#2b2b2b; }
+    .co-t   { fill:#2f2f2f; font-weight:600; font-size:15px; }
+    .co-d   { fill:#6b6b6b; font-size:13px; }
+    .lead   { stroke:#9b9b9b; stroke-width:1.5; stroke-dasharray:4 4; fill:none; }
+    .dot    { fill:#9b9b9b; }
+  </style>
+
+  <text x="290" y="40" text-anchor="middle" class="title">A pallet's license-plate label</text>
+
+  <!-- ================= the label ================= -->
+  <g transform="translate(70,64)">
+    <rect class="paper" x="0" y="0" width="440" height="420" rx="6"/>
+    <rect class="band" x="2" y="2" width="436" height="34"/>
+    <text x="20" y="25" class="htxt">PALLET LICENSE PLATE</text>
+
+    <!-- barcode -->
+    <g class="bar" transform="translate(26,60)">
+      <rect x="0"   y="0" width="6"  height="86"/>
+      <rect x="12"  y="0" width="3"  height="86"/>
+      <rect x="21"  y="0" width="9"  height="86"/>
+      <rect x="36"  y="0" width="3"  height="86"/>
+      <rect x="45"  y="0" width="6"  height="86"/>
+      <rect x="57"  y="0" width="12" height="86"/>
+      <rect x="75"  y="0" width="3"  height="86"/>
+      <rect x="84"  y="0" width="6"  height="86"/>
+      <rect x="99"  y="0" width="3"  height="86"/>
+      <rect x="108" y="0" width="9"  height="86"/>
+      <rect x="123" y="0" width="6"  height="86"/>
+      <rect x="135" y="0" width="3"  height="86"/>
+      <rect x="144" y="0" width="12" height="86"/>
+      <rect x="162" y="0" width="6"  height="86"/>
+      <rect x="177" y="0" width="3"  height="86"/>
+      <rect x="186" y="0" width="9"  height="86"/>
+      <rect x="201" y="0" width="3"  height="86"/>
+      <rect x="210" y="0" width="6"  height="86"/>
+      <rect x="222" y="0" width="3"  height="86"/>
+      <rect x="231" y="0" width="12" height="86"/>
+      <rect x="249" y="0" width="6"  height="86"/>
+      <rect x="264" y="0" width="3"  height="86"/>
+      <rect x="273" y="0" width="9"  height="86"/>
+      <rect x="288" y="0" width="6"  height="86"/>
+      <rect x="300" y="0" width="3"  height="86"/>
+      <rect x="309" y="0" width="6"  height="86"/>
+      <rect x="324" y="0" width="12" height="86"/>
+      <rect x="342" y="0" width="3"  height="86"/>
+      <rect x="351" y="0" width="6"  height="86"/>
+      <rect x="366" y="0" width="9"  height="86"/>
+      <rect x="381" y="0" width="6"  height="86"/>
+    </g>
+    <text x="220" y="172" text-anchor="middle" class="field">LPN-884212</text>
+
+    <line x1="26" y1="196" x2="414" y2="196" stroke="#e2e2e2" stroke-width="1.5"/>
+
+    <text x="26" y="228" class="flabel">SKU</text>
+    <text x="26" y="252" class="field">SKU-WH4419-BLK</text>
+
+    <text x="26" y="298" class="flabel">LOT</text>
+    <text x="26" y="322" class="field">LOT-2026Q3-0087</text>
+
+    <text x="26" y="368" class="flabel">QUANTITY</text>
+    <text x="26" y="392" class="field">45 cases</text>
+  </g>
+
+  <!-- ================= callouts: each dot sits on the field's grey label ================= -->
+  <!-- barcode -->
+  <path class="lead" d="M 300 158 L 590 130"/>
+  <circle class="dot" cx="300" cy="158" r="3.5"/>
+  <text x="602" y="126" class="co-t">The 1D barcode</text>
+  <text x="602" y="147" class="co-d">what the drone's camera reads</text>
+
+  <!-- SKU label -->
+  <path class="lead" d="M 136 288 L 590 224"/>
+  <circle class="dot" cx="136" cy="288" r="3.5"/>
+  <text x="602" y="220" class="co-t">SKU</text>
+  <text x="602" y="241" class="co-d">the product, from the item master</text>
+
+  <!-- LOT label -->
+  <path class="lead" d="M 134 358 L 590 316"/>
+  <circle class="dot" cx="134" cy="358" r="3.5"/>
+  <text x="602" y="312" class="co-t">Lot code</text>
+  <text x="602" y="333" class="co-d">production batch (stored, unused here)</text>
+
+  <!-- QUANTITY label -->
+  <path class="lead" d="M 172 428 L 590 404"/>
+  <circle class="dot" cx="172" cy="428" r="3.5"/>
+  <text x="602" y="400" class="co-t">Quantity</text>
+  <text x="602" y="421" class="co-d">cases on the pallet (illustrative)</text>
+</svg>

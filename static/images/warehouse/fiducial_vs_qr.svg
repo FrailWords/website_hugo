@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" font-family="'Lora', Georgia, serif">
+  <style>
+    .title { fill:#2f2f2f; font-weight:600; font-size:22px; }
+    .cap-t { fill:#2f2f2f; font-weight:600; font-size:19px; }
+    .cap-d { fill:#6b6b6b; font-size:15px; }
+    .mod   { fill:#3a3a3a; }
+    .frame { fill:#3a3a3a; }
+    .paper { fill:#ffffff; stroke:#cfd4d9; stroke-width:1.5; }
+  </style>
+
+  <text x="480" y="40" text-anchor="middle" class="title">Two kinds of square tag</text>
+
+  <!-- ===================== fiducial marker (left) ===================== -->
+  <g transform="translate(150,70)">
+    <rect class="frame" x="0" y="0" width="230" height="230" rx="4"/>
+    <rect class="paper" x="34" y="34" width="162" height="162"/>
+    <!-- 3x3 interior pattern, cell 54 -->
+    <g class="mod">
+      <rect x="34"  y="34"  width="54" height="54"/>
+      <rect x="142" y="34"  width="54" height="54"/>
+      <rect x="88"  y="88"  width="54" height="54"/>
+      <rect x="34"  y="142" width="54" height="54"/>
+      <rect x="142" y="142" width="54" height="54"/>
+    </g>
+  </g>
+  <text x="265" y="345" text-anchor="middle" class="cap-t">Fiducial marker</text>
+  <text x="265" y="370" text-anchor="middle" class="cap-d">read fast, from an angle</text>
+  <text x="265" y="391" text-anchor="middle" class="cap-d">holds almost no data</text>
+
+  <!-- ===================== QR code (right) ===================== -->
+  <g transform="translate(580,70)" class="mod">
+    <!-- finder patterns: 7-module blocks, module = 9 -->
+    <g>
+      <rect x="0" y="0" width="63" height="63"/>
+      <rect x="9" y="9" width="45" height="45" fill="#ffffff"/>
+      <rect x="18" y="18" width="27" height="27"/>
+    </g>
+    <g transform="translate(167,0)">
+      <rect x="0" y="0" width="63" height="63"/>
+      <rect x="9" y="9" width="45" height="45" fill="#ffffff"/>
+      <rect x="18" y="18" width="27" height="27"/>
+    </g>
+    <g transform="translate(0,167)">
+      <rect x="0" y="0" width="63" height="63"/>
+      <rect x="9" y="9" width="45" height="45" fill="#ffffff"/>
+      <rect x="18" y="18" width="27" height="27"/>
+    </g>
+    <!-- timing + data modules (decorative, not scannable), module 9 -->
+    <rect x="72" y="9"  width="9" height="9"/><rect x="90" y="9" width="9" height="9"/><rect x="126" y="9" width="9" height="9"/><rect x="153" y="9" width="9" height="9"/>
+    <rect x="9" y="72" width="9" height="9"/><rect x="27" y="72" width="9" height="9"/><rect x="45" y="72" width="9" height="9"/>
+    <rect x="72" y="72" width="9" height="9"/><rect x="90" y="72" width="9" height="9"/><rect x="108" y="72" width="9" height="9"/><rect x="144" y="72" width="9" height="9"/><rect x="180" y="72" width="9" height="9"/><rect x="198" y="72" width="9" height="9"/><rect x="216" y="72" width="9" height="9"/>
+    <rect x="72" y="90" width="9" height="9"/><rect x="99" y="90" width="9" height="9"/><rect x="135" y="90" width="9" height="9"/><rect x="162" y="90" width="9" height="9"/><rect x="189" y="90" width="9" height="9"/><rect x="216" y="90" width="9" height="9"/>
+    <rect x="81" y="108" width="9" height="9"/><rect x="117" y="108" width="9" height="9"/><rect x="144" y="108" width="9" height="9"/><rect x="171" y="108" width="9" height="9"/><rect x="207" y="108" width="9" height="9"/>
+    <rect x="72" y="126" width="9" height="9"/><rect x="90" y="126" width="9" height="9"/><rect x="108" y="126" width="9" height="9"/><rect x="135" y="126" width="9" height="9"/><rect x="180" y="126" width="9" height="9"/><rect x="198" y="126" width="9" height="9"/>
+    <rect x="9" y="144" width="9" height="9"/><rect x="27" y="144" width="9" height="9"/><rect x="54" y="144" width="9" height="9"/><rect x="99" y="144" width="9" height="9"/><rect x="126" y="144" width="9" height="9"/><rect x="153" y="144" width="9" height="9"/><rect x="171" y="144" width="9" height="9"/><rect x="207" y="144" width="9" height="9"/>
+    <rect x="81" y="162" width="9" height="9"/><rect x="108" y="162" width="9" height="9"/><rect x="126" y="162" width="9" height="9"/><rect x="162" y="162" width="9" height="9"/><rect x="198" y="162" width="9" height="9"/><rect x="216" y="162" width="9" height="9"/>
+    <rect x="72" y="180" width="9" height="9"/><rect x="90" y="180" width="9" height="9"/><rect x="117" y="180" width="9" height="9"/><rect x="153" y="180" width="9" height="9"/><rect x="180" y="180" width="9" height="9"/><rect x="216" y="180" width="9" height="9"/>
+    <rect x="81" y="198" width="9" height="9"/><rect x="99" y="198" width="9" height="9"/><rect x="135" y="198" width="9" height="9"/><rect x="144" y="198" width="9" height="9"/><rect x="171" y="198" width="9" height="9"/><rect x="207" y="198" width="9" height="9"/>
+    <rect x="72" y="216" width="9" height="9"/><rect x="108" y="216" width="9" height="9"/><rect x="126" y="216" width="9" height="9"/><rect x="162" y="216" width="9" height="9"/><rect x="189" y="216" width="9" height="9"/><rect x="216" y="216" width="9" height="9"/>
+  </g>
+  <text x="695" y="345" text-anchor="middle" class="cap-t">QR code</text>
+  <text x="695" y="370" text-anchor="middle" class="cap-d">dense data</text>
+  <text x="695" y="391" text-anchor="middle" class="cap-d">read straight-on</text>
+</svg>

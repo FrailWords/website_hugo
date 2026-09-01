@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a949e"/></marker>
+  </defs>
+  <style>
+    .htag{fill:#9aa3ab;font-size:11px;font-weight:600;letter-spacing:2px}
+    .htxt{fill:#2f2f2f;font-size:18px;font-weight:600}
+    .why {fill:#6b6b6b;font-size:14px}
+    .st  {fill:#33383d;font-size:13px;font-weight:600}
+    .sub {fill:#8a8a8a;font-size:12px}
+    .have{fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .need{fill:#ffffff;stroke:#b9c4cd;stroke-width:1.5;stroke-dasharray:5 4}
+    .flow{stroke:#8a949e;stroke-width:1.8;fill:none;marker-end:url(#a)}
+    .note{fill:#8a6a4e;font-size:12px}
+    .lead{stroke:#9b9b9b;stroke-width:1.5;stroke-dasharray:4 4;fill:none}
+    .dot {fill:#9b9b9b}
+  </style>
+
+  <text x="60" y="40" class="htag">FOCUS</text>
+  <text x="60" y="64" class="htxt">Shipping prompt, rule, and model changes safely</text>
+  <text x="60" y="92" class="why">The prompt is pipeline logic, so a bad edit changes production behavior.</text>
+
+  <!-- CD strip -->
+  <g transform="translate(0,150)">
+    <rect class="have" x="40"  y="0" width="130" height="56" rx="6"/>
+    <text x="105" y="33" text-anchor="middle" class="st">Commit</text>
+
+    <rect class="have" x="210" y="0" width="150" height="56" rx="6"/>
+    <text x="285" y="26" text-anchor="middle" class="st">Unit tests</text>
+    <text x="285" y="44" text-anchor="middle" class="sub">+ DB-wiring smoke</text>
+
+    <rect class="need" x="400" y="0" width="150" height="56" rx="6"/>
+    <text x="475" y="26" text-anchor="middle" class="st">Eval suite</text>
+    <text x="475" y="44" text-anchor="middle" class="sub">model steps &#183; not built</text>
+
+    <rect class="have" x="590" y="0" width="150" height="56" rx="6"/>
+    <text x="665" y="33" text-anchor="middle" class="st">Deploy worker fleet</text>
+
+    <path class="flow" d="M 170 28 L 208 28"/>
+    <path class="flow" d="M 360 28 L 398 28"/>
+    <path class="flow" d="M 550 28 L 588 28"/>
+  </g>
+
+  <!-- versioning note off the deploy step -->
+  <path class="lead" d="M 665 206 L 665 250"/>
+  <circle class="dot" cx="665" cy="206" r="3.5"/>
+  <rect class="need" x="470" y="252" width="390" height="56" rx="6"/>
+  <text x="486" y="276" class="st" fill="#8a6a4e">A workflow mid-run replays its old history</text>
+  <text x="486" y="296" class="note">so a behavior change goes through Temporal workflow versioning</text>
+</svg>

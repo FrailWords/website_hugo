@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a949e"/></marker>
+  </defs>
+  <style>
+    .htag{fill:#9aa3ab;font-size:11px;font-weight:600;letter-spacing:2px}
+    .htxt{fill:#2f2f2f;font-size:18px;font-weight:600}
+    .why {fill:#6b6b6b;font-size:14px}
+    .colh{fill:#7a838c;font-size:12px;font-weight:600;letter-spacing:1px}
+    .st  {fill:#33383d;font-size:13px;font-weight:600}
+    .sub {fill:#8a8a8a;font-size:12px}
+    .have{fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .need{fill:#ffffff;stroke:#b9c4cd;stroke-width:1.5;stroke-dasharray:5 4}
+    .flow{stroke:#8a949e;stroke-width:1.8;fill:none;marker-end:url(#a)}
+    .tr  {stroke:#c2ccd6;stroke-width:2;fill:none}
+    .alert{stroke:#cbae7e;stroke-width:1.5;fill:none;stroke-dasharray:4 3}
+  </style>
+
+  <text x="60" y="40" class="htag">FOCUS</text>
+  <text x="60" y="64" class="htxt">Seeing behavior in aggregate, not just per run</text>
+  <text x="60" y="92" class="why">A per-run trace won&#8217;t show the false-positive rate climbing.</text>
+
+  <!-- have: one run trace -->
+  <text x="60" y="140" class="colh">HAVE &#183; ONE TRACE PER RUN</text>
+  <rect class="have" x="60" y="152" width="230" height="150" rx="6"/>
+  <path class="tr" d="M 84 176 L 120 176 M 120 176 L 120 200 L 160 200 M 160 200 L 160 224 L 210 224 M 210 224 L 210 248 L 260 248 M 260 248 L 260 272 L 266 272"/>
+  <text x="175" y="296" text-anchor="middle" class="sub">Temporal event history</text>
+
+  <path class="flow" d="M 296 228 L 356 228"/>
+  <text x="326" y="216" text-anchor="middle" class="sub">roll up</text>
+
+  <!-- need: dashboard of four tiles -->
+  <text x="370" y="140" class="colh">NEED &#183; RUNNING RATES</text>
+  <rect class="need" x="370" y="152" width="250" height="70" rx="6"/>
+  <text x="382" y="182" class="st">found / verified / stripped</text>
+  <text x="382" y="204" class="sub">per run</text>
+  <rect class="need" x="632" y="152" width="250" height="70" rx="6"/>
+  <text x="644" y="182" class="st">false-positive rate</text>
+  <text x="644" y="204" class="sub">stripped &#247; flagged</text>
+  <rect class="need" x="370" y="232" width="250" height="70" rx="6"/>
+  <text x="382" y="262" class="st">review queue depth &amp; wait</text>
+  <text x="382" y="284" class="sub">how long items sit</text>
+  <rect class="need" x="632" y="232" width="250" height="70" rx="6"/>
+  <text x="644" y="262" class="st">tokens &amp; latency per step</text>
+  <text x="644" y="284" class="sub">where time and spend go</text>
+
+  <rect class="alert" x="370" y="318" width="512" height="34" rx="6"/>
+  <text x="626" y="340" text-anchor="middle" class="sub" fill="#8a6a4e">alert fires when a rate drifts</text>
+</svg>

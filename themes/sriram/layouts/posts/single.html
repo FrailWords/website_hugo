@@ -19,7 +19,11 @@
     </div>
     {{ end }}
   </header>
-  
+
+  {{ with .Params.cover }}
+  <figure class="post-cover"><img src="{{ . | relURL }}" alt="" loading="eager"></figure>
+  {{ end }}
+
   <div class="post-content{{ if in .Params.tags "poetry" }} poetry{{ end }}">
     {{ .Content }}
   </div>

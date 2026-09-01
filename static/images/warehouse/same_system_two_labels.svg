@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 348" font-family="'Lora', Georgia, serif">
+  <text x="20" y="26" font-size="15" font-weight="600" fill="#1f2933">The same system, with its ordinary names</text>
+
+  <text x="20" y="52" font-size="9" font-weight="600" letter-spacing="0.6" fill="#8a94a0">IN THIS POST</text>
+  <text x="215" y="52" font-size="9" font-weight="600" letter-spacing="0.6" fill="#8a94a0">WHAT IT PLAINLY IS</text>
+
+  <g>
+    <!-- rows: left box (term) + = + right plain name -->
+    <g font-size="12.5" font-weight="600" fill="#1f2933">
+      <rect x="20" y="62" width="176" height="34" rx="7" fill="#eef1f4" stroke="#c4ccd4" stroke-width="1"/><text x="32" y="84">Durable workflow</text>
+      <rect x="20" y="102" width="176" height="34" rx="7" fill="#eef1f4" stroke="#c4ccd4" stroke-width="1"/><text x="32" y="124">Task queue</text>
+      <rect x="20" y="142" width="176" height="34" rx="7" fill="#eef1f4" stroke="#c4ccd4" stroke-width="1"/><text x="32" y="164">Typed tools</text>
+      <rect x="20" y="182" width="176" height="34" rx="7" fill="#eef1f4" stroke="#c4ccd4" stroke-width="1"/><text x="32" y="204">Verifier cascade</text>
+      <rect x="20" y="222" width="176" height="34" rx="7" fill="#eef1f4" stroke="#c4ccd4" stroke-width="1"/><text x="32" y="244">Human gate</text>
+      <rect x="20" y="262" width="176" height="34" rx="7" fill="#eef1f4" stroke="#c4ccd4" stroke-width="1"/><text x="32" y="284">Step-by-step log</text>
+    </g>
+    <g font-size="14" fill="#aab2bb" text-anchor="middle">
+      <text x="206" y="84">=</text><text x="206" y="124">=</text><text x="206" y="164">=</text><text x="206" y="204">=</text><text x="206" y="244">=</text><text x="206" y="284">=</text>
+    </g>
+    <g font-size="11.5" fill="#5b6570">
+      <text x="220" y="84">a restartable, checkpointed job</text>
+      <text x="220" y="124">producer / consumer decoupling</text>
+      <text x="220" y="164">interface contracts between stages</text>
+      <text x="220" y="204">cheap check before the costly one</text>
+      <text x="220" y="244">an approval queue</text>
+      <text x="220" y="284">an execution trace</text>
+    </g>
+  </g>
+
+  <text x="20" y="322" font-size="11" fill="#6b7280">On the right is each part's ordinary engineering name.</text>
+</svg>

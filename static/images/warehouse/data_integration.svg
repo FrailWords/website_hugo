@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#a9b3bc"/></marker>
+  </defs>
+  <style>
+    .h    {fill:#2f2f2f;font-size:16px;font-weight:600}
+    .colh {fill:#7a838c;font-size:12px;font-weight:600;letter-spacing:1px;text-anchor:middle}
+    .rowl {fill:#33383d;font-size:13px;font-weight:600}
+    .stub {fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .stubt{fill:#33383d;font-size:12px;font-weight:600;text-anchor:middle}
+    .real {fill:#ffffff;stroke:#b9c4cd;stroke-width:1.3;stroke-dasharray:5 4}
+    .realt{fill:#5c6570;font-size:11px;text-anchor:middle}
+    .dflow{stroke:#a9b3bc;stroke-width:1.5;fill:none;stroke-dasharray:5 4;marker-end:url(#d)}
+    .note {fill:#8a8a8a;font-size:11px}
+  </style>
+
+  <text x="24" y="30" class="h">What the example uses, and what a real deployment builds</text>
+
+  <text x="205" y="66" class="colh">IN THE EXAMPLE</text>
+  <text x="600" y="66" class="colh">IN A REAL DEPLOYMENT</text>
+  <line x1="300" y1="78" x2="300" y2="410" stroke="#e6e6e6" stroke-width="1.5"/>
+
+  <!-- ROW 1: Expected state -->
+  <text x="24" y="128" class="rowl">Expected</text>
+  <text x="24" y="146" class="rowl">state</text>
+  <rect class="stub" x="128" y="116" width="150" height="40" rx="6"/><text class="stubt" x="203" y="140">Postgres query</text>
+  <rect class="real" x="320" y="116" width="96"  height="40" rx="5"/><text class="realt" x="368" y="140">WMS</text>
+  <rect class="real" x="440" y="116" width="120" height="40" rx="5"/><text class="realt" x="500" y="140">scheduled export</text>
+  <rect class="real" x="584" y="116" width="110" height="40" rx="5"/><text class="realt" x="639" y="140">middleware</text>
+  <rect class="real" x="718" y="116" width="130" height="40" rx="5"/><text class="realt" x="783" y="140">freshness check</text>
+  <path class="dflow" d="M416 136 L438 136"/><path class="dflow" d="M560 136 L582 136"/><path class="dflow" d="M694 136 L716 136"/>
+
+  <!-- ROW 2: Observations -->
+  <text x="24" y="238" class="rowl">Observations</text>
+  <rect class="stub" x="128" y="222" width="150" height="40" rx="6"/><text class="stubt" x="203" y="246">fixture file</text>
+  <rect class="real" x="320" y="222" width="120" height="40" rx="5"/><text class="realt" x="380" y="246">drone images</text>
+  <rect class="real" x="464" y="222" width="210" height="40" rx="5"/><text class="realt" x="569" y="246">barcode + OCR + detection</text>
+  <rect class="real" x="698" y="222" width="150" height="40" rx="5"/><text class="realt" x="773" y="246">index + photo store</text>
+  <path class="dflow" d="M440 242 L462 242"/><path class="dflow" d="M674 242 L696 242"/>
+
+  <!-- ROW 3: Context facts -->
+  <text x="24" y="332" class="rowl">Context</text>
+  <text x="24" y="350" class="rowl">facts</text>
+  <rect class="stub" x="128" y="322" width="150" height="40" rx="6"/><text class="stubt" x="203" y="346">seed data</text>
+  <rect class="real" x="320" y="304" width="180" height="30" rx="5"/><text class="realt" x="410" y="323">order history</text>
+  <rect class="real" x="320" y="340" width="180" height="30" rx="5"/><text class="realt" x="410" y="359">item master</text>
+  <rect class="real" x="320" y="376" width="180" height="30" rx="5"/><text class="realt" x="410" y="395">slotting config</text>
+  <text x="520" y="349" class="note">three separate feeds, each with its own owner and refresh cadence</text>
+</svg>

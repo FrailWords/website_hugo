@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a949e"/></marker>
+  </defs>
+  <style>
+    .htag{fill:#9aa3ab;font-size:11px;font-weight:600;letter-spacing:2px}
+    .htxt{fill:#2f2f2f;font-size:18px;font-weight:600}
+    .why {fill:#6b6b6b;font-size:14px}
+    .colh{fill:#7a838c;font-size:12px;font-weight:600;letter-spacing:1px}
+    .gatet{fill:#33383d;font-size:13px;font-weight:600}
+    .box  {fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .boxt {fill:#33383d;font-size:12px;font-weight:600}
+    .gate {fill:#e7e3d6;stroke:#bcaf8f;stroke-width:2}
+    .need {fill:#ffffff;stroke:#b9c4cd;stroke-width:1.5;stroke-dasharray:5 4}
+    .flow {stroke:#8a949e;stroke-width:1.8;fill:none;marker-end:url(#a)}
+    .tick {fill:#5a9e6f;font-size:15px;font-weight:600}
+    .gapm {fill:#c98b6b;font-size:15px;font-weight:600}
+    .li   {fill:#33383d;font-size:13px}
+  </style>
+
+  <text x="60" y="40" class="htag">FOCUS</text>
+  <text x="60" y="64" class="htxt">Two risks a language model adds</text>
+  <text x="60" y="92" class="why">It can be talked into a wrong verdict, and warehouse data can leak to an outside API.</text>
+
+  <line x1="478" y1="128" x2="478" y2="380" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- LEFT: it can dispatch floor work -->
+  <text x="60" y="146" class="colh">IT CAN DISPATCH FLOOR WORK</text>
+  <rect class="gate" x="60" y="160" width="380" height="56" rx="6"/>
+  <text x="76" y="185" class="gatet">A person approves every remediation ticket</text>
+  <text x="76" y="204" class="why" font-size="12">before a crew is sent to a slot</text>
+
+  <text x="60" y="248" class="tick">&#10003;</text><text x="88" y="248" class="li">in place today</text>
+  <text x="60" y="286" class="gapm">&#9633;</text><text x="88" y="286" class="li">give the pipeline a DB login that writes tickets</text>
+  <text x="88" y="306" class="why" font-size="12">but cannot change WMS inventory</text>
+  <text x="60" y="340" class="gapm">&#9633;</text><text x="88" y="340" class="li">log who approved each ticket, and when</text>
+
+  <!-- RIGHT: it reads warehouse data -->
+  <text x="516" y="146" class="colh">IT READS WAREHOUSE DATA</text>
+  <rect class="box"  x="500" y="160" width="126" height="46" rx="6"/><text x="512" y="180" class="boxt">slot data</text><text x="512" y="197" class="why" font-size="11">+ free-text notes</text>
+  <path class="flow" d="M630 183 L660 183"/>
+  <rect class="need" x="664" y="160" width="96" height="46" rx="6"/><text x="676" y="180" class="boxt" font-size="11">strip names,</text><text x="676" y="197" class="why" font-size="11">keep structure</text>
+  <path class="flow" d="M764 183 L794 183"/>
+  <rect class="box"  x="798" y="160" width="120" height="46" rx="6"/><text x="810" y="188" class="boxt">verifier model</text>
+
+  <text x="500" y="248" class="tick">&#10003;</text><text x="528" y="248" class="li">verifier must reply in a fixed set of fields</text>
+  <text x="500" y="286" class="gapm">&#9633;</text><text x="528" y="286" class="li">treat a pallet&#8217;s note field as untrusted</text>
+  <text x="528" y="306" class="why" font-size="12">it could carry text aimed at flipping the verdict</text>
+  <text x="500" y="340" class="gapm">&#9633;</text><text x="528" y="340" class="li">keep operator names (e.g. A.Chen) out of the prompt</text>
+</svg>

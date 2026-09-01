@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a949e"/></marker>
+  </defs>
+  <style>
+    .h   {fill:#2f2f2f;font-size:16px;font-weight:600}
+    .n   {fill:#33383d;font-size:13px;font-weight:600;text-anchor:middle}
+    .sub {fill:#8a8a8a;font-size:12px;text-anchor:middle}
+    .sync{fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .wait{fill:#ffffff;stroke:#b9c4cd;stroke-width:1.5;stroke-dasharray:5 4}
+    .flow{stroke:#8a949e;stroke-width:1.8;fill:none;marker-end:url(#a)}
+    .brace{stroke:#c2c2c2;stroke-width:1.5;fill:none}
+    .clk {fill:none;stroke:#8a949e;stroke-width:1.5}
+  </style>
+
+  <text x="24" y="34" class="h">The pipeline, in the abstract</text>
+
+  <!-- seven stages -->
+  <g>
+    <rect class="sync" x="24"  y="86" width="120" height="64" rx="6"/><text class="n" x="84"  y="114">Lookups</text><text class="sub" x="84" y="134">expected + observed</text>
+    <rect class="sync" x="156" y="86" width="120" height="64" rx="6"/><text class="n" x="216" y="122">Compare</text>
+    <rect class="sync" x="288" y="86" width="120" height="64" rx="6"/><text class="n" x="348" y="122">Classify</text>
+    <rect class="sync" x="420" y="86" width="120" height="64" rx="6"/><text class="n" x="480" y="114">Cheap</text><text class="n" x="480" y="132">check</text>
+    <rect class="sync" x="552" y="86" width="120" height="64" rx="6"/><text class="n" x="612" y="122">Verifier</text>
+    <rect class="wait" x="684" y="86" width="120" height="64" rx="6"/><text class="n" x="750" y="118">Human</text><text class="n" x="750" y="136">review</text>
+    <circle class="clk" cx="700" cy="102" r="7"/><path class="clk" d="M700 102 L700 97 M700 102 L704 104"/>
+    <rect class="wait" x="816" y="86" width="120" height="64" rx="6"/><text class="n" x="876" y="122">Remediate</text>
+    <circle class="clk" cx="832" cy="102" r="7"/><path class="clk" d="M832 102 L832 97 M832 102 L836 104"/>
+  </g>
+
+  <path class="flow" d="M 144 118 L 154 118"/>
+  <path class="flow" d="M 276 118 L 286 118"/>
+  <path class="flow" d="M 408 118 L 418 118"/>
+  <path class="flow" d="M 540 118 L 550 118"/>
+  <path class="flow" d="M 672 118 L 682 118"/>
+  <path class="flow" d="M 804 118 L 814 118"/>
+
+  <!-- braces: sync vs async -->
+  <path class="brace" d="M 24 168 L 24 178 L 672 178 L 672 168"/>
+  <text x="348" y="198" class="sub">each answers in moments</text>
+  <path class="brace" d="M 684 168 L 684 178 L 936 178 L 936 168"/>
+  <text x="810" y="198" class="sub">the run parks here, minutes to a day</text>
+
+  <!-- producer / consumer inset -->
+  <line x1="24" y1="238" x2="936" y2="238" stroke="#ececec" stroke-width="1.5"/>
+  <text x="24" y="272" class="h">Underneath: a queue between caller and worker</text>
+
+  <rect class="sync" x="24"  y="296" width="140" height="56" rx="6"/><text class="n" x="94" y="329">Caller</text>
+  <g>
+    <rect class="sync" x="240" y="292" width="150" height="20" rx="3"/>
+    <rect class="sync" x="240" y="316" width="150" height="20" rx="3"/>
+    <rect class="sync" x="240" y="340" width="150" height="20" rx="3"/>
+    <text class="sub" x="315" y="376">task queue</text>
+  </g>
+  <rect class="sync" x="470" y="296" width="200" height="56" rx="6"/><text class="n" x="570" y="329">Worker runs each step</text>
+
+  <path class="flow" d="M 164 324 L 238 324"/>
+  <path class="flow" d="M 392 326 L 468 326"/>
+
+  <text x="480" y="404" class="sub">A named queue decouples the caller from the steps that do the work.</text>
+</svg>

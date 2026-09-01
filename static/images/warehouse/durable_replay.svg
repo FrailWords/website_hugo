@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a949e"/></marker>
+  </defs>
+  <style>
+    .h    {fill:#2f2f2f;font-size:31.6px;font-weight:600}
+    .lbl  {fill:#33383d;font-size:26.4px;font-weight:600}
+    .sub  {fill:#8a8a8a;font-size:23.2px}
+    .step {fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .logc {fill:#e7e3d6;stroke:#bcaf8f;stroke-width:1.5}
+    .flow {stroke:#8a949e;stroke-width:1.8;fill:none;marker-end:url(#a)}
+    .down {stroke:#b6a074;stroke-width:1.5;fill:none;stroke-dasharray:3 3}
+    .up   {stroke:#b6a074;stroke-width:1.5;fill:none;stroke-dasharray:3 3;marker-end:url(#a)}
+    .crash{stroke:#c98b6b;stroke-width:2}
+    .rlab {fill:#8a6a4e;font-size:23.2px;font-weight:600}
+  </style>
+
+  <text x="24" y="34" class="h">Durable replay</text>
+
+  <!-- timeline of steps -->
+  <text x="24" y="74" class="sub">THE WORKFLOW, STEP BY STEP</text>
+  <g>
+    <rect class="step" x="24"  y="86" width="96" height="48" rx="6"/><text class="lbl" x="72"  y="115" text-anchor="middle">step 1</text>
+    <rect class="step" x="150" y="86" width="96" height="48" rx="6"/><text class="lbl" x="198" y="115" text-anchor="middle">step 2</text>
+    <rect class="step" x="276" y="86" width="96" height="48" rx="6"/><text class="lbl" x="324" y="115" text-anchor="middle">step 3</text>
+    <rect class="step" x="402" y="86" width="96" height="48" rx="6"/><text class="lbl" x="450" y="115" text-anchor="middle">step 4</text>
+    <rect class="step" x="528" y="86" width="96" height="48" rx="6" opacity="0.45"/><text class="lbl" x="576" y="115" text-anchor="middle" opacity="0.45">step 5</text>
+    <rect class="step" x="654" y="86" width="96" height="48" rx="6" opacity="0.45"/><text class="lbl" x="702" y="115" text-anchor="middle" opacity="0.45">step 6</text>
+  </g>
+  <path class="flow" d="M120 110 L148 110"/>
+  <path class="flow" d="M246 110 L274 110"/>
+  <path class="flow" d="M372 110 L400 110"/>
+  <path class="flow" d="M498 110 L526 110" opacity="0.45"/>
+  <path class="flow" d="M624 110 L652 110" opacity="0.45"/>
+
+  <!-- each completed step writes its result down to the log -->
+  <path class="down" d="M72 134 L72 196"/>
+  <path class="down" d="M198 134 L198 196"/>
+  <path class="down" d="M324 134 L324 196"/>
+  <path class="down" d="M450 134 L450 196"/>
+
+  <!-- the log -->
+  <rect class="logc" x="24" y="198" width="726" height="44" rx="6"/>
+  <text class="lbl" x="40" y="225" fill="#3f3a2e">recorded log:  r1  &#183;  r2  &#183;  r3  &#183;  r4</text>
+  <text class="sub" x="600" y="225">end of log</text>
+  <line x1="486" y1="198" x2="486" y2="242" stroke="#bcaf8f" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- crash + replay -->
+  <path class="crash" d="M462 70 L478 90 M478 70 L462 90"/>
+  <text x="470" y="60" text-anchor="middle" class="rlab" fill="#c98b6b">restart</text>
+
+  <text x="24" y="290" class="sub">ON RESTART</text>
+  <rect class="step" x="24" y="302" width="726" height="52" rx="6" fill="#f7f4ee" stroke="#bcaf8f" stroke-dasharray="5 4"/>
+  <text class="rlab" x="40" y="325">replay steps 1&#8211;4 from the log, no real work re-done</text>
+  <text class="rlab" x="40" y="345">then run step 5 onward for real</text>
+  <path class="up" d="M486 300 L486 250"/>
+  <text x="500" y="284" class="rlab">resume here</text>
+</svg>

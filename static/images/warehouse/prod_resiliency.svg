@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="'Lora', Georgia, serif">
+  <style>
+    .htag{fill:#9aa3ab;font-size:11px;font-weight:600;letter-spacing:2px}
+    .htxt{fill:#2f2f2f;font-size:18px;font-weight:600}
+    .why {fill:#6b6b6b;font-size:14px}
+    .colh{fill:#7a838c;font-size:12px;font-weight:600;letter-spacing:1px}
+    .it  {fill:#33383d;font-size:14px}
+    .have{fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .need{fill:#ffffff;stroke:#b9c4cd;stroke-width:1.5;stroke-dasharray:5 4}
+    .tick{fill:#5a9e6f;font-size:16px;font-weight:600}
+    .gap {fill:#c98b6b;font-size:16px;font-weight:600}
+  </style>
+
+  <text x="60" y="40" class="htag">FOCUS</text>
+  <text x="60" y="64" class="htxt">Surviving failures and unsafe re-runs</text>
+  <text x="60" y="92" class="why">An outage, a missing row, or a double-run shouldn&#8217;t stall a zone or corrupt state.</text>
+
+  <!-- covered -->
+  <text x="60" y="140" class="colh">COVERED BY DURABLE EXECUTION</text>
+  <rect class="have" x="60" y="152" width="400" height="176" rx="6"/>
+  <text x="84" y="184" class="tick">&#10003;</text><text x="112" y="184" class="it">crash resumes where it left off</text>
+  <text x="84" y="216" class="tick">&#10003;</text><text x="112" y="216" class="it">activities retry on failure</text>
+  <text x="84" y="248" class="tick">&#10003;</text><text x="112" y="248" class="it">each activity has a timeout</text>
+  <text x="84" y="280" class="tick">&#10003;</text><text x="112" y="280" class="it">offline verifier fallback</text>
+  <text x="112" y="300" class="why" font-size="12">(accepts a claim at low confidence with no API key)</text>
+
+  <!-- open edges -->
+  <text x="500" y="140" class="colh">STILL OPEN</text>
+  <rect class="need" x="500" y="152" width="400" height="176" rx="6"/>
+  <text x="524" y="184" class="gap">&#9633;</text><text x="552" y="184" class="it">human review parks with no timeout</text>
+  <text x="524" y="216" class="gap">&#9633;</text><text x="552" y="216" class="it">a missing WMS row ends the run</text>
+  <text x="524" y="248" class="gap">&#9633;</text><text x="552" y="248" class="it">API outage retries without bound</text>
+  <text x="524" y="280" class="gap">&#9633;</text><text x="552" y="280" class="it">a re-run opens duplicate tickets</text>
+  <text x="552" y="300" class="why" font-size="12">(closed by an idempotency key on ticket creation)</text>
+</svg>

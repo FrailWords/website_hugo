@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="'Lora', Georgia, serif">
+  <style>
+    .h     {fill:#2f2f2f;font-size:31.6px;font-weight:600}
+    .card  {fill:#fbfbfa;stroke:#dcdcd8;stroke-width:1.5}
+    .green {fill:#e4ecdd;stroke:#9cbf94;stroke-width:1.5}
+    .tan   {fill:#f6efe4;stroke:#cbae7e;stroke-width:1.5}
+    .numd  {fill:#2f2f2f;font-size:56px;font-weight:600}
+    .numg  {fill:#33463a;font-size:44px;font-weight:600}
+    .numt  {fill:#8a6a4e;font-size:44px;font-weight:600}
+    .lbl   {fill:#5f5f5f;font-size:20px}
+    .lblb  {fill:#2f2f2f;font-size:21px;font-weight:600}
+    .arrow {fill:none;stroke:#b0b0b0;stroke-width:2}
+  </style>
+
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b0b0b0"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="34" class="h">Four mismatches, two real problems</text>
+
+  <!-- left: the four mismatches -->
+  <g transform="translate(24,72)">
+    <rect class="card" x="0" y="0" width="230" height="156" rx="8"/>
+    <text x="24" y="66" class="numd">4</text>
+    <text x="24" y="98" class="lbl">slots where the count</text>
+    <text x="24" y="122" class="lbl">did not match</text>
+  </g>
+
+  <!-- arrows -->
+  <path class="arrow" d="M262 132 C 340 132, 360 116, 452 116" marker-end="url(#ah)"/>
+  <path class="arrow" d="M262 156 C 340 156, 360 232, 452 232" marker-end="url(#ah)"/>
+
+  <!-- right top: real -->
+  <g transform="translate(456,72)">
+    <rect class="green" x="0" y="0" width="480" height="90" rx="8"/>
+    <text x="24" y="58" class="numg">2</text>
+    <text x="86" y="40" class="lblb">real anomalies</text>
+    <text x="86" y="66" class="lbl">someone is sent to check these</text>
+  </g>
+
+  <!-- right bottom: explained -->
+  <g transform="translate(456,188)">
+    <rect class="tan" x="0" y="0" width="480" height="90" rx="8"/>
+    <text x="24" y="58" class="numt">2</text>
+    <text x="86" y="40" class="lblb">already explained</text>
+    <text x="86" y="66" class="lbl">a move that was in the log, a bad photo</text>
+  </g>
+</svg>

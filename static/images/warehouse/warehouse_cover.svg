@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDFCFB"/>
+      <stop offset="1" stop-color="#F4EFE8"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- soft diagonal scan sweep -->
+  <g filter="url(#soft)" opacity="0.6">
+    <rect x="486" y="-140" width="120" height="910" fill="#ffffff" transform="rotate(-17 600 315)"/>
+  </g>
+
+  <!-- shelf beams, one under each row -->
+  <g fill="#C3B6A6" fill-opacity="0.32">
+    <rect x="80" y="170" width="1040" height="3" rx="1.5"/>
+    <rect x="80" y="306" width="1040" height="3" rx="1.5"/>
+    <rect x="80" y="442" width="1040" height="3" rx="1.5"/>
+    <rect x="80" y="578" width="1040" height="3" rx="1.5"/>
+  </g>
+
+  <!-- grid of shelf cells: mostly calm, two missing (the gap), one hollow (the ghost) -->
+  <g>
+    <!-- row 0 -->
+    <rect x="80"  y="56"  width="150" height="110" rx="12" fill="#7D9B8A" fill-opacity="0.30"/>
+    <rect x="258" y="56"  width="150" height="110" rx="12" fill="#7A95A8" fill-opacity="0.30"/>
+    <rect x="436" y="56"  width="150" height="110" rx="12" fill="#D4A574" fill-opacity="0.30"/>
+    <!-- 614,56 missing -->
+    <rect x="792" y="56"  width="150" height="110" rx="12" fill="#C4907A" fill-opacity="0.30"/>
+    <rect x="970" y="56"  width="150" height="110" rx="12" fill="#7D9B8A" fill-opacity="0.30"/>
+
+    <!-- row 1 -->
+    <rect x="80"  y="192" width="150" height="110" rx="12" fill="#7A95A8" fill-opacity="0.30"/>
+    <rect x="258" y="192" width="150" height="110" rx="12" fill="#D4A574" fill-opacity="0.30"/>
+    <rect x="436" y="192" width="150" height="110" rx="12" fill="#9B8AA8" fill-opacity="0.30"/>
+    <rect x="614" y="192" width="150" height="110" rx="12" fill="#C4907A" fill-opacity="0.30"/>
+    <rect x="792" y="192" width="150" height="110" rx="12" fill="#7D9B8A" fill-opacity="0.30"/>
+    <rect x="970" y="192" width="150" height="110" rx="12" fill="#7A95A8" fill-opacity="0.30"/>
+
+    <!-- row 2 -->
+    <rect x="80"  y="328" width="150" height="110" rx="12" fill="#D4A574" fill-opacity="0.30"/>
+    <!-- 258,328 missing -->
+    <rect x="436" y="328" width="150" height="110" rx="12" fill="#C4907A" fill-opacity="0.30"/>
+    <rect x="614" y="328" width="150" height="110" rx="12" fill="#7D9B8A" fill-opacity="0.30"/>
+    <!-- 792,328 ghost: hollow outline -->
+    <rect x="792" y="328" width="150" height="110" rx="12" fill="none" stroke="#7A95A8" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="7 6"/>
+    <rect x="970" y="328" width="150" height="110" rx="12" fill="#D4A574" fill-opacity="0.30"/>
+
+    <!-- row 3 -->
+    <rect x="80"  y="464" width="150" height="110" rx="12" fill="#9B8AA8" fill-opacity="0.30"/>
+    <rect x="258" y="464" width="150" height="110" rx="12" fill="#C4907A" fill-opacity="0.30"/>
+    <rect x="436" y="464" width="150" height="110" rx="12" fill="#7D9B8A" fill-opacity="0.30"/>
+    <rect x="614" y="464" width="150" height="110" rx="12" fill="#7A95A8" fill-opacity="0.30"/>
+    <rect x="792" y="464" width="150" height="110" rx="12" fill="#D4A574" fill-opacity="0.30"/>
+    <rect x="970" y="464" width="150" height="110" rx="12" fill="#9B8AA8" fill-opacity="0.30"/>
+  </g>
+
+  <!-- a faint tick by the ghost cell: the flag -->
+  <circle cx="867" cy="316" r="4" fill="#C4907A" fill-opacity="0.8"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a949e"/></marker>
+  </defs>
+  <style>
+    .htag{fill:#9aa3ab;font-size:11px;font-weight:600;letter-spacing:2px}
+    .htxt{fill:#2f2f2f;font-size:18px;font-weight:600}
+    .why {fill:#6b6b6b;font-size:14px}
+    .colh{fill:#7a838c;font-size:12px;font-weight:600;letter-spacing:1px}
+    .key {fill:#33383d;font-size:15px;font-weight:600}
+    .sub {fill:#8a8a8a;font-size:12px}
+    .have{fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .flag{fill:#f6efe4;stroke:#cbae7e;stroke-width:2}
+    .need{fill:#ffffff;stroke:#b9c4cd;stroke-width:1.5;stroke-dasharray:5 4}
+    .arr {stroke:#8a949e;stroke-width:1.8;fill:none;stroke-dasharray:5 4;marker-end:url(#a)}
+  </style>
+
+  <text x="60" y="40" class="htag">FOCUS</text>
+  <text x="60" y="64" class="htxt">Measuring delivery when the logic is partly a prompt</text>
+  <text x="60" y="92" class="why">A prompt change can&#8217;t be unit-tested, so change failure rate is invisible without evals.</text>
+
+  <text x="60" y="132" class="colh">THE FOUR DORA KEYS</text>
+
+  <rect class="have" x="60"  y="146" width="196" height="58" rx="6"/>
+  <text x="158" y="180" text-anchor="middle" class="key">Deploy frequency</text>
+  <text x="158" y="226" text-anchor="middle" class="sub">carries over unchanged</text>
+
+  <rect class="have" x="272" y="146" width="196" height="58" rx="6"/>
+  <text x="370" y="180" text-anchor="middle" class="key">Lead time</text>
+  <text x="370" y="226" text-anchor="middle" class="sub">carries over unchanged</text>
+
+  <rect class="flag" x="484" y="146" width="196" height="58" rx="6"/>
+  <text x="582" y="180" text-anchor="middle" class="key">Change failure rate</text>
+  <path class="arr" d="M 582 206 L 582 250"/>
+  <rect class="need" x="484" y="256" width="196" height="52" rx="6"/>
+  <text x="582" y="278" text-anchor="middle" class="key" font-size="13">Eval set over labeled</text>
+  <text x="582" y="296" text-anchor="middle" class="key" font-size="13">anomalies</text>
+  <text x="582" y="330" text-anchor="middle" class="sub">needed to measure it &#8212; not built</text>
+
+  <rect class="have" x="696" y="146" width="196" height="58" rx="6"/>
+  <text x="794" y="180" text-anchor="middle" class="key">Recovery time</text>
+  <text x="794" y="226" text-anchor="middle" class="sub">= durable workflow resumes,</text>
+  <text x="794" y="243" text-anchor="middle" class="sub">rather than restarts</text>
+</svg>

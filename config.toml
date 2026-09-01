@@ -9,6 +9,9 @@ pagerSize = 8
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
 [markup.highlight]
 style = "pastie"
 lineNos = false

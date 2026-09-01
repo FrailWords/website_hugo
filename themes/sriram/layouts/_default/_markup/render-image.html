@@ -1,0 +1,5 @@
+{{- /* Inline images (diagrams) break out wider than the prose column, like tables. */ -}}
+<figure class="diagram">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+  {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>

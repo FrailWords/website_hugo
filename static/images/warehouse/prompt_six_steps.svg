@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 268" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="s1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2933"/>
+    </marker>
+  </defs>
+
+  <text x="230" y="24" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2933">Six fixed steps, with the branches written in</text>
+
+  <!-- row 1 -->
+  <rect x="15" y="42" width="134" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="82" y="71" text-anchor="middle" font-size="13.5" fill="#1f2933">1 · Plan</text>
+  <line x1="149" y1="66" x2="163" y2="66" stroke="#1f2933" stroke-width="1.4" marker-end="url(#s1)"/>
+  <rect x="163" y="42" width="134" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="230" y="71" text-anchor="middle" font-size="13.5" fill="#1f2933">2 · Compare</text>
+  <line x1="297" y1="66" x2="311" y2="66" stroke="#1f2933" stroke-width="1.4" marker-end="url(#s1)"/>
+  <rect x="311" y="42" width="134" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="378" y="71" text-anchor="middle" font-size="13.5" fill="#1f2933">3 · Classify</text>
+
+  <!-- wrap connector 3 -> 4 -->
+  <path d="M378,90 L378,111 L82,111 L82,132" fill="none" stroke="#1f2933" stroke-width="1.4" marker-end="url(#s1)"/>
+
+  <!-- row 2 -->
+  <rect x="15" y="132" width="134" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="82" y="161" text-anchor="middle" font-size="13" fill="#1f2933">4 · Movement check</text>
+  <line x1="149" y1="156" x2="163" y2="156" stroke="#1f2933" stroke-width="1.4" marker-end="url(#s1)"/>
+  <rect x="163" y="132" width="134" height="48" rx="8" fill="#e8f1f8" stroke="#1d6fa5" stroke-width="1.7"/>
+  <text x="230" y="161" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12455f">5 · Verify</text>
+  <line x1="297" y1="156" x2="311" y2="156" stroke="#1f2933" stroke-width="1.4" marker-end="url(#s1)"/>
+  <rect x="311" y="132" width="134" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="378" y="161" text-anchor="middle" font-size="13.5" fill="#1f2933">6 · Report</text>
+
+  <!-- branch notes -->
+  <line x1="82" y1="180" x2="82" y2="192" stroke="#9aa5b1" stroke-width="1.1"/>
+  <text x="82" y="206" text-anchor="middle" font-size="11" fill="#6b7280">a recorded move</text>
+  <text x="82" y="219" text-anchor="middle" font-size="11" fill="#6b7280">settles it here</text>
+
+  <line x1="230" y1="180" x2="230" y2="192" stroke="#9aa5b1" stroke-width="1.1"/>
+  <text x="230" y="206" text-anchor="middle" font-size="11" fill="#6b7280">the model runs only if</text>
+  <text x="230" y="219" text-anchor="middle" font-size="11" fill="#6b7280">the gap is unexplained</text>
+
+  <text x="230" y="250" text-anchor="middle" font-size="12" fill="#6b7280">Cheapest checks first. Most anomalies stop before step 5.</text>
+</svg>

@@ -1,0 +1,24 @@
+{{- /* Overrides Hugo's built-in figure shortcode.
+       For local .svg sources: inline the file so its <text> inherits the page
+       body font (webfonts don't apply to <img>-loaded SVGs). Each figure gets a
+       unique id and the SVG's <style> selectors are scoped under it, so multiple
+       diagrams on one page can't stomp each other's classes.
+       Everything else falls back to a plain <img>. */ -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" -}}
+{{- $path := printf "static%s" $src -}}
+{{- if and (strings.HasSuffix (lower $src) ".svg") (fileExists $path) -}}
+  {{- $uid := printf "dg-%s" (path.BaseName $src) -}}
+  {{- $svg := readFile $path -}}
+  {{- $svg = $svg | replaceRE `\.([A-Za-z_][\w-]*)(\s*[,{])` (printf "#%s .$1$2" $uid) -}}
+  <figure class="diagram" id="{{ $uid }}" role="img" aria-label="{{ $alt }}">
+    {{ $svg | safeHTML }}
+    {{- with $caption }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end -}}
+  </figure>
+{{- else -}}
+  <figure class="diagram">
+    <img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Get "title" }} title="{{ . }}"{{ end }} loading="lazy">
+    {{- with $caption }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end -}}
+  </figure>
+{{- end -}}

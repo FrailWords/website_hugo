@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 356" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="pc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2933"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="24" font-size="15" font-weight="600" fill="#1f2933">Who runs what</text>
+
+  <!-- LEFT: orchestrator + classifier -->
+  <text x="20" y="48" font-size="9" font-weight="600" letter-spacing="0.6" fill="#8a94a0">THE MODEL DRIVES THE LOOP</text>
+  <rect x="20" y="56" width="196" height="52" rx="8" fill="#e8f1f8" stroke="#1d6fa5" stroke-width="1.7"/>
+  <text x="32" y="80" font-size="12.5" font-weight="600" fill="#12455f">Claude Sonnet</text>
+  <text x="32" y="98" font-size="9.5" fill="#4a5a68">reads the prompt, picks the next call</text>
+
+  <text x="20" y="134" font-size="9" font-weight="600" letter-spacing="0.6" fill="#8a94a0">FIXED RULES · NO MODEL</text>
+  <rect x="20" y="142" width="196" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="32" y="166" font-size="12.5" font-weight="600" fill="#1f2933">Classifier</text>
+  <text x="32" y="184" font-size="9.5" fill="#5b6570">sets severity from plain rules</text>
+
+  <!-- RIGHT: tools it calls -->
+  <text x="250" y="48" font-size="9" font-weight="600" letter-spacing="0.6" fill="#8a94a0">TOOLS IT CALLS</text>
+  <g font-size="10.5" fill="#1f2933" text-anchor="middle">
+    <rect x="250" y="56" width="190" height="27" rx="6" fill="#f6f7f9" stroke="#6b7280" stroke-width="1.1"/><text x="345" y="73">WMS lookup</text>
+    <rect x="250" y="88" width="190" height="27" rx="6" fill="#f6f7f9" stroke="#6b7280" stroke-width="1.1"/><text x="345" y="105">Observation lookup</text>
+    <rect x="250" y="120" width="190" height="27" rx="6" fill="#f6f7f9" stroke="#6b7280" stroke-width="1.1"/><text x="345" y="137">Movement check</text>
+    <rect x="250" y="152" width="190" height="27" rx="6" fill="#f6f7f9" stroke="#6b7280" stroke-width="1.1"/><text x="345" y="169">Verifier</text>
+    <rect x="250" y="184" width="190" height="27" rx="6" fill="#f6f7f9" stroke="#6b7280" stroke-width="1.1"/><text x="345" y="201">Human review</text>
+    <rect x="250" y="216" width="190" height="27" rx="6" fill="#f6f7f9" stroke="#6b7280" stroke-width="1.1"/><text x="345" y="233">Remediation ticket</text>
+  </g>
+  <!-- arrow orchestrator -> tools -->
+  <path d="M216 82 L232 82 L232 69 L248 69" fill="none" stroke="#1f2933" stroke-width="1.4" marker-end="url(#pc)"/>
+  <text x="224" y="60" font-size="9" fill="#6b7280">calls</text>
+
+  <!-- BOTTOM: plumbing -->
+  <text x="20" y="270" font-size="9" font-weight="600" letter-spacing="0.6" fill="#8a94a0">THE PLUMBING · NO MODEL</text>
+  <rect x="20" y="278" width="200" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="32" y="302" font-size="12.5" font-weight="600" fill="#1f2933">Workflow</text>
+  <text x="32" y="320" font-size="9.5" fill="#5b6570">holds the run's state</text>
+  <rect x="240" y="278" width="200" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="252" y="302" font-size="12.5" font-weight="600" fill="#1f2933">Worker</text>
+  <text x="252" y="320" font-size="9.5" fill="#5b6570">runs the I/O activities</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="'Lora', Georgia, serif">
+  <style>
+    .h    {fill:#2f2f2f;font-size:31.6px;font-weight:600}
+    .colh {fill:#7a838c;font-size:22.2px;font-weight:600;letter-spacing:1px}
+    .steel{fill:#bcbcbc}
+    .wood {fill:#d0bd97;stroke:#b6a074;stroke-width:1.5}
+    .box  {fill:#dde9f6;stroke:#91b3d7;stroke-width:1.5}
+    .ghost{fill:none;stroke:#c9a8a8;stroke-width:1.5;stroke-dasharray:5 4}
+    .cnt  {fill:#33383d;font-size:46.4px;font-weight:600;text-anchor:middle}
+    .cntl {fill:#8a8a8a;font-size:23.2px;text-anchor:middle}
+    .badge{fill:#f6efe4;stroke:#cbae7e;stroke-width:1.5}
+    .btxt {fill:#8a6a4e;font-size:23px;font-weight:600;text-anchor:middle}
+    .concl{fill:#2f2f2f;font-size:26.4px;font-weight:600;text-anchor:middle}
+  </style>
+
+  <text x="24" y="34" class="h">One slot, two states (B-07-04)</text>
+
+  <!-- left: expected -->
+  <text x="70" y="72" class="colh">EXPECTED &#183; WMS</text>
+  <rect class="steel" x="60"  y="86" width="10" height="150" rx="3"/>
+  <rect class="steel" x="360" y="86" width="10" height="150" rx="3"/>
+  <rect class="steel" x="60" y="86"  width="310" height="9" rx="3"/>
+  <rect class="steel" x="60" y="227" width="310" height="9" rx="3"/>
+  <g>
+    <rect class="wood" x="84"  y="210" width="76" height="14"/><rect class="box" x="92"  y="168" width="60" height="42" rx="5"/>
+    <rect class="wood" x="176" y="210" width="76" height="14"/><rect class="box" x="184" y="168" width="60" height="42" rx="5"/>
+    <rect class="wood" x="268" y="210" width="76" height="14"/><rect class="box" x="276" y="168" width="60" height="42" rx="5"/>
+  </g>
+  <text x="215" y="286" class="cnt">3</text>
+  <text x="215" y="304" class="cntl">pallets expected</text>
+
+  <!-- right: observed -->
+  <text x="560" y="72" class="colh">OBSERVED &#183; DRONE PHOTO</text>
+  <rect class="steel" x="550" y="86" width="10" height="150" rx="3"/>
+  <rect class="steel" x="850" y="86" width="10" height="150" rx="3"/>
+  <rect class="steel" x="550" y="86"  width="310" height="9" rx="3"/>
+  <rect class="steel" x="550" y="227" width="310" height="9" rx="3"/>
+  <g>
+    <rect class="wood" x="574" y="210" width="76" height="14"/><rect class="box" x="582" y="168" width="60" height="42" rx="5"/>
+    <rect class="wood" x="666" y="210" width="76" height="14"/><rect class="box" x="674" y="168" width="60" height="42" rx="5"/>
+    <rect class="ghost" x="766" y="168" width="60" height="42" rx="5"/>
+    <rect class="ghost" x="758" y="210" width="76" height="14"/>
+  </g>
+  <text x="705" y="286" class="cnt">2</text>
+  <text x="705" y="304" class="cntl">pallets seen</text>
+
+  <!-- gap badge -->
+  <rect class="badge" x="140" y="326" width="680" height="38" rx="8"/>
+  <text x="480" y="350" class="btxt">LPN-884212 missing. This gap is the anomaly</text>
+</svg>

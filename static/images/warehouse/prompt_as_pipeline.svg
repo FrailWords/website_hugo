@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a949e"/></marker>
+    <marker id="d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#9cbf94"/></marker>
+  </defs>
+  <style>
+    .h    {fill:#2f2f2f;font-size:16px;font-weight:600}
+    .colh {fill:#7a838c;font-size:12px;font-weight:600;letter-spacing:1px}
+    .s    {fill:#33383d;font-size:14px;font-weight:600;text-anchor:middle}
+    .fx   {fill:#33383d;font-size:14px;font-weight:600;text-anchor:middle}
+    .step {fill:#eef1f4;stroke:#b9c4cd;stroke-width:1.5}
+    .fixed{fill:#e7e3d6;stroke:#bcaf8f;stroke-width:1.8}
+    .dec  {fill:#e4ecdd;stroke:#9cbf94;stroke-width:1.5}
+    .dtxt {fill:#33463a;font-size:13px}
+    .flow {stroke:#8a949e;stroke-width:1.8;fill:none;marker-end:url(#a)}
+    .link {stroke:#9cbf94;stroke-width:1.6;fill:none;stroke-dasharray:5 4;marker-end:url(#d)}
+    .note {fill:#8a8a8a;font-size:12px}
+  </style>
+
+  <text x="24" y="34" class="h">The prompt describes the steps; the model makes the calls</text>
+
+  <!-- spine: six prompt steps -->
+  <text x="150" y="72" text-anchor="middle" class="colh">THE PROMPT&#8217;S SIX STEPS</text>
+  <g>
+    <rect class="step"  x="70" y="84"  width="160" height="46" rx="6"/><text class="s" x="150" y="112">Plan</text>
+    <rect class="step"  x="70" y="146" width="160" height="46" rx="6"/><text class="s" x="150" y="174">Gather</text>
+    <rect class="fixed" x="70" y="208" width="160" height="46" rx="6"/><text class="fx" x="150" y="236">Classify</text>
+    <rect class="step"  x="70" y="270" width="160" height="46" rx="6"/><text class="s" x="150" y="298">Verify</text>
+    <rect class="step"  x="70" y="332" width="160" height="46" rx="6"/><text class="s" x="150" y="360">Remediate</text>
+    <rect class="step"  x="70" y="394" width="160" height="46" rx="6"/><text class="s" x="150" y="422">Report</text>
+  </g>
+  <path class="flow" d="M150 130 L150 144"/>
+  <path class="flow" d="M150 192 L150 206"/>
+  <path class="flow" d="M150 254 L150 268"/>
+  <path class="flow" d="M150 316 L150 330"/>
+  <path class="flow" d="M150 378 L150 392"/>
+
+  <!-- the model decides -->
+  <text x="620" y="72" text-anchor="middle" class="colh">THE MODEL DECIDES</text>
+  <rect class="dec" x="470" y="84"  width="300" height="46" rx="6"/><text class="dtxt" x="486" y="112">which slot to look at next</text>
+  <rect class="dec" x="470" y="146" width="300" height="46" rx="6"/><text class="dtxt" x="486" y="174">check settled, or escalate to the verifier</text>
+  <rect class="dec" x="470" y="270" width="300" height="46" rx="6"/><text class="dtxt" x="486" y="298">escalate to a person, or not</text>
+  <rect class="dec" x="470" y="394" width="300" height="46" rx="6"/><text class="dtxt" x="486" y="422">what goes in the report</text>
+
+  <path class="link" d="M232 169 L468 107"/>
+  <path class="link" d="M232 291 L468 169"/>
+  <path class="link" d="M232 293 L468 293"/>
+  <path class="link" d="M232 417 L468 417"/>
+
+  <!-- legend -->
+  <rect class="fixed" x="70" y="452" width="18" height="14" rx="2"/>
+  <text x="96" y="464" class="note">fixed-rule step the model can&#8217;t alter (Classify, and the movement check inside Verify)</text>
+</svg>
