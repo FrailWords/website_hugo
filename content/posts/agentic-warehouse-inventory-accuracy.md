@@ -15,6 +15,8 @@ Recent job search has lead me to looking at one of these 'harness' like things, 
 
 So, I wanted to do two things - first figure out a simple domain where there's a specific practical problem to be solved, that can be 'agentic'ally solved, and then secondly, see how something like 'Temporal' helps in making this solution 'production-ready' (more on this later).
 
+The code is on GitHub: [FrailWords/warehouse_anomaly_finder_temporal](https://github.com/FrailWords/warehouse_anomaly_finder_temporal). Clone-and-run instructions are in the README.
+
 Most of what follows is warehouse domain, not tech. That is on purpose - modeling the domain is what decides whether the thing works, and it is the part that does not transfer. The Temporal and agent pieces sit on top, and those do.
 
 ## Where This Came From
