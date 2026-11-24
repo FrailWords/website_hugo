@@ -1,6 +1,7 @@
 ---
 title: "Bringing the Learning Back to AI-Assisted School Work"
 date: 2026-11-24
+image: "/images/classroom-harness-og.png"
 draft: true
 tags: ["software-engineering", "ai-agents", "harness", "privacy", "education"]
 ---
