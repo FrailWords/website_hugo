@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 214" font-family="'Lora', Georgia, serif">
+  <text x="230" y="24" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2933">Three layers</text>
+
+  <rect x="15" y="40" width="430" height="50" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="31" y="62" font-size="13.5" font-weight="600" fill="#1f2933">For schools</text>
+  <text x="31" y="80" font-size="11" fill="#5b6570">assignments, workflows, grading criteria, teachers and students</text>
+
+  <rect x="15" y="98" width="430" height="50" rx="8" fill="#e8f1f8" stroke="#1d6fa5" stroke-width="1.7"/>
+  <text x="31" y="120" font-size="13.5" font-weight="600" fill="#12455f">The core</text>
+  <text x="31" y="138" font-size="11" fill="#1f2933">runs workflows, checks requests and replies, keeps the trail, swaps names for IDs</text>
+
+  <rect x="15" y="156" width="430" height="50" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="31" y="178" font-size="13.5" font-weight="600" fill="#1f2933">The platform</text>
+  <text x="31" y="196" font-size="11" fill="#5b6570">runs the core for each school, and keeps each school's data separate</text>
+</svg>

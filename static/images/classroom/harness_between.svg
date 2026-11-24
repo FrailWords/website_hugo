@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 210" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="hb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2933"/>
+    </marker>
+  </defs>
+
+  <rect x="163" y="16" width="134" height="44" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="230" y="43" text-anchor="middle" font-size="13.5" fill="#1f2933">Teacher</text>
+  <line x1="230" y1="60" x2="230" y2="96" stroke="#1f2933" stroke-width="1.4" marker-end="url(#hb)"/>
+  <text x="238" y="83" font-size="11" fill="#6b7280">sets the rules</text>
+
+  <rect x="15" y="96" width="120" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="75" y="125" text-anchor="middle" font-size="13.5" fill="#1f2933">Student</text>
+
+  <rect x="163" y="96" width="134" height="48" rx="8" fill="#e8f1f8" stroke="#1d6fa5" stroke-width="1.7"/>
+  <text x="230" y="125" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12455f">Harness</text>
+
+  <rect x="325" y="96" width="120" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="385" y="125" text-anchor="middle" font-size="13.5" fill="#1f2933">AI</text>
+
+  <line x1="135" y1="120" x2="161" y2="120" stroke="#1f2933" stroke-width="1.4" marker-start="url(#hb)" marker-end="url(#hb)"/>
+  <line x1="297" y1="120" x2="323" y2="120" stroke="#1f2933" stroke-width="1.4" marker-start="url(#hb)" marker-end="url(#hb)"/>
+
+  <text x="230" y="186" text-anchor="middle" font-size="11" fill="#6b7280">Every question and every reply passes through the harness.</text>
+</svg>

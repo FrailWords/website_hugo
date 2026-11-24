@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 150" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="of" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2933"/>
+    </marker>
+  </defs>
+
+  <rect x="15" y="20" width="170" height="92" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="31" y="44" font-size="13" font-weight="600" fill="#1f2933">One file per school</text>
+  <text x="31" y="64" font-size="11" fill="#5b6570">size</text>
+  <text x="31" y="80" font-size="11" fill="#5b6570">where its data must stay</text>
+  <text x="31" y="96" font-size="11" fill="#5b6570">AI models and budget</text>
+
+  <line x1="185" y1="66" x2="263" y2="66" stroke="#1f2933" stroke-width="1.4" marker-end="url(#of)"/>
+  <text x="224" y="58" text-anchor="middle" font-size="11" fill="#6b7280">read by</text>
+
+  <rect x="263" y="20" width="182" height="92" rx="8" fill="#e8f1f8" stroke="#1d6fa5" stroke-width="1.7"/>
+  <text x="354" y="60" text-anchor="middle" font-size="13" font-weight="600" fill="#12455f">The platform</text>
+  <text x="354" y="80" text-anchor="middle" font-size="11" fill="#1f2933">sets up everything</text>
+  <text x="354" y="95" text-anchor="middle" font-size="11" fill="#1f2933">the school needs</text>
+
+  <text x="230" y="138" text-anchor="middle" font-size="11" fill="#6b7280">Nobody at the school looks after servers.</text>
+</svg>

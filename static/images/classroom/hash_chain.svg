@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 128" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="hc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2933"/>
+    </marker>
+  </defs>
+
+  <rect x="6"   y="24" width="88" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="50"  y="53" text-anchor="middle" font-size="13" fill="#1f2933">Step 1</text>
+  <line x1="94" y1="48" x2="112" y2="48" stroke="#1f2933" stroke-width="1.4" marker-end="url(#hc)"/>
+
+  <rect x="112" y="24" width="88" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="156" y="53" text-anchor="middle" font-size="13" fill="#1f2933">Step 2</text>
+  <line x1="200" y1="48" x2="218" y2="48" stroke="#1f2933" stroke-width="1.4" marker-end="url(#hc)"/>
+
+  <rect x="218" y="24" width="88" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="262" y="53" text-anchor="middle" font-size="13" fill="#1f2933">Step 3</text>
+  <line x1="306" y1="48" x2="324" y2="48" stroke="#1f2933" stroke-width="1.4" marker-end="url(#hc)"/>
+
+  <rect x="324" y="24" width="130" height="48" rx="8" fill="#e8f1f8" stroke="#1d6fa5" stroke-width="1.7"/>
+  <text x="389" y="45" text-anchor="middle" font-size="12.5" font-weight="600" fill="#12455f">Signed with the</text>
+  <text x="389" y="61" text-anchor="middle" font-size="12.5" font-weight="600" fill="#12455f">school's key</text>
+
+  <text x="230" y="98" text-anchor="middle" font-size="11" fill="#6b7280">Each step's fingerprint includes the fingerprint of the step before.</text>
+  <text x="230" y="114" text-anchor="middle" font-size="11" fill="#6b7280">The last fingerprint is signed when the student hands in.</text>
+</svg>

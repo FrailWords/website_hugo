@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" font-family="'Lora', Georgia, serif">
+  <defs>
+    <marker id="es" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f2933"/>
+    </marker>
+  </defs>
+
+  <text x="230" y="24" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2933">The task as five stages</text>
+
+  <rect x="6"   y="42" width="80" height="44" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="46"  y="69" text-anchor="middle" font-size="13" fill="#1f2933">Recall</text>
+  <line x1="86" y1="64" x2="98" y2="64" stroke="#1f2933" stroke-width="1.4" marker-end="url(#es)"/>
+
+  <rect x="98"  y="42" width="80" height="44" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="138" y="69" text-anchor="middle" font-size="13" fill="#1f2933">Research</text>
+  <line x1="178" y1="64" x2="190" y2="64" stroke="#1f2933" stroke-width="1.4" marker-end="url(#es)"/>
+
+  <rect x="190" y="42" width="80" height="44" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="230" y="69" text-anchor="middle" font-size="13" fill="#1f2933">Draft</text>
+  <line x1="270" y1="64" x2="282" y2="64" stroke="#1f2933" stroke-width="1.4" marker-end="url(#es)"/>
+
+  <rect x="282" y="42" width="80" height="44" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="322" y="69" text-anchor="middle" font-size="13" fill="#1f2933">Improve</text>
+  <line x1="362" y1="64" x2="374" y2="64" stroke="#1f2933" stroke-width="1.4" marker-end="url(#es)"/>
+
+  <rect x="374" y="42" width="80" height="44" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
+  <text x="414" y="69" text-anchor="middle" font-size="13" fill="#1f2933">Submit</text>
+
+  <text x="230" y="108" text-anchor="middle" font-size="11" fill="#6b7280">The student finishes one stage before starting the next.</text>
+</svg>

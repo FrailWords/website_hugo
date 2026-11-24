@@ -724,6 +724,12 @@ pre {
   margin: 0;
 }
 
+/* Lines picked out with hl_lines in a code fence, in the diagrams' highlight blue. */
+.highlight .hl {
+  display: block;
+  background: #e8f1f8;
+}
+
 pre code {
   font-family: inherit;
   font-size: inherit;
@@ -775,7 +781,8 @@ pre code {
 .highlight .si,
 .highlight .sx,
 .highlight .sr,
-.highlight .ss { color: var(--accent-sage); } /* Strings */
+.highlight .ss,
+.highlight .l { color: var(--accent-sage); } /* Strings, and YAML's unquoted values */
 
 .highlight .m,
 .highlight .mf,
