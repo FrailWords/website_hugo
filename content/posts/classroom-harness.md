@@ -407,6 +407,27 @@ So whether a hint gives the answer away depends partly on which model is doing t
 - **Same instructions.** Both models got the same instructions, which were first tuned with Claude.
 - **Two judges.** Both models judged every hint, so no model was the only judge of its own hints.
 
+## Measuring the Review
+
+The review goes through the trail on behalf of the teacher, and writes down what the AI noticed. Each note points to the moments in the trail behind that note, so the teacher can go and check.
+
+I then wanted to know whether a teacher can actually rely on those notes. So I ran the review on 20 fictional handed-in assignments, and checked each review in a few ways, such as:
+
+- whether every note points to a moment that is really in the trail
+- whether every student a note mentions actually worked on that assignment
+- whether there is a note whenever a student pastes a lot and then can't answer the quick questions about the paste
+- whether the harness can read the review at all (if not, the harness uses its own notes written without AI)
+
+The harness already knows all of this from the trail, so there was no need to write down the right answers beforehand.
+
+Claude Sonnet 5.5 and Sarvam 105B both passed every check on about 9 in 10 assignments.
+
+| | Claude Sonnet 5.5 | Sarvam 105B |
+|---|---|---|
+| Reviews that passed every check | 18 of 20 | 18 of 20 |
+
+These checks only show that the notes match the trail. Whether the notes are actually fair and useful is something only teachers can judge, by reading them.
+
 ## Measuring Cost
 
 I also measured what one student doing the whole photosynthesis assignment costs in AI, from the first question to the review.
@@ -427,7 +448,7 @@ If the student then types the copied answer into the harness a few words at a ti
 
 Copying slowly like this takes longer than doing the work, and the quick questions at the end of each stage still ask the student to explain the steps. Even so, the harness can't fully stop a student who copies this way.
 
-The tests used *simulated students*, each with a known way of working. The simulated student who copied slowly often got an "accept" from the review.
+The tests also used *simulated students*, each with a known way of working. In the one saved test run, the simulated student who copied slowly got none of the quick questions right, and the review suggested talking to the student first. One run is too few to say how often a student who copies slowly gets caught.
 
 ## Where This Stands
 
