@@ -7,17 +7,18 @@
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" | default "" -}}
 {{- $caption := .Get "caption" -}}
+{{- $class := cond (eq (.Get "size") "narrow") "diagram diagram-narrow" "diagram" -}}
 {{- $path := printf "static%s" $src -}}
 {{- if and (strings.HasSuffix (lower $src) ".svg") (fileExists $path) -}}
   {{- $uid := printf "dg-%s" (path.BaseName $src) -}}
   {{- $svg := readFile $path -}}
   {{- $svg = $svg | replaceRE `\.([A-Za-z_][\w-]*)(\s*[,{])` (printf "#%s .$1$2" $uid) -}}
-  <figure class="diagram" id="{{ $uid }}" role="img" aria-label="{{ $alt }}">
+  <figure class="{{ $class }}" id="{{ $uid }}" role="img" aria-label="{{ $alt }}">
     {{ $svg | safeHTML }}
     {{- with $caption }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end -}}
   </figure>
 {{- else -}}
-  <figure class="diagram">
+  <figure class="{{ $class }}">
     <img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Get "title" }} title="{{ . }}"{{ end }} loading="lazy">
     {{- with $caption }}<figcaption>{{ . | safeHTML }}</figcaption>{{ end -}}
   </figure>

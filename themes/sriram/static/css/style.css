@@ -724,10 +724,12 @@ pre {
   margin: 0;
 }
 
-/* Lines picked out with hl_lines in a code fence, in the diagrams' highlight blue. */
+/* Lines picked out with hl_lines in a code fence, in the diagrams' highlight blue. The background alone is too
+   close to the code block's own, so a bar in the diagrams' highlight stroke marks each line too. */
 .highlight .hl {
   display: block;
-  background: #e8f1f8;
+  background: #d9e8f5;
+  box-shadow: inset 3px 0 0 #1d6fa5;
 }
 
 pre code {
@@ -1012,6 +1014,12 @@ footer {
 .post-content .diagram svg text,
 .post-content .diagram svg tspan {
   font-family: var(--font-body);
+}
+
+/* size="narrow" on the figure shortcode: a diagram drawn 460 units wide reads at about body-text size here,
+   instead of being scaled up past the headings at full width. */
+.post-content .diagram.diagram-narrow {
+  max-width: 600px;
 }
 
 .post-content .diagram figcaption {

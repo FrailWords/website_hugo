@@ -15,7 +15,7 @@
 
   <rect x="30" y="116" width="400" height="48" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
   <text x="46" y="137" font-size="12.5" font-weight="600" fill="#1f2933">2 · A check by a smaller AI model</text>
-  <text x="46" y="154" font-size="11" fill="#5b6570">Are the notes on topic? If not, a gentle reminder, and the student can still move on.</text>
+  <text x="46" y="154" font-size="11" fill="#5b6570">Are the notes on topic? If not, the student gets a gentle reminder and can still move on.</text>
 
   <line x1="230" y1="164" x2="230" y2="190" stroke="#1f2933" stroke-width="1.4" marker-end="url(#fr)"/>
 

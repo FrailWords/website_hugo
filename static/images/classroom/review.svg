@@ -16,6 +16,6 @@
   <rect x="325" y="24" width="120" height="48" rx="8" fill="#e8f1f8" stroke="#1d6fa5" stroke-width="1.7"/>
   <text x="385" y="53" text-anchor="middle" font-size="13.5" font-weight="600" fill="#12455f">Teacher</text>
 
-  <text x="230" y="98" text-anchor="middle" font-size="11" fill="#6b7280">The review suggests: accept, accept with notes, or talk to the student.</text>
+  <text x="230" y="98" text-anchor="middle" font-size="11" fill="#6b7280">The review suggests: accept, accept with notes, or talk to the student first.</text>
   <text x="230" y="116" text-anchor="middle" font-size="11" fill="#6b7280">The teacher decides.</text>
 </svg>

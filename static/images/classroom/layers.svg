@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 214" font-family="'Lora', Georgia, serif">
-  <text x="230" y="24" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2933">Three layers</text>
+  <text x="230" y="24" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2933">Only the top layer is specific to schools</text>
 
   <rect x="15" y="40" width="430" height="50" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="1.4"/>
   <text x="31" y="62" font-size="13.5" font-weight="600" fill="#1f2933">For schools</text>
