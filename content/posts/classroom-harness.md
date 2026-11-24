@@ -2,11 +2,8 @@
 title: "Bringing the Learning Back to AI-Assisted School Work"
 date: 2026-11-24
 image: "/images/classroom-harness-og.png"
-draft: true
 tags: ["software-engineering", "ai-agents", "harness", "privacy", "education"]
 ---
-
-<!-- DRAFT 2026-11-24. Every section below was agreed in review. -->
 
 I've been increasingly thinking about where the 'learning' happens when AI does most of the work, across many domains like tech and education, and specifically in schools. Schools also turned out to be one of the best-suited places to try out the idea behind this post. Nowadays, a student can hand in an AI-written essay and the teacher can't even tell if it's actually written by the student or an AI.
 
