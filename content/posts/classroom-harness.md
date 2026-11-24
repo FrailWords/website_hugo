@@ -5,7 +5,7 @@ image: "/images/classroom-harness-og.png"
 tags: ["software-engineering", "ai-agents", "harness", "privacy", "education"]
 ---
 
-I've been increasingly thinking about where the 'learning' happens when AI does most of the work, across many domains like tech and education, and specifically in schools. Schools also turned out to be one of the best-suited places to try out the idea behind this post. Nowadays, a student can hand in an AI-written essay and the teacher can't even tell if it's actually written by the student or an AI.
+I've been increasingly thinking about where the 'learning' happens when AI does most of the work, across many domains like tech and education, and specifically in schools. Nowadays, a student can hand in an AI-written essay and the teacher can't even tell if it's actually written by the student or an AI.
 
 I also care a lot about privacy. When a school uses AI, its students' work ends up with whichever company runs the model, and the school has little say over what gets sent or where the work is kept.
 
@@ -15,7 +15,7 @@ So I started thinking about what a 'harness' that helps with all of these might 
 - putting the school and the teacher back in control of that learning
 - keeping the students' data private
 
-I then ideated, designed and built a working prototype of such a harness, together with Claude.
+I then designed and built a working prototype of such a harness, together with Claude.
 
 ## What I Mean by a Harness
 
@@ -31,7 +31,7 @@ So every question a student asks the AI, and every reply that comes back, goes t
 
 Let's take a fictional example of a school science task: a one-page explanation of how plants make their food from sunlight.
 
-Today, a teacher might hand out an assignment sheet with steps to follow, such as noting what you already know, reading up and writing a draft. Nothing prevents the student from skipping the steps and just submitting an AI generated final explanation directly.
+Today, a teacher might hand out an assignment sheet with steps to follow, such as noting what you already know, reading up and writing a draft. Nothing prevents the student from skipping the steps and just submitting an AI-generated final explanation directly.
 
 So in the harness, the teacher turns those steps into five *stages*. The student has to go through them one at a time and in order, so the explanation gets built up bit by bit from the student's own thinking.
 
@@ -76,9 +76,11 @@ The highlighted lines are the teacher's choices:
 - For the Recall stage, the goal, the help the AI may give, and two steps that run when the student finishes the stage.
 - For the Research stage, the goal, and a rule that the AI never writes the explanation.
 
-{{< figure size="narrow" src="/images/classroom/finish_recall.svg" alt="When a student finishes Recall, its two steps run in order before Research begins" >}}
+The Recall stage doesn't need that rule, because the only help allowed there is a question back or a hint.
 
-The first step needs at least 40 words of notes. The second asks a smaller AI model whether the notes are on topic, and if they aren't, the student gets a gentle reminder.
+{{< figure size="narrow" src="/images/classroom/finish_recall.svg" alt="When a student finishes the Recall stage, two steps from the workflow file run, then the student answers questions about the stage, and the Research stage begins" >}}
+
+The first step needs at least 40 words of notes. The second asks a smaller AI model whether the notes are on topic, and if they aren't, the student gets a gentle reminder. After both steps, the harness asks the student to explain the steps they took in the Recall stage, and then the Research stage begins.
 
 Today these files are written by hand. A future implementation could provide a UI to help build such workflow files.
 
@@ -86,7 +88,7 @@ Today these files are written by hand. A future implementation could provide a U
 
 Inside a stage, the student asks the AI questions in their own words.
 
-Before the AI replies, a second, smaller AI model reads the student's question and answers a few simple questions:
+Before the AI replies, a second, smaller AI model reads the student's question and answers a few questions about it, such as:
 
 - Is the question safe for a child to ask?
 - Is the question about the topic?
@@ -120,7 +122,7 @@ Sometimes one hint isn't enough. Giving a stuck student the full answer straight
 
 Say a student in the Recall stage asks the AI for a hint. The first reply is a question back to the student, just to trigger the thought process.
 
-The student asks again without changing their notes. After two replies like this, the help gets a bit more detailed, and this time the student gets a hint.
+The student asks again without changing their notes, and gets another question back. After two replies like this, the help gets a bit more detailed, and the student's next request gets a hint.
 
 If the student keeps asking without changing anything, the AI keeps giving hints, because the teacher didn't allow examples in the Recall stage.
 
@@ -143,6 +145,8 @@ So when a student pastes 60 words or more at once, the harness asks them two qui
 The student also sees why the questions came up, for example "60 words arrived in one step, so two questions about it." If they don't know an answer, they can ask for a hint instead.
 
 Every now and then, the harness also asks a student a quick question at random, so the questions don't only come up when something looks wrong.
+
+At the end of each stage, the harness asks a few more quick questions, this time asking the student to explain the steps they took in that stage.
 
 ## A Record of Every Step the Student Takes
 
@@ -204,7 +208,7 @@ So before any request goes out, the harness swaps each student's name for an ID 
 
 {{< figure size="narrow" src="/images/classroom/redaction.svg" alt="Names become IDs and the phone number becomes a label before the request leaves" >}}
 
-The AI provider still gets the student's question, and never learns who asked the question.
+The AI provider still gets the student's question, but never sees the student's name.
 
 The list of which ID belongs to which student stays inside the school. So when the review of the student's trail comes back talking about s_7b01, the harness puts the name back in, and the teacher reads "Asha".
 
@@ -219,7 +223,7 @@ For every call, the gateway:
 - swaps names for IDs, and phone numbers and email addresses for labels
 - picks the smaller model for checks and the larger model for writing
 - checks the spending against the budget for the school, the class or the assignment
-- records the call, including which model was used, what the call was for and how many tokens the call used
+- records the call, including which model was used, what the call was for and how many *tokens* the call used (tokens are the small pieces of text that AI providers count and charge by)
 
 Because every call passes through the gateway, adding another AI provider is mostly a change to the gateway. Each model in the routing settings names its provider:
 
@@ -229,7 +233,9 @@ models:
   sarvam:    { small: sarvam/sarvam-105b, large: sarvam/sarvam-105b, decision: sarvam/sarvam-105b }
 ```
 
-and the gateway looks that provider up in one table:
+The `decision` model is the smaller model that does the checks, and the `small` and `large` models write the hints, the replies and the review. On the Claude side, Claude Haiku 5.5 does the checks and Claude Sonnet 5.5 does the writing. On the Sarvam side, Sarvam 105B does both jobs.
+
+The gateway then looks the provider up in one table:
 
 ```python {hl_lines=[1]}
 PROVIDERS = {"anthropic": _claude, "bedrock": _bedrock_converse, "sarvam": _sarvam}
@@ -245,7 +251,7 @@ Adding Sarvam meant one line in the routing settings, one entry in the table, an
 
 ## Keeping Stored Data Private
 
-The harness encrypts each student's notes, drafts and trail, along with their quick questions and reviews. Even someone with a copy of the database can't read them without the right key.
+The harness encrypts each student's notes, drafts and trail, along with their quick questions and reviews.
 
 {{< figure size="narrow" src="/images/classroom/class_keys.svg" alt="Each class has its own key, which locks only that class's data" >}}
 
@@ -257,7 +263,7 @@ Each class's data is encrypted with that class's key, and each class key is in t
 
 {{< figure size="narrow" src="/images/classroom/keys_envelope.svg" alt="Each class's data sits inside its class key, and every class key sits inside the school's main key" >}}
 
-The encryption uses *Fernet*, an authenticated symmetric encryption scheme from Python's cryptography library. Fernet encrypts with AES-128 and signs the result with HMAC-SHA256, so any change to the stored data is detected when the data is read back.
+The encryption uses *Fernet*, an authenticated symmetric encryption scheme from Python's cryptography library. Fernet encrypts with AES-128 and authenticates the result with HMAC-SHA256, so any change to the stored data is detected when the data is read back.
 
 On AWS, the main key lives in AWS's Key Management Service and never leaves the service. Every request to unlock a class key names the school, so a class key locked for one school can't be unlocked for another.
 
@@ -285,7 +291,7 @@ Only the top layer needs to change for a new domain.
 
 ## The Same Core in a Law Firm
 
-The school design started with design thinking. I listed the five people who decide whether a school starts using AI for school work, and the worry each one has:
+I started the school design by listing the five people who decide whether a school starts using AI for school work, and what each one cares about:
 
 - **The student** already uses chatbots.
 - **The teacher** sees only the finished work.
@@ -293,7 +299,7 @@ The school design started with design thinking. I listed the five people who dec
 - **The IT in-charge** asks where the data lives.
 - **The parent** asks what is recorded.
 
-Each part of the harness answers one of those worries.
+The harness was designed around these five people.
 
 A law firm would start the same way, with its own people:
 
@@ -302,7 +308,7 @@ A law firm would start the same way, with its own people:
 - the client
 - whoever looks after the firm's data
 
-Their worries would shape the top layer, while the core stays the same.
+What those people care about would shape the top layer, while the core stays the same.
 
 | | School | Law firm |
 |---|---|---|
@@ -343,14 +349,16 @@ spec:
     encryption: { keyOwner: school }                # only the school holds its main key
 ```
 
-A *Kubernetes operator* is a program that watches files like this one. The operator compares what the file asks for with what exists, and fixes the difference. That way the operator sets up the school's own space, sign-in, key, budget and computers for student sessions.
+With `dataResidency: in`, the school's stored data stays in India. A model outside India, such as Claude Haiku 5.5 here, still gets requests from outside the country, with names already swapped for IDs.
 
-- **Separation.** A school picks how separate the school is from other schools: a shared cluster, a virtual cluster of its own, or a dedicated cluster. The school's data, keys and network are separate at every level.
-- **Timetable.** School use follows the timetable, so computers for student sessions start ahead of lessons and deadlines, and scale to zero at night.
+*Kubernetes* is a widely used system for running programs across many computers. A *Kubernetes operator* is a program that watches files like this one. The operator compares what the file asks for with what exists, and fixes the difference. That way the operator sets up the school's own space, sign-in, key, budget and computers for student sessions.
 
-The operator and these files are still a design, and so is connecting a school's own AI provider account. What runs today is the harness on one machine with Docker, plus a Terraform setup for AWS that has been tested on an AWS emulator.
+- **Separation.** A school picks how separate the school is from other schools: a shared *cluster* (a group of computers run together by Kubernetes), a virtual cluster of its own (a separate space on shared computers), or a dedicated cluster (computers used only by that school). In the design, the school's data, keys and network are separate at every level.
+- **Timetable.** School use follows the timetable, so computers for student sessions start ahead of lessons and deadlines, and all shut down at night.
 
-## Measuring Correctness of AI Checks
+The operator and these files are still a design, and so is connecting a school's own AI provider account. What runs today is the harness on one machine, using Docker (a tool that packages a program with everything it needs to run). There is also a Terraform setup for AWS (files that describe the cloud resources to create), which has been tested on an AWS emulator (a program that imitates AWS on one computer).
+
+## Measuring How Often the Checks Are Right
 
 Before the AI replies to a student, a smaller AI model answers a few questions about the student's message, such as "Is the message aligned to the topic?". I wanted to know how often the smaller AI model gets those answers right.
 
@@ -358,12 +366,11 @@ Here is how the test went:
 
 - I collected example student messages from the photosynthesis assignment's Research stage, and wrote down the right answers beforehand.
 - Each test ran several times, so each result is a range.
-- Both models got exactly the same instructions, which were written and checked with Claude first, and not changed for Sarvam.
 
 What the two models did:
 
 - **Claude Haiku 5.5** from Anthropic got about 95 in 100 answers right. One of Claude Haiku's misses was calling "Is it dangerous to look at the sun to see how much light plants get?" unsafe every time, even though the question is a fair one about the topic.
-- **Sarvam 105B** from the Indian company Sarvam AI got about 90 in 100 answers right. Sarvam's models run in India, which matters to any school that cares where student data goes. One of Sarvam's misses was treating "Who won the cricket match yesterday?" as on topic in most runs.
+- **Sarvam 105B** from the Indian company Sarvam AI got about 90 in 100 answers right. One of Sarvam's misses was treating "Who won the cricket match yesterday?" as on topic in most runs.
 
 | | Claude Haiku 5.5 | Sarvam 105B |
 |---|---|---|
@@ -376,19 +383,20 @@ These are small tests, so a few answers either way would change the results.
 
 The next thing I wanted to know was whether the hints actually hold back the answer, because a hint that hands over the answer stops the student from doing the thinking.
 
-Hints are written by a larger AI model than the one doing the checks. Claude Sonnet 5.5 writes the hints on the Claude side, and Sarvam 105B writes the hints on the Sarvam side.
+On the Claude side, hints are written by Claude Sonnet 5.5, a larger model than the Claude Haiku 5.5 that does the checks. On the Sarvam side, Sarvam 105B writes the hints as well as doing the checks.
 
 I gave both models the same student questions and had both models judge every hint:
 
-- Every one of Claude Sonnet 5.5's hints held back the answer.
-- About 1 in 4 of Sarvam 105B's hints gave the answer away, usually by stating a fact outright.
-- The judges didn't agree. Sarvam 105B flagged those hints, but Claude didn't flag a single hint from either model.
+- Both judges said every one of Claude Sonnet 5.5's hints held back the answer.
+- Sarvam 105B, judging its own hints, said about 1 in 4 of them gave the answer away, usually by stating a fact outright.
+- Claude didn't flag a single one of Sarvam 105B's hints.
 
-So whether a hint gives the answer away depends partly on which model is doing the judging.
+So whether a hint gives the answer away depends partly on which model is doing the judging. A person reading the same hints would settle which judge is right, and that is a next step.
 
-| | Claude Sonnet 5.5 | Sarvam 105B |
+| Hints that held back the answer | Claude Sonnet 5.5's hints | Sarvam 105B's hints |
 |---|---|---|
-| Hints that held back the answer | all of them | about 3 in 4 |
+| Judged by Claude | all of them | all of them |
+| Judged by Sarvam 105B | all of them | about 3 in 4 |
 
 ### How the Tests Were Run
 
@@ -397,8 +405,7 @@ So whether a hint gives the answer away depends partly on which model is doing t
 - **Answers first.** The right answers were written down before any model ran, so the models are compared with a person and never with themselves.
 - **Repeats.** Each test ran several times, because a model doesn't always answer the same way twice.
 - **Same instructions.** Both models got the same instructions, which were first tuned with Claude.
-- **Two judges.** Both models judged every hint, because a model may go easy on its own replies.
-- **Real moments only.** A review passed only if every note pointed to a real moment in the trail, so the teacher can check every note.
+- **Two judges.** Both models judged every hint, so no model was the only judge of its own hints.
 
 ## Measuring Cost
 
@@ -408,7 +415,7 @@ I also measured what one student doing the whole photosynthesis assignment costs
 |---|---|---|
 | One student, one whole assignment | about ₹7 | under ₹1 |
 
-Claude costs more partly because Claude Sonnet 5.5 thinks the problem through before replying, while Sarvam 105B ran with thinking turned off. Sarvam's prices are also introductory for now.
+Claude costs more partly because Claude Sonnet 5.5 thinks the problem through before replying, while Sarvam 105B ran with thinking turned off. Sarvam's prices are also introductory until the end of 2026.
 
 Choosing between the models means weighing accuracy, cost and where the data is processed, and that choice is the school's to make. The rules, the trail and the keys stay the same whichever model the school picks.
 
@@ -416,7 +423,7 @@ Choosing between the models means weighing accuracy, cost and where the data is 
 
 A determined student can still copy from a chatbot on another device or account, such as a phone, a second laptop or a personal account.
 
-If the student then types the copied answer into the harness a few words at a time, the student's notes grow slowly, just like steady work, and no quick questions are triggered.
+If the student then types the copied answer into the harness a few words at a time, the student's notes grow slowly, just like steady work, and no paste questions come up.
 
 Copying slowly like this takes longer than doing the work, and the quick questions at the end of each stage still ask the student to explain the steps. Even so, the harness can't fully stop a student who copies this way.
 
